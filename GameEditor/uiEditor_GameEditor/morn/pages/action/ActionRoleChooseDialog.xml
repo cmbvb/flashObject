@@ -1,0 +1,20 @@
+<Dialog sceneWidth="600" sceneHeight="400" sceneColor="0xffffff" sceneBg="" layers="1,1,0,0,第 1 层">
+  <Image url="png.comp.bg" x="0" y="0" layer="1" sizeGrid="5,30,5,30" width="700" height="500"/>
+  <Image url="png.comp.blank" x="0" y="1" layer="1" width="667" height="26" name="drag"/>
+  <Button skin="png.comp.btn_close" x="669" y="3" layer="1" name="close"/>
+  <Box layers="1,1,0" layer="1" x="9" y="35">
+    <Image url="png.comp.bg2" y="60" layer="1" sizeGrid="5,5,5,5" width="226" height="361" x="0"/>
+    <List layers="1,1,0" layer="1" x="6" y="66" repeatX="1" repeatY="14" var="listRoles">
+      <VScrollBar skin="png.comp.vscroll" x="197" layer="1" width="17" height="350" name="scrollBar" y="0"/>
+      <UIView source="action/ActionRoleChooseItem.xml" x="0" y="0" layer="1" name="render" runtime="com.canaan.gameEditor.view.action.ActionRoleChooseItem"/>
+    </List>
+    <TextInput skin="png.comp.textinput" x="30" layer="1" width="171" height="22" var="txtSearch" y="30"/>
+    <Label text="搜索" layer="1" y="30" x="0"/>
+    <Label text="类型" y="2" layer="1" x="0"/>
+    <ComboBox labels="label1,label2" skin="png.comp.combobox" x="30" layer="1" y="0" width="171" sizeGrid="5,5,50,5" var="cboRoleType" scrollBarSkin="png.comp.vscroll" visibleNum="10"/>
+  </Box>
+  <Button skin="png.comp.button" x="611" y="465" layer="1" var="btnAccept" label="确定"/>
+  <Panel layers="1,1,0" layer="1" x="246" y="96" width="440" height="360" var="panelPreview">
+    <Image url="png.comp.borderBlank" layer="1" width="440" height="360" sizeGrid="2,2,2,2"/>
+  </Panel>
+</Dialog>

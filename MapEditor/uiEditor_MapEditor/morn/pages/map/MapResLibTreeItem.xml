@@ -1,0 +1,5 @@
+<TreeItem sceneWidth="600" sceneHeight="400" sceneColor="0xffffff" sceneBg="" layers="1,1,0,0,第 1 层">
+  <Clip url="png.comp.clip_selectBox" x="0" y="0" layer="1" clipX="1" clipY="2" name="selectBox" width="240" height="20"/>
+  <Image url="png.comp.img_folder" x="2" y="2" layer="1" var="imgFolder"/>
+  <Label text="赤月恶魔" x="20" y="0" layer="1" var="lblName" width="220" height="20"/>
+</TreeItem>

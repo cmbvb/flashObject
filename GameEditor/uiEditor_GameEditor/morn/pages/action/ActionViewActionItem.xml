@@ -1,0 +1,5 @@
+<View sceneWidth="600" sceneHeight="400" sceneColor="0xffffff" sceneBg="" layers="1,1,0,0,第 1 层">
+  <Clip url="png.comp.clip_selectBox" x="0" layer="1" clipX="1" clipY="2" y="0" width="185" height="40" name="selectBox"/>
+  <Image url="png.comp.blank" layer="1" width="40" height="40" var="imgPreview" name="imgPreview" x="0" y="0"/>
+  <Label text="动作" x="46" y="10" layer="1" var="lblAction" name="lblAction" width="137" height="20"/>
+</View>

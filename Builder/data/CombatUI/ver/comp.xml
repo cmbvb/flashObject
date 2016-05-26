@@ -1,0 +1,31 @@
+<lib>
+  <bitmapdata class="png.comp.bg" file="E:\FlashObject\assect\Combat\ui\morn\assets\comp\bg.png" compression="false" quality="80" create="1369563238105473"/>
+  <bitmapdata class="png.comp.btn_close" file="E:\FlashObject\assect\Combat\ui\morn\assets\comp\btn_close.png" compression="false" quality="80" create="1369563238080938"/>
+  <bitmapdata class="png.comp.button" file="E:\FlashObject\assect\Combat\ui\morn\assets\comp\button.png" compression="false" quality="80" create="1369563238086846"/>
+  <bitmapdata class="png.comp.checkbox" file="E:\FlashObject\assect\Combat\ui\morn\assets\comp\checkbox.png" compression="false" quality="80" create="1369563238103351"/>
+  <bitmapdata class="png.comp.clip_num" file="E:\FlashObject\assect\Combat\ui\morn\assets\comp\clip_num.png" compression="false" quality="80" create="13695632380767364"/>
+  <bitmapdata class="png.comp.clip_selectBox" file="E:\FlashObject\assect\Combat\ui\morn\assets\comp\clip_selectBox.png" compression="false" quality="80" create="13997052001391001"/>
+  <bitmapdata class="png.comp.clip_tree_arrow" file="E:\FlashObject\assect\Combat\ui\morn\assets\comp\clip_tree_arrow.png" compression="false" quality="80" create="13997980866521007"/>
+  <bitmapdata class="png.comp.clip_tree_folder" file="E:\FlashObject\assect\Combat\ui\morn\assets\comp\clip_tree_folder.png" compression="false" quality="80" create="13990469480301113"/>
+  <bitmapdata class="png.comp.combobox" file="E:\FlashObject\assect\Combat\ui\morn\assets\comp\combobox.png" compression="false" quality="80" create="1369563238081634"/>
+  <bitmapdata class="png.comp.hscroll$bar" file="E:\FlashObject\assect\Combat\ui\morn\assets\comp\hscroll$bar.png" compression="false" quality="80" create="13695632380691339"/>
+  <bitmapdata class="png.comp.hscroll$down" file="E:\FlashObject\assect\Combat\ui\morn\assets\comp\hscroll$down.png" compression="false" quality="80" create="13695632380711745"/>
+  <bitmapdata class="png.comp.hscroll$up" file="E:\FlashObject\assect\Combat\ui\morn\assets\comp\hscroll$up.png" compression="false" quality="80" create="13695632380911684"/>
+  <bitmapdata class="png.comp.hscroll" file="E:\FlashObject\assect\Combat\ui\morn\assets\comp\hscroll.png" compression="false" quality="80" create="13695632380772830"/>
+  <bitmapdata class="png.comp.hslider$bar" file="E:\FlashObject\assect\Combat\ui\morn\assets\comp\hslider$bar.png" compression="false" quality="80" create="13695632380971248"/>
+  <bitmapdata class="png.comp.hslider" file="E:\FlashObject\assect\Combat\ui\morn\assets\comp\hslider.png" compression="false" quality="80" create="13695632381092913"/>
+  <bitmapdata class="png.comp.image" file="E:\FlashObject\assect\Combat\ui\morn\assets\comp\image.png" compression="false" quality="80" create="136956323809561202"/>
+  <bitmapdata class="png.comp.linkbutton" file="E:\FlashObject\assect\Combat\ui\morn\assets\comp\linkbutton.png" compression="false" quality="80" create="13695632381072909"/>
+  <bitmapdata class="png.comp.progress$bar" file="E:\FlashObject\assect\Combat\ui\morn\assets\comp\progress$bar.png" compression="false" quality="80" create="1369563238065303"/>
+  <bitmapdata class="png.comp.progress" file="E:\FlashObject\assect\Combat\ui\morn\assets\comp\progress.png" compression="false" quality="80" create="1369563238073280"/>
+  <bitmapdata class="png.comp.radiogroup" file="E:\FlashObject\assect\Combat\ui\morn\assets\comp\radiogroup.png" compression="false" quality="80" create="13695632380831096"/>
+  <bitmapdata class="png.comp.tab" file="E:\FlashObject\assect\Combat\ui\morn\assets\comp\tab.png" compression="false" quality="80" create="13695632380791238"/>
+  <bitmapdata class="png.comp.textarea" file="E:\FlashObject\assect\Combat\ui\morn\assets\comp\textarea.png" compression="false" quality="80" create="13825374413461068"/>
+  <bitmapdata class="png.comp.textinput" file="E:\FlashObject\assect\Combat\ui\morn\assets\comp\textinput.png" compression="false" quality="80" create="13825374413461068"/>
+  <bitmapdata class="png.comp.vscroll$bar" file="E:\FlashObject\assect\Combat\ui\morn\assets\comp\vscroll$bar.png" compression="false" quality="80" create="1369563238089450"/>
+  <bitmapdata class="png.comp.vscroll$down" file="E:\FlashObject\assect\Combat\ui\morn\assets\comp\vscroll$down.png" compression="false" quality="80" create="1369563238094736"/>
+  <bitmapdata class="png.comp.vscroll$up" file="E:\FlashObject\assect\Combat\ui\morn\assets\comp\vscroll$up.png" compression="false" quality="80" create="1369563238067780"/>
+  <bitmapdata class="png.comp.vscroll" file="E:\FlashObject\assect\Combat\ui\morn\assets\comp\vscroll.png" compression="false" quality="80" create="13695632381012825"/>
+  <bitmapdata class="png.comp.vslider$bar" file="E:\FlashObject\assect\Combat\ui\morn\assets\comp\vslider$bar.png" compression="false" quality="80" create="13695632380971248"/>
+  <bitmapdata class="png.comp.vslider" file="E:\FlashObject\assect\Combat\ui\morn\assets\comp\vslider.png" compression="false" quality="80" create="13827645749181052"/>
+</lib>

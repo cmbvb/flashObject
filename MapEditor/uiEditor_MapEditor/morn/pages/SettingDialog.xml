@@ -1,0 +1,12 @@
+<Dialog sceneWidth="600" sceneHeight="400" sceneColor="0xffffff" sceneBg="" layers="1,1,0,0,第 1 层">
+  <Image url="png.comp.bg" x="0" y="0" layer="1" sizeGrid="5,30,5,30" width="500" height="400"/>
+  <Image url="png.comp.blank" x="0" y="1" layer="1" width="468" height="26" name="drag"/>
+  <Button skin="png.comp.btn_close" x="469" y="3" layer="1" var="btnClose"/>
+  <Button skin="png.comp.button" x="212.5" y="360" layer="1" var="btnAccept" label="确定"/>
+  <Label text="客户端目录：" x="58" y="53" layer="1"/>
+  <TextInput skin="png.comp.textinput" x="149" y="52" layer="1" sizeGrid="5,5,5,5" width="200" height="22" var="txtClient"/>
+  <Button skin="png.comp.button" x="359" y="51" layer="1" var="btnSetClient" label="选择"/>
+  <Label text="服务器目录：" x="58" y="84" layer="1"/>
+  <TextInput skin="png.comp.textinput" x="149" y="83" layer="1" sizeGrid="5,5,5,5" width="200" height="22" var="txtServer"/>
+  <Button skin="png.comp.button" x="359" y="82" layer="1" var="btnSetServer" label="选择"/>
+</Dialog>

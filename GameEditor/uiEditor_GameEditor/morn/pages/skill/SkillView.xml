@@ -1,0 +1,17 @@
+<View sceneWidth="1430" sceneHeight="860" sceneColor="0xffffff" sceneBg="" layers="1,1,0,0,第 1 层" width="1430" height="860">
+  <Button skin="png.comp.button" x="10" y="10" layer="1" label="新建技能" var="btnAdd"/>
+  <Box layers="1,1,0" layer="1" x="10" y="64">
+    <Image url="png.comp.bg2" y="26" layer="1" sizeGrid="5,5,5,5" width="226" height="761" x="0"/>
+    <List layers="1,1,0" layer="1" x="6" y="32" repeatX="1" repeatY="30" var="listSkills">
+      <VScrollBar skin="png.comp.vscroll" x="197" layer="1" width="17" height="750" name="scrollBar"/>
+      <UIView source="skill/SkillViewItem.xml" x="0" y="0" layer="1" name="render" runtime="com.canaan.gameEditor.view.skill.SkillViewItem"/>
+    </List>
+    <TextInput skin="png.comp.textinput" x="30" layer="1" width="171" height="22" var="txtSearch"/>
+    <Label text="搜索" layer="1"/>
+  </Box>
+  <Box layers="1,1,0" layer="1" x="257" y="64" var="container">
+    <Label text="技能预览" x="3" layer="1"/>
+    <Image url="png.comp.bg2" y="26" layer="1" sizeGrid="5,5,5,5" width="1165" height="761" x="0"/>
+    <UIView source="skill/SkillPreviewView.xml" x="28" y="60" layer="1" runtime="com.canaan.gameEditor.view.skill.SkillPreviewView" var="skillPreview"/>
+  </Box>
+</View>

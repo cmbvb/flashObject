@@ -1,0 +1,22 @@
+<setting>
+  <tableInputTablePath path="../数据表一键导出工具/data"/>
+  <tableInputSettingPath path="../数据表一键导出工具/setting"/>
+  <tableOutputServerPath path=""/>
+  <tableOutputClientPath path="../../toolPublish/role"/>
+  <tableOutputSettingPath path=""/>
+  <templeOutputServerPath path=""/>
+  <templeOutputClientPath path="../../RoleObject/src/table"/>
+  <templeOutputServerNameSpace path=""/>
+  <templeOutputServerImport path=""/>
+  <templeOutputClientImport path=""/>
+  <enumOutputServerPath path=""/>
+  <enumOutputClientPath path=""/>
+  <enumOutputServerNameSpace path=""/>
+  <enumOutputServerImport path=""/>
+  <enumOutputClientImport path=""/>
+  <protocolOutputServerPath path=""/>
+  <protocolOutputClientPath path=""/>
+  <protocolOutputServerNameSpace path=""/>
+  <protocolOutputServerImport path=""/>
+  <protocolOutputClientImport path=""/>
+</setting>

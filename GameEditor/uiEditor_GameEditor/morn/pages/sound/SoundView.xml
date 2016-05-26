@@ -1,0 +1,30 @@
+<View sceneWidth="1430" sceneHeight="860" sceneColor="0xffffff" sceneBg="" layers="1,1,0,0,第 1 层" width="1430" height="860">
+  <Button skin="png.comp.button" x="10" y="10" layer="1" label="导入音频" var="btnImport"/>
+  <Box layers="1,1,0" layer="1" x="10" y="64">
+    <Image url="png.comp.bg2" y="26" layer="1" sizeGrid="5,5,5,5" width="226" height="761" x="0"/>
+    <List layers="1,1,0" layer="1" x="6" y="32" repeatX="1" repeatY="30" var="listSounds">
+      <UIView source="sound/SoundViewItem.xml" layer="1" name="render" y="0" runtime="com.canaan.gameEditor.view.sound.SoundViewItem"/>
+      <VScrollBar skin="png.comp.vscroll" x="197" layer="1" width="17" height="750" name="scrollBar"/>
+    </List>
+    <TextInput skin="png.comp.textinput" x="30" layer="1" width="171" height="22" var="txtSearch"/>
+    <Label text="搜索" layer="1"/>
+  </Box>
+  <Box layers="1,1,0" layer="1" x="257" y="64" var="container">
+    <Label text="音频信息" x="3" layer="1"/>
+    <Image url="png.comp.bg2" y="26" layer="1" sizeGrid="5,5,5,5" width="1165" height="761" x="0"/>
+    <Label text="编号：" x="10" y="38" layer="1"/>
+    <TextInput skin="png.comp.textinput" x="53" y="38" layer="1" width="200" height="22" sizeGrid="10,10,10,10" var="txtID" editable="false"/>
+    <Label text="类型：" x="10" y="67" layer="1"/>
+    <ComboBox labels="音乐,音效" skin="png.comp.combobox" x="53" y="66" layer="1" width="200" height="23" sizeGrid="10,10,50,10" selectedIndex="1" var="cboType"/>
+    <Label text="文件：" x="10" y="96" layer="1"/>
+    <TextInput skin="png.comp.textinput" x="53" y="95" layer="1" width="200" sizeGrid="10,10,10,10" var="txtFile" editable="false"/>
+    <Label text="备注：" x="10" y="125" layer="1"/>
+    <TextArea skin="png.comp.textarea" x="53" y="124" layer="1" width="200" height="150" scrollBarSkin="png.comp.vscroll" sizeGrid="10,10,10,10" var="txtDesc" editable="false"/>
+    <HBox layers="1,1,0" layer="1" x="9" y="290" space="10">
+      <Button skin="png.comp.button" x="101" layer="1" var="btnSave" label="保存" visible="false"/>
+      <Button skin="png.comp.button" y="0" layer="1" var="btnPlay" label="播放" x="0"/>
+      <Button skin="png.comp.button" y="0" layer="1" var="btnStop" label="停止" x="0"/>
+    </HBox>
+  </Box>
+  <Button skin="png.comp.button" x="95" y="10" layer="1" label="保存全部" var="btnSaveAll"/>
+</View>

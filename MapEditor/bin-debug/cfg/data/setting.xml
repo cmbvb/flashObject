@@ -1,0 +1,4 @@
+<setting>
+  <clientFolder path="client"/>
+  <serverFolder path="server"/>
+</setting>

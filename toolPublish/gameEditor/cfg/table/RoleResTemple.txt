@@ -1,0 +1,4 @@
+编号	类型	动作
+id	type	actions
+int	int	string[]
+10000	1	3|10000_3

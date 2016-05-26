@@ -1,0 +1,17 @@
+<View sceneWidth="600" sceneHeight="400" sceneColor="0xffffff" sceneBg="" layers="1,1,0,0,第 1 层">
+  <List layers="1,1,0" layer="1" var="listTimeLine" repeatX="50" repeatY="2" x="0" y="0">
+    <UIView source="skill/SkillTimeLineItem.xml" layer="1" name="render" runtime="com.canaan.gameEditor.view.skill.SkillTimeLineItem"/>
+  </List>
+  <Box layers="1,1,0" layer="1" x="478" y="108">
+    <Button skin="png.comp.button" x="247" layer="1" label="播放" var="btnPlay"/>
+    <Label text="当前帧索引" y="1" layer="1"/>
+    <Label text="50/50" x="68" y="1" layer="1" var="txtCurrentFrame" align="left" width="35" height="18" color="0xff0000"/>
+    <Label text="时间" x="118" y="1" layer="1"/>
+    <Label text="0.333s/0.333s" x="150" y="1" layer="1" var="txtSeconds" color="0xff0000"/>
+    <Button skin="png.comp.button" x="247" y="35" layer="1" label="修改技能" var="btnEdit"/>
+  </Box>
+  <Box layers="1,1,0" layer="1" y="196" x="0">
+    <Image url="png.comp.borderBlank" layer="1" width="820" height="400" sizeGrid="2,2,2,2"/>
+    <Panel layers="1,1,0" layer="1" width="820" height="400" var="panelDetail"/>
+  </Box>
+</View>

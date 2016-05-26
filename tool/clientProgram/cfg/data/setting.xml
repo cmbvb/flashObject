@@ -1,0 +1,22 @@
+<setting>
+  <tableInputTablePath path="../table/data"/>
+  <tableInputSettingPath path="../table/setting"/>
+  <tableOutputServerPath path=""/>
+  <tableOutputClientPath path="../../Combat/bin-debug/assets"/>
+  <tableOutputSettingPath path=""/>
+  <templeOutputServerPath path=""/>
+  <templeOutputClientPath path="../../Combat/src/model/table"/>
+  <templeOutputServerNameSpace path=""/>
+  <templeOutputServerImport path=""/>
+  <templeOutputClientImport path=""/>
+  <enumOutputServerPath path=""/>
+  <enumOutputClientPath path="../../../code/client/game/xy2/src/com/canaan/xy2/models/enums"/>
+  <enumOutputServerNameSpace path=""/>
+  <enumOutputServerImport path=""/>
+  <enumOutputClientImport path=""/>
+  <protocolOutputServerPath path="../../../code/server/XY2Server/GameServer/Message"/>
+  <protocolOutputClientPath path="../../../code/client/game/xy2/src/com/canaan/xy2/models/protocols"/>
+  <protocolOutputServerNameSpace path="GameServer.messages"/>
+  <protocolOutputServerImport path="using GameLib.Container;&#xD;using GameServer.Define.EnumNormal;"/>
+  <protocolOutputClientImport path=""/>
+</setting>

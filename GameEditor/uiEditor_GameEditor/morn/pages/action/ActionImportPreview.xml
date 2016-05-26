@@ -1,0 +1,13 @@
+<View sceneWidth="636" sceneHeight="571" sceneColor="0xffffff" sceneBg="" layers="1,1,0,0,第 1 层">
+  <HSlider skin="png.comp.hslider" x="34" y="497" layer="1" width="562" height="6" sizeGrid="3,2,3,2" tick="1" var="sliderFrame"/>
+  <TextInput text="30" skin="png.comp.textinput" x="203" y="524" layer="1" width="80" height="22" var="txtFrameSet"/>
+  <Label text="帧频" x="167" y="525" layer="1"/>
+  <Button skin="png.comp.button" x="520" y="522" layer="1" label="播放" var="btnPlay"/>
+  <Label text="方向" x="40" y="524" layer="1"/>
+  <Panel layers="1,1,0" layer="1" x="18" y="18" width="600" height="450" var="panelPreview">
+    <Image url="png.comp.blank2" x="00" y="0" layer="1" width="600" height="450"/>
+  </Panel>
+  <ComboBox labels="下" skin="png.comp.combobox" x="75" y="523" layer="1" width="80" height="23" sizeGrid="10,10,50,10" var="cboDirection" scrollBarSkin="png.comp.vscroll" selectedIndex="0" visibleNum="8"/>
+  <Label text="当前帧索引" x="358" y="524" layer="1"/>
+  <Label text="0/0" x="435" y="524" layer="1" var="txtCurrentFrame"/>
+</View>

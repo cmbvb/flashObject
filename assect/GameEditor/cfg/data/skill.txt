@@ -1,0 +1,1 @@
+id	desc	roleResId	action	lockTarget	unLoackTarget	nonTargetSelf	releaseEffectId	releaseEffectFrame	directionEffectId	directionEffectFrame	missileEffectType	missileSpeed	missileEffectId	missileEffectFrame	missileHitEffectId

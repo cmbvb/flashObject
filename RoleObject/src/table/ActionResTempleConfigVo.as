@@ -1,0 +1,1 @@
+package table{	import table.temple.ActionResTemple;	public class ActionResTempleConfigVo extends ActionResTemple	{		public function ActionResTempleConfigVo()		{			super();		}		public function get resUrl():String {			return GameRes.action + "1/10000/10000_3_1.action";		}			}}

@@ -1,0 +1,15 @@
+<project version="1">
+  <asynRes/>
+  <unDealRes/>
+  <resTypes>png,jpg</resTypes>
+  <resExportPath>../src/cfg/uiswf</resExportPath>
+  <resCanCompress>0</resCanCompress>
+  <resPublishQuality>80</resPublishQuality>
+  <codeExportPath>../src/com/canaan/mapEditor/ui</codeExportPath>
+  <codeImports>import com.canaan.lib.component.controls.*;</codeImports>
+  <uiType>0</uiType>
+  <uiExportPath>bin/ui.swf</uiExportPath>
+  <boxTypes>Box,Container,List,Tree,Tab,RadioGroup,ViewStack,Panel,HBox,VBox</boxTypes>
+  <pageTypes>View,Dialog,TreeItem</pageTypes>
+  <shareResPath/>
+</project>

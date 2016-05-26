@@ -1,0 +1,24 @@
+<View sceneWidth="1440" sceneHeight="900" sceneColor="0xffffff" sceneBg="" layers="1,1,0,0,第 1 层">
+  <Box layers="1,1,0" layer="1" x="1401" y="1" var="containerSetting">
+    <Button skin="png.comp.button_setting" layer="1" var="btnSetting" toolTip="设置"/>
+  </Box>
+  <Box layers="1,1,0" layer="1" var="containerEdit" x="1185" y="35">
+    <Image url="png.comp.blank" layer="1" width="258" height="889" var="imgBg" x="0" y="0"/>
+    <UIView source="map/MapMiniView.xml" x="3" y="3" layer="1" runtime="com.canaan.mapEditor.view.map.MapMiniView" var="miniView"/>
+    <UIView source="map/MapEditView.xml" x="3" y="292" layer="1" runtime="com.canaan.mapEditor.view.map.MapEditView" var="editView"/>
+    <CheckBox label="F1显示网格" skin="png.comp.checkbox" x="7" y="824" layer="1" var="chkShowGrid"/>
+    <CheckBox label="F2显示对象信息" skin="png.comp.checkbox" x="104" y="824" layer="1" var="chkShowObjectInfo"/>
+    <CheckBox label="F3显示对象层" skin="png.comp.checkbox" x="7" y="844" layer="1" var="chkShowObjectLayer" selected="true"/>
+    <CheckBox label="F4显示区域层" skin="png.comp.checkbox" x="104" y="844" layer="1" var="chkShowAreaLayer" selected="true"/>
+    <CheckBox label="F5显示地形层" skin="png.comp.checkbox" x="7" y="864" layer="1" var="chkShowBlockLayer" selected="true"/>
+  </Box>
+  <Box layers="1,1,0" layer="1" x="5" y="5" var="containerButton">
+    <Button skin="png.comp.button" layer="1" label="新建" width="40" var="btnCreate"/>
+    <Button skin="png.comp.button" x="45" layer="1" label="打开" width="40" var="btnOpen"/>
+    <Button skin="png.comp.button" x="90" layer="1" label="保存" width="40" var="btnSave"/>
+    <Button skin="png.comp.button" x="135" layer="1" label="切图" width="40" var="btnOutput"/>
+    <Button skin="png.comp.button" x="180" layer="1" label="生成缩略图" var="btnOutputMini"/>
+  </Box>
+  <UIView source="map/MapView.xml" x="0" y="35" layer="1" var="mapView" runtime="com.canaan.mapEditor.view.map.MapView"/>
+  <UIView source="map/MapAttrView.xml" x="0" y="364" layer="1" var="mapAttrView" runtime="com.canaan.mapEditor.view.map.MapAttrView"/>
+</View>

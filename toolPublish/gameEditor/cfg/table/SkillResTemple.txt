@@ -1,0 +1,3 @@
+编号	备注	动作	技能锁定目标	不锁定目标	无目标时对自己使用	自身特效ID	自身特效起始帧	技能8方向特效ID	技能8方向特效起始帧	飞行道具类型（有轨迹1, 无轨迹不黏人2，无轨迹黏人3）	飞行道具速度（仅对有轨迹有效）	飞行道具ID	飞行道具起始帧	撞击特效ID
+id	desc	action	lockTarget	unLoackTarget	nonTargetSelf	releaseEffectId	releaseEffectFrame	directionEffectId	directionEffectFrame	missileEffectType	missileSpeed	missileEffectId	missileEffectFrame	missileHitEffectId
+int	string	int	bool	bool	bool	int	int	int	int	int	int	int	int	int

@@ -1,0 +1,667 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workbench progressCount="47" version="2.0">
+<workbenchAdvisor/>
+<window height="728" maximized="true" width="1024" x="386" y="-16">
+<fastViewData fastViewLocation="1024"/>
+<perspectiveBar>
+<itemSize x="160"/>
+</perspectiveBar>
+<coolbarLayout>
+<coolItem id="group.file" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="195" y="22"/>
+<coolItem id="additions" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="206" y="22"/>
+<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="101" y="22"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="84" y="22"/>
+<coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="group.nav" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="198" y="22"/>
+<coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="group.help" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
+</coolbarLayout>
+<page aggregateWorkingSetId="Aggregate for window 1452868582388" focus="true" label="工作空间 － Flash">
+<editors>
+<editorArea activeWorkbook="DefaultEditorWorkbook">
+<info part="DefaultEditorWorkbook">
+<folder appearance="1" expanded="2">
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
+<part id="6"/>
+<part id="7"/>
+<part id="8"/>
+<part id="9"/>
+<part id="10"/>
+</presentation>
+</folder>
+</info>
+</editorArea>
+<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="RoleObject.as" partName="RoleObject.as" path="E:/FlashObject/RoleObject/src/RoleObject.as" title="RoleObject.as" tooltip="RoleObject/src/RoleObject.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/RoleObject/src/RoleObject.as"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="486" selectionTopPixel="227"/>
+</editor>
+<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="ActionResTemple.as" partName="ActionResTemple.as" path="E:/FlashObject/RoleObject/src/table/temple/ActionResTemple.as" title="ActionResTemple.as" tooltip="RoleObject/src/table/temple/ActionResTemple.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/RoleObject/src/table/temple/ActionResTemple.as"/>
+<editorState selectionHorizontalPixel="0" selectionLength="10" selectionOffset="8" selectionTopPixel="507"/>
+</editor>
+<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="RoleBodyPart.as" partName="RoleBodyPart.as" path="E:/FlashObject/RoleObject/src/role/objectPart/RoleBodyPart.as" title="RoleBodyPart.as" tooltip="RoleObject/src/role/objectPart/RoleBodyPart.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/RoleObject/src/role/objectPart/RoleBodyPart.as"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="542" selectionTopPixel="90"/>
+</editor>
+<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="GameRes.as" partName="GameRes.as" path="E:/FlashObject/RoleObject/src/GameRes.as" title="GameRes.as" tooltip="RoleObject/src/GameRes.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/RoleObject/src/GameRes.as"/>
+<editorState selectionHorizontalPixel="0" selectionLength="14" selectionOffset="159" selectionTopPixel="0"/>
+</editor>
+<editor activePart="true" focus="true" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="BaseRenderPart.as" partName="BaseRenderPart.as" path="E:/FlashObject/RoleObject/src/com/canaan/lib/role/view/BaseRenderPart.as" title="BaseRenderPart.as" tooltip="RoleObject/src/com/canaan/lib/role/view/BaseRenderPart.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/RoleObject/src/com/canaan/lib/role/view/BaseRenderPart.as"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1328" selectionTopPixel="252"/>
+</editor>
+<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="ResManager.as" partName="ResManager.as" path="E:/FlashObject/RoleObject/src/com/canaan/lib/managers/ResManager.as" title="ResManager.as" tooltip="RoleObject/src/com/canaan/lib/managers/ResManager.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/RoleObject/src/com/canaan/lib/managers/ResManager.as"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="7003" selectionTopPixel="2590"/>
+</editor>
+<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="ActionVo.as" partName="ActionVo.as" path="E:/FlashObject/RoleObject/src/com/canaan/lib/role/data/ActionVo.as" title="ActionVo.as" tooltip="RoleObject/src/com/canaan/lib/role/data/ActionVo.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/RoleObject/src/com/canaan/lib/role/data/ActionVo.as"/>
+<editorState selectionHorizontalPixel="0" selectionLength="17" selectionOffset="568" selectionTopPixel="154"/>
+</editor>
+<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="BitmapEx.as" partName="BitmapEx.as" path="E:/FlashObject/RoleObject/src/com/canaan/lib/display/BitmapEx.as" title="BitmapEx.as" tooltip="RoleObject/src/com/canaan/lib/display/BitmapEx.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/RoleObject/src/com/canaan/lib/display/BitmapEx.as"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="806" selectionTopPixel="350"/>
+</editor>
+<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="AbstractObjectPart.as" partName="AbstractObjectPart.as" path="E:/FlashObject/RoleObject/src/role/objectPart/AbstractObjectPart.as" title="AbstractObjectPart.as" tooltip="RoleObject/src/role/objectPart/AbstractObjectPart.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/RoleObject/src/role/objectPart/AbstractObjectPart.as"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="316" selectionTopPixel="117"/>
+</editor>
+<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="ActionResTempleConfigVo.as" partName="ActionResTempleConfigVo.as" path="E:/FlashObject/RoleObject/src/table/ActionResTempleConfigVo.as" title="ActionResTempleConfigVo.as" tooltip="RoleObject/src/table/ActionResTempleConfigVo.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/RoleObject/src/table/ActionResTempleConfigVo.as"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="225" selectionTopPixel="0"/>
+</editor>
+<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="AbstractView.as" partName="AbstractView.as" path="E:/FlashObject/RoleObject/src/com/canaan/lib/role/view/AbstractView.as" title="AbstractView.as" tooltip="RoleObject/src/com/canaan/lib/role/view/AbstractView.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/RoleObject/src/com/canaan/lib/role/view/AbstractView.as"/>
+<editorState selectionHorizontalPixel="0" selectionLength="10" selectionOffset="4210" selectionTopPixel="257"/>
+</editor>
+</editors>
+<views>
+<view id="org.eclipse.ui.views.ProgressView" partName="进度">
+<viewState/>
+</view>
+<view id="org.eclipse.search.ui.views.SearchView" partName="搜索">
+<viewState isPinned="false">
+<view IMemento.internal.id="" org.eclipse.search.lastActivation="0"/>
+<view IMemento.internal.id="com.adobe.flexbuilder.as.editors.searchpage" org.eclipse.search.lastActivation="1" org.eclipse.search.resultpage.layout="2"/>
+</viewState>
+</view>
+<view id="org.eclipse.debug.ui.DebugView" partName="调试">
+<viewState/>
+</view>
+<view id="com.adobe.flexbuilder.packageexplorer" partName="包资源管理器">
+<viewState LINK_NAVIGATOR_TO_EDITOR="0" fpeIsFlat="0" fpeSortBy="1" sorter="1">
+<fpeExpanded>
+<fpeElement fpePath="/RoleObject"/>
+<fpeElement fpePath="/RoleObject/src"/>
+<fpeElement fpePath="/RoleObject/src/%typeDefaultPackage"/>
+<fpeElement fpePath="/RoleObject/src/com/canaan/lib"/>
+<fpeElement fpePath="/RoleObject/src/com/canaan/lib/debug"/>
+<fpeElement fpePath="/RoleObject/src/role"/>
+<fpeElement fpePath="/RoleObject/src/role/constants"/>
+<fpeElement fpePath="/RoleObject/src/role/objectPart"/>
+<fpeElement fpePath="/RoleObject/bin-debug"/>
+<fpeElement fpePath="/RoleObject/bin-debug/action"/>
+<fpeElement fpePath="/RoleObject/bin-debug/action/1"/>
+<fpeElement fpePath="/RoleObject/bin-debug/action/1/10000"/>
+</fpeExpanded>
+<fpeSelection>
+<fpeElement fpePath="/RoleObject/bin-debug/action/1/10000/10000_3_1.action"/>
+</fpeSelection>
+<filters>
+<filter element=".flexProperties" isEnabled="true"/>
+<filter element=".actionScriptProperties" isEnabled="true"/>
+<filter element=".project" isEnabled="true"/>
+<filter element=".settings" isEnabled="true"/>
+<filter element=".flexLibProperties" isEnabled="true"/>
+<filter element=".DS_Store" isEnabled="true"/>
+<filter element=".model" isEnabled="true"/>
+<filter element="*.class" isEnabled="false"/>
+<filter element=".*" isEnabled="false"/>
+<filter element=".flexProperties" isEnabled="true"/>
+<filter element=".actionScriptProperties" isEnabled="true"/>
+<filter element=".project" isEnabled="true"/>
+<filter element=".settings" isEnabled="true"/>
+<filter element=".flexLibProperties" isEnabled="true"/>
+<filter element=".DS_Store" isEnabled="true"/>
+<filter element=".model" isEnabled="true"/>
+<filter element="*.class" isEnabled="false"/>
+<filter element=".*" isEnabled="false"/>
+</filters>
+<expanded>
+<element path="/RoleObject"/>
+<element path="/RoleObject/bin-debug"/>
+<element path="/RoleObject/bin-debug/action"/>
+<element path="/RoleObject/bin-debug/action/1"/>
+<element path="/RoleObject/bin-debug/action/1/10000"/>
+</expanded>
+<selection>
+<element path="/RoleObject/bin-debug/action/1/10000/10000_3_1.action"/>
+</selection>
+</viewState>
+</view>
+<view id="com.adobe.flexbuilder.monitors.network.view.NetworkMonitorView" partName="网络监视器">
+<viewState>
+<column number="0" width="20"/>
+<column number="1" width="100"/>
+<column number="2" width="100"/>
+<column number="3" width="80"/>
+<column number="4" width="90"/>
+<column number="5" width="100"/>
+<column number="6" width="80"/>
+</viewState>
+</view>
+<view id="org.eclipse.debug.ui.VariableView" partName="变量">
+<viewState/>
+</view>
+<view id="org.eclipse.debug.ui.BreakpointView" partName="断点">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.views.ContentOutline" partName="大纲">
+<viewState/>
+</view>
+<view id="org.eclipse.debug.ui.ExpressionView" partName="表达式">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.views.ProblemView" partName="问题">
+<viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.locationField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="问题">
+<expanded>&#x0A;<category IMemento.internal.id="错误"/>
+</expanded>
+<columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
+</viewState>
+</view>
+<view id="org.eclipse.ui.console.ConsoleView" partName="控制台">
+<viewState/>
+</view>
+<view id="com.adobe.flexbuilder.dcrad.views.DataServicesView" partName="数据/服务">
+<viewState/>
+</view>
+<view id="com.adobe.flexbuilder.as.editor.asdocviewer" partName="ASDoc">
+<viewState/>
+</view>
+</views>
+<perspectives activePart="org.eclipse.ui.console.ConsoleView" activePerspective="com.adobe.flexbuilder.editors.mxml.ui.perspectives.development">
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="com.adobe.flexbuilder.debug.ui.perspectives.FlexDebugPerspectiveFactory" id="com.adobe.flexbuilder.debug.ui.perspectives.debug" label="Flash 调试"/>
+<alwaysOnActionSet id="com.adobe.flexbuilder.flashbridge.flashproject.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.egit.ui.navigation"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.doc.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.tasks.ui.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="org.eclipse.wb.core.ui.actionset"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.launchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.profileActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.NavigateActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.breakpointActionSet"/>
+<alwaysOnActionSet id="com.adobe.flexbuilder.debug.ui.flexDebuggingActionSet"/>
+<alwaysOnActionSet id="com.adobe.flexbuilder.zzz.editors.common.ui.project.publish"/>
+<alwaysOnActionSet id="com.adobe.flexbuilder.exportimport.actionSet1"/>
+<alwaysOnActionSet id="com.adobe.flexbuilder.dcrad.actionSet"/>
+<alwaysOnActionSet id="com.adobe.flexbuilder.as.editor.ui.NavigationActions"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.debugActionSet"/>
+<show_view_action id="org.eclipse.debug.ui.VariableView"/>
+<show_view_action id="org.eclipse.debug.ui.BreakpointView"/>
+<show_view_action id="org.eclipse.debug.ui.ExpressionView"/>
+<show_view_action id="org.eclipse.ui.console.ConsoleView"/>
+<show_view_action id="org.eclipse.debug.ui.DebugView"/>
+<show_view_action id="org.eclipse.ui.views.ProblemView"/>
+<show_view_action id="com.adobe.flexbuilder.packageexplorer"/>
+<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
+<new_wizard_action id="com.adobe.flexbuilder.editorcore.ui.project.wizards.newproject"/>
+<new_wizard_action id="com.adobe.flexbuilder.project.ui.wizards.FlexLibraryProjectWizard"/>
+<new_wizard_action id="com.adobe.flashbuilder.project.multiplatform.ui.MultiPlatformProjectWizard"/>
+<new_wizard_action id="com.adobe.flexbuilder.project.ui.wizards.NewActionScriptProjectWizard"/>
+<new_wizard_action id="com.adobe.flexbuilder.project.ui.wizards.ActionScriptLibraryProjectWizard"/>
+<new_wizard_action id="com.adobe.flashbuilder.project.multiplatform.ui.MultiPlatformActionScriptProjectWizard"/>
+<new_wizard_action id="com.adobe.flexbuilder.flashbridge.NewFlashProProjectWizard"/>
+<new_wizard_action id="com.adobe.flexbuilder.mxml.editor.ui.wizards.NewMXMLApplication"/>
+<new_wizard_action id="com.adobe.flexbuilder.mxml.editor.ui.wizards.NewMXMLComponent"/>
+<new_wizard_action id="com.adobe.flexbuilder.mxml.editor.ui.wizards.NewMXMLItemRenderer"/>
+<new_wizard_action id="com.adobe.flexbuilder.mxml.editor.ui.wizards.NewMXMLModule"/>
+<new_wizard_action id="com.adobe.flexbuilder.mxml.editor.ui.wizards.NewMXMLSkin"/>
+<new_wizard_action id="com.adobe.flexbuilder.as.editor.wizards.NewActionScriptFile.flex"/>
+<new_wizard_action id="com.adobe.flexbuilder.as.editor.classWizard.flex"/>
+<new_wizard_action id="com.adobe.flexbuilder.as.editor.interfaceWizard.flex"/>
+<new_wizard_action id="com.adobe.flexbuilder.as.editor.skinnableComponentWizard.flex"/>
+<new_wizard_action id="com.adobe.flexbuilder.as.editor.workerWizard.flex"/>
+<new_wizard_action id="com.adobe.flexbuilder.css.editor.wizards.NewCSSFile"/>
+<new_wizard_action id="com.adobe.flexbuilder.as.editor.flexUnitClassWizard.flex"/>
+<new_wizard_action id="com.adobe.flexbuilder.as.editor.flexUnitTestSuiteClassWizard.flex"/>
+<new_wizard_action id="com.adobe.flexbuilder.as.editor.packageWizard.flex"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.folder"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.file"/>
+<perspective_action id="com.adobe.flexbuilder.editors.mxml.ui.perspectives.development"/>
+<perspective_action id="com.adobe.flexbuilder.debug.ui.perspectives.debug"/>
+<perspective_action id="com.adobe.flash.profiler.ui.ProfilingPerspective"/>
+<hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="com.adobe.flexbuilder.dcrad.views.DataServicesView"/>
+<view id="com.adobe.flexbuilder.monitors.network.view.NetworkMonitorView"/>
+<view id="org.eclipse.search.ui.views.SearchView"/>
+<view id="org.eclipse.debug.ui.DebugView"/>
+<view id="org.eclipse.debug.ui.VariableView"/>
+<view id="org.eclipse.debug.ui.BreakpointView"/>
+<view id="org.eclipse.debug.ui.ExpressionView"/>
+<fastViewBars/>
+<layout>
+<mainWindow>
+<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">
+<page content="org.eclipse.debug.ui.DebugView" label="调试"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="stickyFolderRight" ratio="0.7496318" ratioLeft="1018" ratioRight="340" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.63027805" ratioLeft="612" ratioRight="359" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.console.ConsoleView" label="控制台"/>
+<page content="com.adobe.flexbuilder.dcrad.views.DataServicesView" label="数据/服务"/>
+<page content="com.adobe.flexbuilder.monitors.network.view.NetworkMonitorView" label="网络监视器"/>
+<page content="org.eclipse.search.ui.views.SearchView" label="搜索"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+</presentation>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.31611893" ratioLeft="202" ratioRight="437" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.38385502" ratioLeft="699" ratioRight="1122" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder activePageID="org.eclipse.debug.ui.ExpressionView" appearance="2" expanded="2">
+<page content="org.eclipse.debug.ui.VariableView" label="变量"/>
+<page content="org.eclipse.debug.ui.BreakpointView" label="断点"/>
+<page content="org.eclipse.debug.ui.ExpressionView" label="表达式"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+</presentation>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="com.adobe.flexbuilder.mxml.editor.ui.perspectives.DevelopmentPerspectiveFactory" id="com.adobe.flexbuilder.editors.mxml.ui.perspectives.development" label="Flash"/>
+<alwaysOnActionSet id="com.adobe.flexbuilder.flashbridge.flashproject.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.egit.ui.navigation"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.doc.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.tasks.ui.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="org.eclipse.wb.core.ui.actionset"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.launchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.profileActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.NavigateActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.breakpointActionSet"/>
+<alwaysOnActionSet id="com.adobe.flexbuilder.debug.ui.flexDebuggingActionSet"/>
+<alwaysOnActionSet id="com.adobe.flexbuilder.zzz.editors.common.ui.project.publish"/>
+<alwaysOnActionSet id="com.adobe.flexbuilder.exportimport.actionSet1"/>
+<alwaysOnActionSet id="com.adobe.flexbuilder.dcrad.actionSet"/>
+<alwaysOnActionSet id="com.adobe.flexbuilder.as.editor.ui.NavigationActions"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.debugActionSet"/>
+<show_view_action id="com.adobe.flexbuilder.packageexplorer"/>
+<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
+<show_view_action id="org.eclipse.ui.views.ProblemView"/>
+<show_view_action id="com.adobe.flexbuilder.dcrad.views.DataServicesView"/>
+<new_wizard_action id="com.adobe.flexbuilder.editorcore.ui.project.wizards.newproject"/>
+<new_wizard_action id="com.adobe.flexbuilder.project.ui.wizards.FlexLibraryProjectWizard"/>
+<new_wizard_action id="com.adobe.flashbuilder.project.multiplatform.ui.MultiPlatformProjectWizard"/>
+<new_wizard_action id="com.adobe.flexbuilder.project.ui.wizards.NewActionScriptProjectWizard"/>
+<new_wizard_action id="com.adobe.flexbuilder.project.ui.wizards.ActionScriptLibraryProjectWizard"/>
+<new_wizard_action id="com.adobe.flashbuilder.project.multiplatform.ui.MultiPlatformActionScriptProjectWizard"/>
+<new_wizard_action id="com.adobe.flexbuilder.flashbridge.NewFlashProProjectWizard"/>
+<new_wizard_action id="com.adobe.flexbuilder.mxml.editor.ui.wizards.NewMXMLApplication"/>
+<new_wizard_action id="com.adobe.flexbuilder.mxml.editor.ui.wizards.NewMXMLComponent"/>
+<new_wizard_action id="com.adobe.flexbuilder.mxml.editor.ui.wizards.NewMXMLItemRenderer"/>
+<new_wizard_action id="com.adobe.flexbuilder.mxml.editor.ui.wizards.NewMXMLModule"/>
+<new_wizard_action id="com.adobe.flexbuilder.mxml.editor.ui.wizards.NewMXMLSkin"/>
+<new_wizard_action id="com.adobe.flexbuilder.as.editor.wizards.NewActionScriptFile.flex"/>
+<new_wizard_action id="com.adobe.flexbuilder.as.editor.classWizard.flex"/>
+<new_wizard_action id="com.adobe.flexbuilder.as.editor.interfaceWizard.flex"/>
+<new_wizard_action id="com.adobe.flexbuilder.as.editor.skinnableComponentWizard.flex"/>
+<new_wizard_action id="com.adobe.flexbuilder.as.editor.workerWizard.flex"/>
+<new_wizard_action id="com.adobe.flexbuilder.css.editor.wizards.NewCSSFile"/>
+<new_wizard_action id="com.adobe.flexbuilder.as.editor.flexUnitClassWizard.flex"/>
+<new_wizard_action id="com.adobe.flexbuilder.as.editor.flexUnitTestSuiteClassWizard.flex"/>
+<new_wizard_action id="com.adobe.flexbuilder.as.editor.packageWizard.flex"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.folder"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.file"/>
+<perspective_action id="com.adobe.flexbuilder.editors.mxml.ui.perspectives.development"/>
+<perspective_action id="com.adobe.flexbuilder.debug.ui.perspectives.debug"/>
+<perspective_action id="com.adobe.flash.profiler.ui.ProfilingPerspective"/>
+<hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="com.adobe.flexbuilder.packageexplorer"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
+<view id="org.eclipse.ui.views.ProblemView"/>
+<view id="com.adobe.flexbuilder.dcrad.views.DataServicesView"/>
+<view id="com.adobe.flexbuilder.monitors.network.view.NetworkMonitorView"/>
+<view id="com.adobe.flexbuilder.as.editor.asdocviewer"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="org.eclipse.debug.ui.DebugView"/>
+<view id="org.eclipse.search.ui.views.SearchView"/>
+<view id="org.eclipse.ui.views.ProgressView"/>
+<view id="org.eclipse.debug.ui.ExpressionView"/>
+<fastViewBars/>
+<layout>
+<mainWindow>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@6916c054">
+<folder activePageID="com.adobe.flexbuilder.packageexplorer" appearance="2" expanded="2">
+<page content="com.adobe.flexbuilder.packageexplorer" label="包资源管理器"/>
+<page content="org.eclipse.ui.views.ContentOutline" label="大纲"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="750" ratioRight="250" relationship="2" relative="org.eclipse.ui.internal.ViewStack@6916c054">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.22405271" ratioLeft="408" ratioRight="1413" relationship="2" relative="org.eclipse.ui.internal.ViewStack@6916c054"/>
+<info folder="true" part="bottomLayout" ratio="0.62718844" ratioLeft="609" ratioRight="362" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ProblemView" label="问题"/>
+<page content="com.adobe.flexbuilder.dcrad.views.DataServicesView" label="数据/服务"/>
+<page content="com.adobe.flexbuilder.monitors.network.view.NetworkMonitorView" label="网络监视器"/>
+<page content="com.adobe.flexbuilder.as.editor.asdocviewer" label="ASDoc"/>
+<page content="org.eclipse.ui.console.ConsoleView" label="控制台"/>
+<page content="org.eclipse.debug.ui.DebugView" label="调试"/>
+<page content="org.eclipse.search.ui.views.SearchView" label="搜索"/>
+<page content="org.eclipse.ui.views.ProgressView" label="进度"/>
+<page content="org.eclipse.debug.ui.ExpressionView" label="表达式"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
+<part id="6"/>
+<part id="7"/>
+<part id="8"/>
+</presentation>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
+</perspectives>
+<workingSets/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/RoleObject/src/com/canaan/lib/role/view/BaseRenderPart.as"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/RoleObject/src/role/objectPart/RoleBodyPart.as"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/RoleObject/src/RoleObject.as"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/RoleObject/src/role/objectPart/AbstractObjectPart.as"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/RoleObject/src/com/canaan/lib/core/Application.as"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/RoleObject/src/com/canaan/lib/display/BitmapEx.as"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/RoleObject/src/role/objectPart/RoleBodyPart.as"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/RoleObject/src/table/ActionResTempleConfigVo.as"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/RoleObject/src/role/objectPart/AbstractObjectPart.as"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/RoleObject/src/com/canaan/lib/role/view/AbstractView.as"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/RoleObject/src/com/canaan/lib/role/data/ActionVo.as"/>
+</editors>
+<item historyLabel="AbstractObjectPart.as" index="3">
+<position info="not_deleted" x="1148" y="0"/>
+</item>
+<item historyLabel="BitmapEx.as" index="5">
+<position info="not_deleted" x="806" y="0"/>
+</item>
+<item historyLabel="AbstractObjectPart.as" index="3">
+<position info="not_deleted" x="1148" y="0"/>
+</item>
+<item historyLabel="RoleObject.as" index="2">
+<position info="not_deleted" x="541" y="0"/>
+</item>
+<item historyLabel="BaseRenderPart.as" index="0">
+<position info="not_deleted" x="1437" y="0"/>
+</item>
+<item historyLabel="RoleObject.as" index="2">
+<position info="not_deleted" x="541" y="0"/>
+</item>
+<item historyLabel="Application.as" index="4">
+<position info="not_deleted" x="503" y="6"/>
+</item>
+<item historyLabel="RoleObject.as" index="2">
+<position info="not_deleted" x="486" y="0"/>
+</item>
+<item historyLabel="RoleBodyPart.as" index="1">
+<position info="not_deleted" x="829" y="0"/>
+</item>
+<item historyLabel="AbstractObjectPart.as" index="3">
+<position info="not_deleted" x="1130" y="9"/>
+</item>
+<item historyLabel="BaseRenderPart.as" index="0">
+<position info="not_deleted" x="1437" y="0"/>
+</item>
+<item historyLabel="BaseRenderPart.as" index="0">
+<position info="not_deleted" x="4542" y="0"/>
+</item>
+<item historyLabel="BaseRenderPart.as" index="0">
+<position info="not_deleted" x="4540" y="0"/>
+</item>
+<item historyLabel="BaseRenderPart.as" index="0">
+<position info="not_deleted" x="4615" y="0"/>
+</item>
+<item historyLabel="BaseRenderPart.as" index="0">
+<position info="not_deleted" x="4031" y="0"/>
+</item>
+<item historyLabel="BaseRenderPart.as" index="0">
+<position info="not_deleted" x="1328" y="0"/>
+</item>
+<item historyLabel="BaseRenderPart.as" index="0">
+<position info="not_deleted" x="2674" y="0"/>
+</item>
+<item historyLabel="BaseRenderPart.as" index="0">
+<position info="not_deleted" x="4679" y="0"/>
+</item>
+<item historyLabel="BaseRenderPart.as" index="0">
+<position info="not_deleted" x="2674" y="0"/>
+</item>
+<item historyLabel="BaseRenderPart.as" index="0">
+<position info="not_deleted" x="2678" y="11"/>
+</item>
+<item historyLabel="BaseRenderPart.as" index="0">
+<position info="not_deleted" x="1328" y="0"/>
+</item>
+<item historyLabel="RoleBodyPart.as" index="6">
+<position info="not_deleted" x="829" y="0"/>
+</item>
+<item historyLabel="ActionResTempleConfigVo.as" index="7">
+<position/>
+</item>
+<item historyLabel="RoleBodyPart.as" index="6">
+<position info="not_deleted" x="758" y="0"/>
+</item>
+<item historyLabel="ActionResTempleConfigVo.as" index="7">
+<position/>
+</item>
+<item historyLabel="RoleBodyPart.as" index="6">
+<position info="not_deleted" x="936" y="0"/>
+</item>
+<item historyLabel="ActionResTempleConfigVo.as" index="7">
+<position info="not_deleted" x="207" y="6"/>
+</item>
+<item historyLabel="RoleBodyPart.as" index="6">
+<position info="not_deleted" x="756" y="0"/>
+</item>
+<item historyLabel="ActionResTempleConfigVo.as" index="7">
+<position info="not_deleted" x="270" y="0"/>
+</item>
+<item historyLabel="RoleBodyPart.as" index="6">
+<position info="not_deleted" x="756" y="0"/>
+</item>
+<item historyLabel="RoleBodyPart.as" index="6">
+<position info="not_deleted" x="803" y="0"/>
+</item>
+<item historyLabel="RoleBodyPart.as" index="6">
+<position info="not_deleted" x="936" y="0"/>
+</item>
+<item historyLabel="BaseRenderPart.as" index="0">
+<position info="not_deleted" x="1426" y="0"/>
+</item>
+<item historyLabel="RoleBodyPart.as" index="6">
+<position info="not_deleted" x="936" y="0"/>
+</item>
+<item historyLabel="RoleBodyPart.as" index="6">
+<position info="not_deleted" x="542" y="0"/>
+</item>
+<item historyLabel="RoleBodyPart.as" index="6">
+<position info="not_deleted" x="670" y="0"/>
+</item>
+<item historyLabel="ActionResTempleConfigVo.as" index="7">
+<position info="not_deleted" x="225" y="0"/>
+</item>
+<item historyLabel="RoleBodyPart.as" index="6">
+<position info="not_deleted" x="670" y="0"/>
+</item>
+<item historyLabel="ActionResTempleConfigVo.as" index="7">
+<position info="not_deleted" x="225" y="0"/>
+</item>
+<item historyLabel="RoleBodyPart.as" index="6">
+<position info="not_deleted" x="670" y="0"/>
+</item>
+<item historyLabel="AbstractObjectPart.as" index="8">
+<position info="not_deleted" x="1130" y="9"/>
+</item>
+<item historyLabel="AbstractObjectPart.as" index="8">
+<position info="not_deleted" x="653" y="0"/>
+</item>
+<item historyLabel="AbstractObjectPart.as" index="8">
+<position info="not_deleted" x="708" y="0"/>
+</item>
+<item historyLabel="AbstractObjectPart.as" index="8">
+<position info="not_deleted" x="817" y="0"/>
+</item>
+<item historyLabel="AbstractObjectPart.as" index="8">
+<position info="not_deleted" x="1116" y="0"/>
+</item>
+<item historyLabel="AbstractObjectPart.as" index="8">
+<position info="not_deleted" x="316" y="0"/>
+</item>
+<item historyLabel="AbstractView.as" index="9">
+<position info="not_deleted" x="4210" y="10"/>
+</item>
+<item historyLabel="RoleBodyPart.as" index="6">
+<position info="not_deleted" x="542" y="0"/>
+</item>
+<item active="true" historyLabel="BaseRenderPart.as" index="0">
+<position info="not_deleted" x="1328" y="0"/>
+</item>
+<item historyLabel="ActionVo.as" index="10">
+<position info="not_deleted" x="568" y="17"/>
+</item>
+</navigationHistory>
+<input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
+</page>
+<workbenchWindowAdvisor/>
+<actionBarAdvisor/>
+<trimLayout>
+<trimArea IMemento.internal.id="128">
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
+<trimItem IMemento.internal.id="org.eclipse.mylyn.tasks.ui.trim.container"/>
+</trimArea>
+<trimArea IMemento.internal.id="1024">
+<trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
+<trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
+</trimArea>
+</trimLayout>
+</window>
+<mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="AbstractView.as" tooltip="RoleObject/src/com/canaan/lib/role/view/AbstractView.as">
+<persistable path="/RoleObject/src/com/canaan/lib/role/view/AbstractView.as"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="ActionResTempleConfigVo.as" tooltip="RoleObject/src/table/ActionResTempleConfigVo.as">
+<persistable path="/RoleObject/src/table/ActionResTempleConfigVo.as"/>
+</file>
+<file factoryID="com.adobe.flexbuilder.editors.derived.ui.startpage.StartPageEditorInput" id="com.adobe.flexbuilder.ui.StartPage" name="Web 浏览器" tooltip="Flash Builder 欢迎屏幕">
+<persistable iconpath="platform:/plugin/com.adobe.flexbuilder.ui/icons/fb_app_16.png" style="20" tooltip="Flash Builder 欢迎屏幕" url="file:/E:/flashBuilder/Adobe Flash Builder 4.7 (64 Bit)/eclipse/plugins/com.adobe.flexbuilder.ui.nl1_4.7.0.349722/nl/zh/welcome/index.html?firstLaunch=false&amp;edition=prem&amp;version=470"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="Application.as" tooltip="RoleObject/src/com/canaan/lib/core/Application.as">
+<persistable path="/RoleObject/src/com/canaan/lib/core/Application.as"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="StageManager.as" tooltip="RoleObject/src/com/canaan/lib/managers/StageManager.as">
+<persistable path="/RoleObject/src/com/canaan/lib/managers/StageManager.as"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="IRenderPart.as" tooltip="RoleObject/src/com/canaan/lib/role/interfaces/IRenderPart.as">
+<persistable path="/RoleObject/src/com/canaan/lib/role/interfaces/IRenderPart.as"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="TypeRenderPart.as" tooltip="RoleObject/src/role/constants/TypeRenderPart.as">
+<persistable path="/RoleObject/src/role/constants/TypeRenderPart.as"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="AbstractRenderPart.as" tooltip="RoleObject/src/role/objectPart/AbstractRenderPart.as">
+<persistable path="/RoleObject/src/role/objectPart/AbstractRenderPart.as"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="TimerManager.as" tooltip="RoleObject/src/com/canaan/lib/managers/TimerManager.as">
+<persistable path="/RoleObject/src/com/canaan/lib/managers/TimerManager.as"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="BitmapEx.as" tooltip="RoleObject/src/com/canaan/lib/display/BitmapEx.as">
+<persistable path="/RoleObject/src/com/canaan/lib/display/BitmapEx.as"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="ActionVo.as" tooltip="RoleObject/src/com/canaan/lib/role/data/ActionVo.as">
+<persistable path="/RoleObject/src/com/canaan/lib/role/data/ActionVo.as"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="ResItem.as" tooltip="RoleObject/src/com/canaan/lib/core/ResItem.as">
+<persistable path="/RoleObject/src/com/canaan/lib/core/ResItem.as"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="ResManager.as" tooltip="RoleObject/src/com/canaan/lib/managers/ResManager.as">
+<persistable path="/RoleObject/src/com/canaan/lib/managers/ResManager.as"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="BaseRenderPart.as" tooltip="RoleObject/src/com/canaan/lib/role/view/BaseRenderPart.as">
+<persistable path="/RoleObject/src/com/canaan/lib/role/view/BaseRenderPart.as"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="ActionUtil.as" tooltip="RoleObject/src/com/canaan/lib/role/utils/ActionUtil.as">
+<persistable path="/RoleObject/src/com/canaan/lib/role/utils/ActionUtil.as"/>
+</file>
+</mruList>
+</workbench>

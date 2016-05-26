@@ -1,0 +1,7 @@
+<View width="210" height="140" sceneColor="0xffffff" layers="1,1,0,0,第 1 层">
+  <Button label="普攻" skin="png.comp.button" x="140" y="70" layer="1" width="70" height="70" var="btnSkill"/>
+  <Button label="冲刺" skin="png.comp.button" x="0" y="70" layer="1" width="70" height="70" var="btnBash"/>
+  <Button label="技能1" skin="png.comp.button" x="0" y="0" layer="1" width="70" height="70" var="btnSkill1"/>
+  <Button label="技能2" skin="png.comp.button" x="70" y="0" layer="1" width="70" height="70" var="btnSkill2"/>
+  <Button label="技能3" skin="png.comp.button" x="140" y="0" layer="1" width="70" height="70" var="btnSkill3"/>
+</View>

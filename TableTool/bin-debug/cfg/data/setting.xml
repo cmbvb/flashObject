@@ -1,0 +1,22 @@
+<setting>
+  <tableInputTablePath path="../../tool/table/data"/>
+  <tableInputSettingPath path=""/>
+  <tableOutputServerPath path=""/>
+  <tableOutputClientPath path="../../Combat/bin-debug/assets"/>
+  <tableOutputSettingPath path=""/>
+  <templeOutputServerPath path=""/>
+  <templeOutputClientPath path="../../Combat/src/model/table"/>
+  <templeOutputServerNameSpace path=""/>
+  <templeOutputServerImport path=""/>
+  <templeOutputClientImport path=""/>
+  <enumOutputServerPath path=""/>
+  <enumOutputClientPath path=""/>
+  <enumOutputServerNameSpace path=""/>
+  <enumOutputServerImport path=""/>
+  <enumOutputClientImport path=""/>
+  <protocolOutputServerPath path=""/>
+  <protocolOutputClientPath path=""/>
+  <protocolOutputServerNameSpace path=""/>
+  <protocolOutputServerImport path=""/>
+  <protocolOutputClientImport path=""/>
+</setting>

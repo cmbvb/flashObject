@@ -1,0 +1,12 @@
+<View sceneWidth="600" sceneHeight="400" sceneColor="0x999999" sceneBg="" layers="1,1,0,0,第 1 层">
+  <Image url="png.comp.border" layer="1" width="252" height="202" sizeGrid="3,3,3,3" x="0" y="0"/>
+  <Image x="1" y="1" layer="1" width="250" height="200" var="imgMap"/>
+  <Label text="地图名称：" x="6" y="207" layer="1"/>
+  <Label x="66" y="208" layer="1" width="186" height="18" var="lblMapName" text="shabake"/>
+  <Label text="地图尺寸：" x="6" y="245" layer="1"/>
+  <Label x="66" y="246" layer="1" width="186" height="18" var="lblMapSize" text="10000*8000"/>
+  <Label text="地图格子：" x="6" y="264" layer="1"/>
+  <Label x="66" y="265" layer="1" width="186" height="18" var="lblMapGrid" text="255*222"/>
+  <Label text="资源名称：" x="6" y="226" layer="1"/>
+  <Label x="66" y="227" layer="1" width="186" height="18" var="lblResName" text="shabake"/>
+</View>

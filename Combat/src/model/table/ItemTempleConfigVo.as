@@ -1,0 +1,1 @@
+package model.table{	import model.table.temple.ItemTemple;	public class ItemTempleConfigVo extends ItemTemple	{		public function ItemTempleConfigVo()		{			super();		}	}}

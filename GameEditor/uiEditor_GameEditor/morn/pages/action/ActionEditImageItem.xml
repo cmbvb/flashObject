@@ -1,0 +1,6 @@
+<View sceneWidth="600" sceneHeight="400" sceneColor="0xffffff" sceneBg="" layers="1,1,0,0,第 1 层">
+  <Image url="png.comp.border" x="0" y="0" layer="1" sizeGrid="2,2,2,2" width="50" height="50"/>
+  <Clip url="png.comp.clip_selectBox" x="1" y="1" layer="1" clipX="1" clipY="2" width="48" height="48" name="selectBox"/>
+  <Image layer="1" width="48" height="48" x="1" y="1" var="imgIcon"/>
+  <Label text="1" x="2" y="32" layer="1" var="lblIndex" width="46" height="18" align="right" color="0xff0000"/>
+</View>

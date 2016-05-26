@@ -1,0 +1,4 @@
+<setting>
+  <outputFolder path="output"/>
+  <tableFolder path="table"/>
+</setting>

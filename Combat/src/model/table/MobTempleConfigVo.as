@@ -1,0 +1,1 @@
+package model.table{	import model.table.temple.MobTemple;	public class MobTempleConfigVo extends MobTemple	{		public function MobTempleConfigVo()		{			super();		}	}}

@@ -1,0 +1,16 @@
+<project version="1">
+  <asynRes>img,temp,sound</asynRes>
+  <unDealRes>embed</unDealRes>
+  <resTypes>png,jpg</resTypes>
+  <resExportPath>../../../Combat/bin-debug/assets</resExportPath>
+  <resCanCompress>0</resCanCompress>
+  <resPublishQuality>80</resPublishQuality>
+  <codeExportPath>../../../Combat/src/uiCreate</codeExportPath>
+  <codeImports>import morn.core.components.*;</codeImports>
+  <uiType>0</uiType>
+  <uiExportPath>bin/ui.swf</uiExportPath>
+  <boxTypes>Box,Container,List,Tab,RadioGroup,ViewStack,Panel,HBox,VBox,Tree</boxTypes>
+  <pageTypes>View,Dialog</pageTypes>
+  <shareResPath/>
+  <codeType>0</codeType>
+</project>

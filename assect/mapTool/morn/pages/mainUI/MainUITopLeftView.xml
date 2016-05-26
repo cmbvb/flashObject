@@ -1,0 +1,8 @@
+<View width="500" height="33" sceneColor="0xffffff" layers="1,1,0,0,第 1 层">
+  <Button label="设置" skin="png.comp.button" x="0" y="0" layer="1" width="75" height="33" var="btnSet"/>
+  <Button label="保存" skin="png.comp.button" x="164" y="0" layer="1" width="75" height="33" var="btnSave"/>
+  <Button label="发布" skin="png.comp.button" x="328" y="0" layer="1" width="75" height="33" var="btnPublish"/>
+  <Button label="打开" skin="png.comp.button" x="82" y="0" layer="1" width="75" height="33" var="btnOpen"/>
+  <Button label="显示格子" skin="png.comp.button" x="410" y="0" layer="1" height="33" width="75" var="btnShowGrid"/>
+  <Button label="切图" skin="png.comp.button" x="246" y="0" layer="1" width="75" height="33" var="btnCutDown"/>
+</View>

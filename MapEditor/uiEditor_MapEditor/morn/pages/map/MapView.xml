@@ -1,0 +1,4 @@
+<View sceneWidth="1920" sceneHeight="1080" sceneColor="0xffffff" sceneBg="" layers="1,1,0,0,第 1 层">
+  <VScrollBar skin="png.comp.vscroll2" x="0" y="0" layer="1" var="vscroll"/>
+  <HScrollBar skin="png.comp.hscroll2" x="0" y="0" layer="1" var="hscroll"/>
+</View>

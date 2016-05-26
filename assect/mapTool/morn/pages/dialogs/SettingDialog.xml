@@ -1,0 +1,12 @@
+<Dialog width="600" height="400" sceneColor="0xffffff" layers="1,1,0,0,第 1 层">
+  <Image skin="png.comp.bg" x="0" y="0" layer="1" width="317" height="198" sizeGrid="30,30,30,30"/>
+  <Label text="格子宽(width)：" styleSkin="png.comp.label" x="12" y="54.5" layer="1"/>
+  <Label text="格子高(height)：" styleSkin="png.comp.label" x="12" y="85.5" layer="1"/>
+  <TextInput skin="png.comp.blank" x="132" y="53" layer="1" var="inputW"/>
+  <TextInput skin="png.comp.blank" x="132" y="84" layer="1" var="inputH"/>
+  <Button skin="png.comp.btn_close" x="286" y="3" layer="1" name="close"/>
+  <Image skin="png.comp.blank" x="0" y="0" layer="1" width="286" height="25" name="drag"/>
+  <Label text="客户端数据保存路径：" styleSkin="png.comp.label" x="12" y="125" layer="1"/>
+  <Label styleSkin="png.comp.label" x="132" y="126" layer="1" background="true" backgroundColor="0x999999" width="128" height="18" var="lblSavePath"/>
+  <Button label="选择" skin="png.comp.button" x="266" y="123.5" layer="1" width="36" height="23" var="btnSavePath"/>
+</Dialog>

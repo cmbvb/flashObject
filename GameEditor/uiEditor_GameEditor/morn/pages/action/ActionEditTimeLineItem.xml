@@ -1,0 +1,9 @@
+<View sceneWidth="600" sceneHeight="400" sceneColor="0xffffff" sceneBg="" layers="3,1,0,0,第 3 层;2,1,0,0,第 2 层;1,1,0,0,第 1 层">
+  <Label text="55" x="0" y="0" layer="1" width="16" height="16" align="center" var="lblFrame" size="10"/>
+  <Image url="png.comp.border2" layer="1" sizeGrid="4,4,4,4" width="16" height="30" var="imgBG" x="0" y="15"/>
+  <Label text="50" y="44" layer="1" width="16" height="16" align="center" var="lblAnimFrame" color="0xff0000" size="10" x="0"/>
+  <Clip url="png.comp.clip_selectBox2" x="1" y="16" layer="1" sizeGrid="5,5,5,5" width="14" height="28" clipX="1" clipY="2" name="selectBox"/>
+  <Image url="png.comp.timeline_circle" x="3" y="33" layer="1" var="imgCircle"/>
+  <Image url="png.comp.border" x="4" y="31" layer="1" sizeGrid="2,2,2,2" width="8" height="12" var="imgRect"/>
+  <Image url="png.comp.img_effect_small" x="2" y="16" layer="3" var="imgSound"/>
+</View>

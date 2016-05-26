@@ -1,0 +1,5 @@
+<View sceneWidth="600" sceneHeight="400" sceneColor="0xffffff" sceneBg="" layers="1,1,0,0,第 1 层">
+  <Clip url="png.comp.clip_selectBox" x="0" layer="1" clipX="1" clipY="2" y="0" width="195" height="25" name="selectBox"/>
+  <Image url="png.comp.img_music" x="2" y="2" layer="1" var="imgIcon"/>
+  <Label text="音频" x="27" y="2" layer="1" width="165" height="20" var="lblSound"/>
+</View>

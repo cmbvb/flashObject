@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="false" key="com.adobe.flexbuilder.project.ui.use.default.location"/>
+	<item value="false" key="com.adobe.flexbuilder.project.ui.last.apptype"/>
+	<item value="E:\FlashObject" key="com.adobe.flexbuilder.project.ui.last.project.parent"/>
+	<section name="com.adobe.flexbuilder.help.ModulesPropertyPage">
+		<item value="125" key="outputSWFColumnWidth"/>
+		<item value="0" key="sortColumnIndex"/>
+		<item value="225" key="moduleColumnWidth"/>
+		<item value="true" key="sortColumnAscending"/>
+		<item value="125" key="optimizeColumnWidth"/>
+	</section>
+	<section name="com.adobe.flexbuilder.help.WorkersPropertyPage">
+		<item value="0" key="sortColumnIndex"/>
+		<item value="300" key="moduleColumnWidth"/>
+		<item value="true" key="sortColumnAscending"/>
+		<item value="125" key="optimizeColumnWidth"/>
+	</section>
+	<section name="ExportSigningOptions">
+		<list key="certificates">
+			<item value="C:\Users\Administrator\Desktop\123.p12"/>
+			<item value=""/>
+			<item value="C:\Users\XiaoYe\Desktop\123.p12"/>
+		</list>
+	</section>
+</section>

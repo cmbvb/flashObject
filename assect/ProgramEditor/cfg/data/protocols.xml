@@ -1,0 +1,787 @@
+<protocolPackages>
+  <protocolPackage name="0 信息">
+    <protocol value="1" name="info_role_simple" desc="角色简单信息" content="required string uid; // 编号;&#xD;required int level; // 等级;&#xD;required string name; // 名字;&#xD;required byte gender; // 性别;&#xD;required byte job; // 职业"/>
+    <protocol value="2" name="info_role_base" desc="角色基础信息" content="required string uid; // 用户ID;&#xD;optional string serverTime;// 服务器时间&#xD;optional int serverStartDays;// 服务器开启天数(自然流逝天数)&#xD;optional string name; // 名字;&#xD;optional byte gender; // 性别;&#xD;optional byte job; // 职业&#xD;optional int cdPhysical;// 物理攻击公共冷却&#xD;optional int cdMagic;// 魔法攻击公共冷却&#xD;optional string configSkillBar; // 技能栏配置&#xD;optional string configAssist; // 辅助配置&#xD;optional int refuseTrade; // 拒绝交易&#xD;optional int autoAcceptFriendInvite; // 自动接受好友邀请&#xD;optional int autoAcceptTeamInvite; // 自动接受组队邀请&#xD;optional int autoAcceptGuildInvite; // 自动接受行会邀请&#xD;optional byte teamMode; // 组队模型（EnumTeamMode）&#xD;optional int taskEveryday; // 日常任务&#xD;optional int taskEverydayCount; // 日常任务计数&#xD;optional int taskEliteEveryday; // 日常精英任务&#xD;optional int taskEliteEverydayCount; // 日常精英任务计数&#xD;optional int fmlCount; // 封魔岭完成次数&#xD;optional int taskWeekly; // 周任务&#xD;optional int taskWeeklyCount; // 周任务计数&#xD;optional int refineExpCount; // 经验炼制次数&#xD;optional string guildName; // 帮会名称&#xD;optional int suitID; // 激活的魂装ID&#xD;optional int godID; // 激活的神装ID&#xD;optional int pkMode;// PK模式&#xD;optional int dailyOnlineTime;// 每日在线时间&#xD;optional int onGameTime;// 防沉迷在线时间&#xD;optional int weeklyOnlineTime;// 每周在线时间&#xD;optional int cultivationCount; // 修为值兑换次数&#xD;optional int masterWeaponID; // 城主武器ID&#xD;optional int salaryCount; // 官职奉禄次数&#xD;optional int titleID;// 称号&#xD;optional int dailyLoginCount; // &#xD;optional int storageGridNumber;// 元宝开启的仓库格子数量&#xD;optional int guildApplyTime; // 帮会申请倒计时"/>
+    <protocol value="3" name="info_role_battle" desc="角色战斗信息" content="required int attrType;// 属性类型&#xD;required int attrValue; // 属性值"/>
+    <protocol value="4" name="info_battle_dmg" desc="战斗伤害信息" content="required int spriteId;// 精灵编号&#xD;required int dmgType;// 伤害类型(如:掉血,回血,暴击,中毒...)&#xD;required int dmgValue;// 伤害值&#xD;required int skillId;// 技能ID"/>
+    <protocol value="5" name="info_sprite_view" desc="精灵可见信息" content="required int spriteId; // 精灵编号;&#xD;required int spriteType;// 精灵类型&#xD;optional info_sprite_view_base spriteBase;// 基础精灵信息&#xD;optional info_sprite_view_role spriteRole;// 角色精灵信息&#xD;optional info_sprite_view_unit spriteUnit;// 单位精灵信息(通用)&#xD;optional info_sprite_view_buff spriteBuff;// 精灵BUF信息&#xD;optional info_sprite_view_drop spriteDrop;// 精灵掉落信息&#xD;optional info_sprite_view_stall spriteStall; // 精灵摊位信息"/>
+    <protocol value="6" name="info_item_list" desc="物品信息" content="optional string id;  // 物品ID&#xD;optional int baseId;  // 物品基础ID&#xD;optional int pos;  // 物品位置&#xD;optional int stacks;  // 物品的堆叠数量&#xD;optional int useEnergy;  // 物品使用能量值&#xD;optional int limitTimeState;  // 限时物品有效状态&#xD;optional int limitTimeEffective;  // 限时物品有效时间&#xD;optional int limitTimeBegin;  // 限时物品开始使用&#xD;optional int bind;  //是否绑定&#xD;optional int lockType;  //锁定类型&#xD;optional int luck;  // 幸运值&#xD;optional int durable;  // 耐久度&#xD;optional int forgeLevel;  // 锻造等级&#xD;optional int soulLevel; 灵力等级&#xD;optional int inlayBaseID; // 魂装嵌入物ID&#xD;optional int cultivateValue;  // 培养值&#xD;optional int strengthenLevel; // 装备强化增加的星级&#xD;optional int strengthenStar; // 当前减少的强化星级&#xD;optional int recastLight;  // 是否开光&#xD;repeated int recastID;  // 重铸物品属性ID&#xD;repeated int recastValue;  // 重铸物品的属性值&#xD;repeated int nonsuchID;  //极品属性ID&#xD;repeated int nonsuchValue;  // 极品属性值"/>
+    <protocol value="7" name="info_skill" desc="技能信息" content="required int skillId;// 技能编号&#xD;required int cdTime;// 冷却时间, 持续的时间.&#xD;required bool enable;// 开启&#xD;required int proficiency; // 熟练度"/>
+    <protocol value="8" name="info_sprite_view_role" desc="角色精灵信息" content="optional string roleId; // 角色编号&#xD;optional byte roleJob;// 角色职业&#xD;optional byte roleGender;// 角色性别&#xD;optional byte roleLevel; // 角色等级&#xD;optional string roleName; // 角色名字&#xD;optional int roleNameColor;// 角色名字颜色&#xD;optional int roleWeapon;// 武器,时装武器&#xD;optional int roleClothing;// 衣服,时装衣服&#xD;optional int roleShield;// 盾牌&#xD;optional int roleWing;// 翅膀&#xD;optional int roleMounts;// 坐骑&#xD;optional string guildName; // 帮派名字&#xD;optional int suitID; // 激活的魂装ID&#xD;optional int godID; // 激活的神装ID&#xD;optional int roleTitle;// 称号&#xD;optional int roleGuanJie;// 官阶&#xD;optional byte rolePkState;// 恶意PK状态&#xD;optional int roleSinVal;// 罪恶值&#xD;optional int roleSinLevel;// 罪恶等级&#xD;optional int roleMaxIp; // 角色最大内功值&#xD;optional int roleCurIp; // 角色当前内功值&#xD;optional bool roleIsDig; // 角色是否在挖掘"/>
+    <protocol value="9" name="info_sprite_view_base" desc="精灵视图基础信息" content="optional short spriteX; // 精灵x轴坐标&#xD;optional short spriteY; // 精灵y轴坐标&#xD;optional byte spriteDir; // 精灵朝向&#xD;optional int spriteMaxHp;// 角色最大生命值&#xD;optional int spriteCurHp;// 角色当前生命值&#xD;required byte spriteCamp;// 精灵阵营"/>
+    <protocol value="10" name="info_sprite_view_unit" desc="精灵视图NPC信息" content="required int staticId;// 静态数据编号&#xD;required bool bindScript;// 绑定脚本&#xD;required byte level; // 单位等级&#xD;optional string ownerName;// 拥有者名字&#xD;optional bool isCanDig;// 是否可挖掘"/>
+    <protocol value="11" name="info_buff" desc="BUFF信息" content="required int staticId;// 静态编号&#xD;required int validDataCur;// 当前有效数值"/>
+    <protocol value="12" name="info_sprite_view_buff" desc="同步精灵BUFF信息" content="repeated info_buff spriteBuff;// BUFF信息列表&#xD;required byte operation; // 操作类型"/>
+    <protocol value="13" name="info_recast_attribute" desc="开光的属性每条属性信息" content="required bool lock_attr; // 操作状态;&#xD;required int base_id; // 物品基础ID;&#xD;required int numeric // 等级;"/>
+    <protocol value="15" name="info_sprite_view_drop" desc="精灵的掉落信息" content="required byte dropType;// 掉落类型&#xD;required int dropValue;// 掉落数值&#xD;required short dropCount;// 掉落数量&#xD;repeated int attackerSpriteId;//击打玩家精灵ID&#xD;required bool ownerTeam;//是否属于队伍&#xD;required int ownerId;//队伍ID或者精灵ID&#xD;required byte leftTime;//剩余时间&#xD;optional int InlayBaseID;//混装ID，可选"/>
+    <protocol value="16" name="info_profit" desc="玩家收益的信息" content="required int type;// 收益类型&#xD;required int sort;// 收益数值&#xD;required int count;// 收益数量&#xD;optional  int InlayBaseID;//混装ID，可选"/>
+    <protocol value="17" name="info_team" desc="队伍详细信息" content="required string leaderRoleId; // 队长ID&#xD;required string leaderName; // 队长姓名&#xD;required int leaderJob; // 队长职业&#xD;required int leaderRelevel; // 队长转生等级&#xD;required int leaderLevel; // 队长等级&#xD;required int membersCount; // 队伍人数"/>
+    <protocol value="18" name="info_team_nearly_player" desc="附近玩家信息" content="required string roleId; // 角色ID&#xD;required string roleName; // 角色姓名&#xD;required int roleJob; // 角色职业&#xD;required int roleReLevel; // 角色转生等级&#xD;required int roleLevel; // 角色等级&#xD;required string guildName; // 帮派名称&#xD;required string teamName; // 队伍名称"/>
+    <protocol value="19" name="info_team_member" desc="队伍成员信息" content="required string roleId; // 角色ID&#xD;optional string roleName; // 角色名称&#xD;optional string guildName; // 公会名称&#xD;optional int roleJob; // 角色职业&#xD;optional int roleGender; // 角色性别&#xD;optional int roleReLevel; // 角色转生等级&#xD;optional int roleLevel; // 角色等级&#xD;optional int mapId; // 所在地图ID&#xD;optional int maxHp; // 最大生命值&#xD;optional int curHp; // 当前生命值&#xD;optional int maxMp; // 最大魔法值&#xD;optional int curMp; // 当前魔法值"/>
+    <protocol value="20" name="info_guild" desc="帮会详细信息" content="required string id; // 帮会ID&#xD;optional string name; // 帮会名&#xD;optional string owner; // 帮会会长名称，用于帮会列表&#xD;optional string notice; // 公会公告&#xD;optional int level; // 帮会等级&#xD;optional int treasure; // 帮会财富&#xD;optional int memberCount; // 帮会人数(只限帮会列表)&#xD;optional int auditCount; // 审核人数&#xD;optional int audit; // 个人审核状态&#xD;optional int post; // 个人职业&#xD;optional int contribution; // 个人贡献&#xD;optional byte redState; // 个人领取红包状态(1是已领取，0是未领取)&#xD;optional byte chairmanOnline; // 帮会会长在线状态(1在线，0不在线)&#xD;optional byte hotTag; // 帮会HOT推荐标签状态(1推荐状态，0无推荐状态)"/>
+    <protocol value="21" name="info_guild_member" desc="帮会成员信息" content="required string id; // 人物ID&#xD;optional string name; // 人物名称&#xD;optional int job; // 人物职业&#xD;optional int level; // 人物等级&#xD;optional int post; // 帮会职位&#xD;optional int contribute; // 帮会贡献&#xD;optional byte onLine // 1在线，0不在线"/>
+    <protocol value="22" name="info_guild_audit" desc="帮会成员审核列表" content="required string id; // 人物ID&#xD;optional string guild; // 帮会ID&#xD;optional string name; // 人物名称&#xD;optional int job; // 人物职业&#xD;optional int level; // 人物等级&#xD;optional int gender; // 人物性别&#xD;optional byte onLine; // 1在线，0不在线"/>
+    <protocol value="23" name="info_guild_log" desc="帮会日志列表" content="required int logType; // 操作类型&#xD;required int donateValue; // 操作类别&#xD;required int contribution; // 贡献值&#xD;required string name; // 操作者名称&#xD;required int time; // 操作时间"/>
+    <protocol value="24" name="info_guild_red" desc="帮会红包列表" content="required int redType; // 记录类型&#xD;required string name; // 操作者名称&#xD;required int number; // 资金额度"/>
+    <protocol value="25" name="info_scene_rule" desc="场景规则信息" content="repeated info_scene_rule_data data;// 规则数据"/>
+    <protocol value="26" name="info_scene_rule_data" desc="场景规则数据" content="required int funId; // 功能编号&#xD;required string funParam; // 功能参数"/>
+    <protocol value="27" name="info_stall_item" desc="待出售物品的信息" content="optional int pos; // 物品位置&#xD;optional int type; // 货币类型（EnumMonerType）&#xD;optional int cost; // 物品单价&#xD;optional int del;  // 0.不删除物品 1.删除物品&#xD;optional info_item_list item; // 物品的信息列表"/>
+    <protocol value="28" name="info_stall_trade" desc="物品的交易信息" content="optional string id; // 人物ID&#xD;optional string name; // 人物昵称&#xD;optional int type; // 货币类型&#xD;optional int sum; // 货币数理&#xD;optional string itemName; // 物品名称&#xD;optional int itemCount; // 物品数量"/>
+    <protocol value="29" name="info_sprite_view_stall" desc="精灵摆摊信息" content="required string stallName; // 摊位名字"/>
+    <protocol value="30" name="info_mail" desc="邮件信息" content="required string mailID; // 邮件ID&#xD;required string roleID; // 人物ID&#xD;required string sender; // 邮件发送者&#xD;required string title; // 邮件标题&#xD;required string content; // 邮件内容&#xD;repeated info_mail_award_item itemList; // 附件物品&#xD;required int awardGoldFree; // 附件金币&#xD;required int awardGoldBind; // 附件绑定金币&#xD;required int awardVIPPointFree; // 附件元宝&#xD;required int awardVIPPointBind; // 附件绑定元宝&#xD;required int timePoint; // 邮件获取的时间点&#xD;required int received; // 物品是否领取(0为未领取,1为已领取)&#xD;required int state; // 邮件状态"/>
+    <protocol value="31" name="info_mail_award_item" desc="奖励物品信息" content="required int itemBaseID; // 物品基础ID&#xD;required int itemCount; // 物品个数"/>
+    <protocol value="32" name="info_world_boss" desc="世界BOSS信息" content="required int id; // 世界BOSS表 ID&#xD;required int state; // 世界BOSS状态"/>
+    <protocol value="33" name="info_role_activity_award" desc="角色活动奖励数据" content="repeated int onlineAwardFlag;  // 在线领奖标记&#xD;repeated int signDay;  // 签到日期&#xD;repeated int signAwardFlag;  // 签到领奖标记&#xD;optional int makeUpSignCount; // 补签次数&#xD;optional int activeValue; // 活跃值&#xD;repeated int activeAwardFlag;  // 活跃值领奖标记&#xD;repeated int achievementPointAwardFlag;  // 成就点领奖标记&#xD;optional int weeklyMoneyAward;// 每周奖励绑元"/>
+    <protocol value="34" name="info_role_relation" desc="角色关系数据" content="required string targetID; // 目标编号&#xD;optional string name; // 人名&#xD;optional int level; // 等级&#xD;optional int reLevel; // 转生等级&#xD;optional int job; // 职业&#xD;optional int gender; // 性别&#xD;optional int relationType; // 关系类型&#xD;optional int online; // 是否在线"/>
+    <protocol value="35" name="info_mission_condition" desc="任务条件数据" content="required int baseID; // 编号&#xD;required int state; // 状态&#xD;repeated int step;  // 进度"/>
+    <protocol value="36" name="info_item_buy" desc="" content="required int ID;  // 商店ID&#xD;required int dailyCount;  // 每日数量&#xD;required int onceCount;  // 永久数量&#xD;required int time;  // 剩余时间"/>
+    <protocol value="37" name="info_mall" desc="商城数据" content="required int id; // 商品ID&#xD;optional int type; // 商店类型&#xD;optional int itemBaseID; // 物品ID&#xD;optional int itemNum; // 物品数目&#xD;optional int moneyKind; // 需要货币&#xD;optional int money; // 货币数目&#xD;optional int isBindkind; // 绑定状态&#xD;optional int startMoney; // 打折前价格&#xD;optional int maxCount; // 每日最大购买数量&#xD;optional int time; // 打折天数"/>
+    <protocol value="38" name="info_team_ready" desc="队员准备信息" content="required string roleId; // 人物ID&#xD;required int ready; // 是否准备"/>
+    <protocol value="39" name="info_achievement" desc="成就条件数据" content="required int baseID; // 编号&#xD;required int state; // 状态&#xD;repeated int step;  // 进度&#xD;required int completeTime;  // 达成时间"/>
+    <protocol value="40" name="info_title" desc="称号数据" content="required int baseID; // 编号&#xD;required int state; // 状态&#xD;required int getTime; // 获得时间点&#xD;required int effectiveTime; // 持续时间"/>
+    <protocol value="41" name="info_shacheng_role_show" desc="沙城占领方人员显示" content="required string roleID; // 编号&#xD;required string roleName; // 名称&#xD;required int level; // 等级&#xD;required int gender; // 性别&#xD;required int job; // 职业&#xD;required int guildPost; // 帮会职位&#xD;required int fashionWeapon; // 时装武器&#xD;required int fashionClothes; // 时装衣服&#xD;required int shield;// 盾牌&#xD;required int weapon; // 武器&#xD;required int clothes; // 衣服&#xD;required int wing; // 翅膀"/>
+    <protocol value="42" name="info_role_rank" desc="排行榜数据" content="required string roleID; // 编号&#xD;required string roleName; // 名称&#xD;required int rank; // 排行榜名次&#xD;optional int rankValue; // 排行榜数值&#xD;repeated int suits // 套装ID&#xD;required int job; // 职业&#xD;required int level; // 等级&#xD;required string guildName; // 公会名称"/>
+    <protocol value="43" name="info_mine_radio" desc="宝藏广播信息" content="required string roleid;//角色id&#xD;required string name;//角色名字&#xD;required int itemid;  //物品id"/>
+    <protocol value="44" name="info_blood_sacrifice" desc="血祭激活数据" content="required int baseID; // 编号"/>
+    <protocol value="46" name="info_dark_temple_boss" desc="未知暗殿BOSS数据" content="required int id; // boss表ID&#xD;required int unitID; // 单位ID&#xD;required int state // BOSS状态&#xD;required int revivedTime; // 复活剩余时间(秒)"/>
+    <protocol value="47" name="info_elite_boss" desc="精英BOSS数据" content="required int id; // 精英BOSS ID&#xD;required int state // BOSS状态&#xD;required int revivedTime; // 复活剩余时间(秒)"/>
+    <protocol value="48" name="info_private_boss" desc="个人BOSS数据" content="required int id; // 个人BOSS表 ID&#xD;required int count;// 已进入次数"/>
+    <protocol value="49" name="info_zjsc_rank" desc="拯救沙城活动排名数据" content="required string roleName; // 名称&#xD;required int rank; // 排行榜名次&#xD;required int job; // 职业&#xD;required int level; // 等级&#xD;required int rankValue; // 排行榜数值"/>
+    <protocol value="50" name="info_athletics" desc="竞技类数据信息" content="required int id; // 竞技ID&#xD;optional int surplus; // 剩余领取个数&#xD;optional int operation; // 操作状态（领取，未领取，可完成）"/>
+    <protocol value="51" name="info_mars_activate" desc="激活战神信息" content="optional int id; // 激活的战神ID&#xD;optional int surplus; // 战神剩余使用时间（秒）"/>
+    <protocol value="52" name="info_invest_record" desc="投资计划同步数据" content="required string name; // 名称&#xD;required int type; // 投资类型&#xD;required int award;获得收益"/>
+    <protocol value="53" name="info_shzc_rank" desc="生化战场活动排名数据" content="required string roleName; // 名称&#xD;required int rank; // 排行榜名次&#xD;required int job; // 职业&#xD;required int level; // 等级&#xD;required int rankValue; // 排行榜数值"/>
+    <protocol value="54" name="info_popular_boss" desc="全民BOSS条件数据" content="required int baseID; // 编号&#xD;required int state; // 状态&#xD;repeated int step;  // 进度"/>
+    <protocol value="55" name="info_merger_server_activity_show" desc="合服活动显示数据" content="required int baseID; // 编号&#xD;required int showTimeType; // 时间显示类型(0为不显示,1为显示倒计时,2为显示日期)&#xD;required int time; // 时间"/>
+    <protocol value="56" name="info_secret_store" desc="神秘商店商品数量信息" content="required int id; // 商品ID&#xD;optional int isBuy; // 是否已购买（1.已购买 0.没购买）&#xD;optional int count; // 商品数量"/>
+    <protocol value="57" name="info_guild_hegemony" desc="帮会争霸" content="required string name; // 帮会名称&#xD;required int number; // 击杀数量&#xD;repeated string chairman; // 会长名称&#xD;repeated string assistant; // 副会长&#xD;repeated string elder; // 长老"/>
+    <protocol value="58" name="info_private_clone" desc="个人副本数据" content="required int type; // 个人副本 枚举类型(EnumRoleDailyDataType)&#xD;required int count;// 已进入次数"/>
+    <protocol value="59" name="info_treasure_record" desc="存取记录" content="required string name; // 操作者名称&#xD;required int type; // 存取类型 （0.存入 1.取出）&#xD;required int baseID; 存取物品// &#xD;required int count // 存取物品数量"/>
+    <protocol value="60" name="info_recharge_award" desc="首充豪礼" content="required int id; // 礼包ID 首充豪礼表&#xD;required int type; // 礼包类型 EnumRechargeAwardType&#xD;required int state; // 礼包领取状态  1.为已领取 0.没领取"/>
+    <protocol value="61" name="info_extension_award_state" desc="推广员奖励领取状态" content="required int id; // 奖励ID&#xD;required int state; // 0未达成，1可领取，2已领取"/>
+    <protocol value="62" name="info_extension_probie" desc="小号数据" content="required string name;// 名称&#xD;required int type; // 类型&#xD;required int num; // 数值"/>
+    <protocol value="63" name="info_crazy_exchange_ingot_record" desc="挂机兑换元宝记录" content="required string name;//名称&#xD;required int id; // ID&#xD;required int timePoint; // 时间戳"/>
+    <protocol value="64" name="info_crazy_exchange_ingot_count" desc="挂机兑换元宝兑换次数" content="required int id; // ID&#xD;required int count; // 以兑换次数"/>
+    <protocol value="65" name="info_holiday_activity_show" desc="庆典活动显示数据" content="required int baseID; // 编号&#xD;required int showTimeType; // 时间显示类型(0为不显示,1为显示倒计时,2为显示日期)&#xD;required int time; // 时间"/>
+    <protocol value="66" name="info_holiday_secret_store" desc="神秘商店商品数量信息" content="required int id; // 商品ID&#xD;optional int isBuy; // 是否已购买（1.已购买 0.没购买）&#xD;optional int count; // 商品数量"/>
+    <protocol value="67" name="info_mall_buy_limit" desc="" content="required int id; // 商品ID&#xD;required int surplus; // 剩余商品数量"/>
+    <protocol value="68" name="info_open_server_activity_show" desc="开服活动显示数据" content="required int baseID; // 编号&#xD;required int showTimeType; // 时间显示类型(0为不显示,1为显示倒计时,2为显示日期)&#xD;required int time; // 时间"/>
+  </protocolPackage>
+  <protocolPackage name="1 登录">
+    <protocol value="100" name="login_req" desc="登录或者注册" content="required string sig;//用户标识&#xD;required string sign;//登录sign&#xD;required string type;//登录方式"/>
+    <protocol value="101" name="login_res" desc="返回登录或者注册的情况;state=0, 登录成功;state=1,登录失败" content="required int state;//错误号"/>
+    <protocol value="102" name="heart_req" desc="心跳请求" content="required int time;"/>
+    <protocol value="103" name="heart_res" desc="心跳返回" content=""/>
+    <protocol value="104" name="close_reason" desc="服务器主动关闭的原因" content="required string reason;"/>
+    <protocol value="105" name="reconnect_req" desc="客户端端闪断之后重新连接尝试" content="required int HashID;&#xD;required string sign;"/>
+    <protocol value="106" name="reconnect_res" desc="重连响应" content="required bool state;//1成功，2失败"/>
+  </protocolPackage>
+  <protocolPackage name="2 角色">
+    <protocol value="200" name="role_list_req" desc="请求查询角色" content=""/>
+    <protocol value="201" name="role_list_res" desc="角色的默认属性" content="required int state;&#xD;repeated info_role_simple roles; // 角色信息列表"/>
+    <protocol value="202" name="role_create_req" desc="创建角色" content="required string name;//名字;&#xD;required byte job;//职业;&#xD;required byte gender;//性别"/>
+    <protocol value="203" name="role_create_res" desc="应答创建角色" content="required int state; // 状态码;&#xD;optional string uid;// 角色编号(可选)&#xD;optional string name;//名字;&#xD;optional byte job;//职业;&#xD;optional byte gender;//性别"/>
+    <protocol value="204" name="role_select_req" desc="" content="required string uid;// 角色编号"/>
+    <protocol value="205" name="role_select_res" desc="应答选择角色进入游戏" content="required int state;//状态码"/>
+    <protocol value="206" name="role_base_info_syn" desc="角色属性同步" content="required info_role_base baseInfo;// 属性信息列表"/>
+    <protocol value="207" name="role_battle_info_syn" desc="角色战斗信息同步" content="repeated info_role_battle battleInfo;// 角色战斗信息"/>
+    <protocol value="208" name="role_relive_req" desc="请求复活" content="required byte type; // 复活方式 0.原地复活  1.回城复活"/>
+    <protocol value="209" name="role_relive_res" desc="应答复活" content="required int state;// 状态码&#xD;required int spriteId;// 精灵编号"/>
+    <protocol value="230" name="role_init_start_syn" desc="同步角色开始初始化" content=""/>
+    <protocol value="231" name="role_init_end_syn" desc="同步角色初始化结束" content=""/>
+    <protocol value="232" name="role_buff_info_syn" desc="同步角色BUFF信息" content="repeated info_buff spriteBuff;// BUFF信息列表&#xD;required int operation; // 操作类型"/>
+    <protocol value="233" name="role_save_config_req" desc="请求保存配置数据" content="required string skillBar; // 技能栏&#xD;required string assist; // 辅助&#xD;required int refuseTrade; // 拒绝交易&#xD;required int autoAcceptFriendInvite; // 自动接受好友邀请&#xD;required int autoAcceptTeamInvite; // 自动接受组队邀请&#xD;required int autoAcceptGuildInvite; // 自动接受行会邀请&#xD;required byte teamMode; // 组队模式（EnumTeamMode）"/>
+    <protocol value="234" name="role_save_config_res" desc="应答保存配置数据" content="required int state; // 状态码"/>
+    <protocol value="235" name="role_pk_model_req" desc="请求PK模式" content="required int pkModel;// pk模式"/>
+    <protocol value="236" name="role_pk_model_res" desc="应答PK模式" content="required int state;// 状态码"/>
+    <protocol value="241" name="role_show_info_req" desc="显示人物信息请求" content="required string targetID; // 角色ID&#xD;required string targetName; // 角色名字"/>
+    <protocol value="242" name="role_show_info_res" desc="显示人物信息回复" content="required int state; // 状态&#xD;optional string name; // 角色名称&#xD;optional int level; // 角色等级&#xD;optional int profession; // 角色职业&#xD;optional int gender; // 角色性别&#xD;optional int reincarnation; // 角色转生等级&#xD;optional string guildName; // 角色帮会名称&#xD;optional int guildPost; // 角色帮会职务&#xD;optional int fashionWeapon; // 特殊时装武器&#xD;optional int fashionClothes; // 特殊时装衣服&#xD;optional int suit; // 魂装ID&#xD;optional int god; // 神装ID&#xD;optional int TotemId; // 图腾ID &#xD;repeated info_item_list itemInfo;  // 装备"/>
+    <protocol value="243" name="role_dead_syn" desc="角色死亡同步" content="required int atkerSpriteType; // 攻击者类型&#xD;required string atkerName; // 攻击者值"/>
+    <protocol value="244" name="role_global_data_syn" desc="推送全局数据" content="optional string shaChengName // 占领沙城帮会名称&#xD;optional string shaChengMaster // 沙城城主名称"/>
+    <protocol value="245" name="role_activity_award_syn" desc="角色活动奖励同步" content="required info_role_activity_award awardInfo;// 奖励信息列表"/>
+    <protocol value="246" name="role_message_box_syn" desc="模态消息对话框" content="required string context; // 消息内容"/>
+    <protocol value="247" name="role_pk_model_syn" desc="同步PK模式" content="required int pkModel; // PK模式"/>
+    <protocol value="248" name="role_withdrawal_req" desc="提取元宝" content=""/>
+    <protocol value="249" name="role_withdrawal_res" desc="返回提取元宝状态" content="required int state; // 返回状态"/>
+    <protocol value="250" name="role_rebirth_req" desc="人物转生请求" content=""/>
+    <protocol value="251" name="role_rebirth_res" desc="返回人物转生状态" content="required int state; // 状态码"/>
+    <protocol value="252" name="role_rebirth_cultivation_req" desc="转生修为值兑换" content=""/>
+    <protocol value="253" name="role_rebirth_cultivation_res" desc="转生返回修为值" content="required int state; // 状态"/>
+    <protocol value="254" name="role_stars_req" desc="人物星宿请求" content=""/>
+    <protocol value="255" name="role_stars_res" desc="返回人物星宿状态" content="required int state; // 状态码"/>
+    <protocol value="256" name="role_stars_cultivation_req" desc="星宿修为值兑换" content=""/>
+    <protocol value="257" name="role_stars_cultivation_res" desc="返回星宿修为值" content="required int state; // 状态"/>
+    <protocol value="258" name="role_nei_gong_upgrade_req" desc="请求提升内功等级" content="required bool auto; // 自动提升，一键升级"/>
+    <protocol value="259" name="role_nei_gong_upgrade_res" desc="应答提升内功等级" content="required int state; // 错误码"/>
+    <protocol value="260" name="role_follower_syn" desc="角色随从信息同步" content="required int petUnitId;  // 道士宠物单位ID&#xD;required int petUnitlev;  // 道士宠物单位等级&#xD;required int marsUnitId; // 战神单位ID"/>
+    <protocol value="261" name="role_lock_syn" desc="人物锁屏" content="required bool isLock;  // 是否锁屏"/>
+  </protocolPackage>
+  <protocolPackage name="3 分线">
+    <protocol value="301" name="line_change_req" desc="请求换线" content=""/>
+    <protocol value="302" name="line_change_res" desc="应答换线" content=""/>
+  </protocolPackage>
+  <protocolPackage name="4 地图">
+    <protocol value="401" name="map_use_teleport_req" desc="请求使用传送点" content="required int transferId;// 传送点编号"/>
+    <protocol value="402" name="map_use_teleport_res" desc="应答使用传送点" content="required int state;// 状态码"/>
+    <protocol value="403" name="map_view_enter_syn" desc="场景对象进入屏幕" content="required int mapViewEnterType;// 地图视野进入类型&#xD;required info_sprite_view sprites; //进入视野的角色信息"/>
+    <protocol value="404" name="map_view_leave_syn" desc="场景对象离开屏幕" content="required int spritesId; // 离开视野的精灵ID"/>
+    <protocol value="406" name="map_move_req" desc="请求移动" content="required short x; // 起始x轴坐标&#xD;required short y; // 起始y轴坐标&#xD;required short tx; // 目标x轴坐标&#xD;required short ty; // 目标y轴坐标&#xD;required byte type; // 走或者跑"/>
+    <protocol value="407" name="map_move_res" desc="应答移动" content="required int state; // 状态码&#xD;required short x; // 起始x轴坐标&#xD;required short y; // 起始y轴坐标"/>
+    <protocol value="408" name="map_move_syn" desc="在屏幕内移动" content="required int spriteId; // 精灵编号&#xD;required short x; // 起始x轴坐标&#xD;required short y; // 起始y轴坐标&#xD;required short tx; // 目标x轴坐标&#xD;required short ty; // 目标y轴坐标&#xD;required byte type; // 移动类型&#xD;required byte reason;// 移动原因"/>
+    <protocol value="409" name="map_rotation_req" desc="请求旋转" content="required int dir;// 转到方向"/>
+    <protocol value="410" name="map_rotation_res" desc="应答旋转" content="required int state; // 状态码"/>
+    <protocol value="411" name="map_rotation_syn" desc="同步旋转" content="required int spriteId; // 精灵编号&#xD;required int dir;// 转到方向"/>
+    <protocol value="412" name="map_view_info_syn" desc="视野精灵信息同步" content="required info_sprite_view spriteInfoList; // 精灵信息列表"/>
+    <protocol value="413" name="map_pick_up_req" desc="请求拾取" content="required int spriteId;// 精灵编号"/>
+    <protocol value="414" name="map_pick_up_res" desc="应答拾取" content="required int msgState;// 消息码&#xD;required int spriteId;// 精灵编号&#xD;optional info_sprite_view_drop infoDrop;// 掉落信息"/>
+    <protocol value="415" name="map_npc_transfer_req" desc="请求npc传送" content="required int id;// npc传送ID"/>
+    <protocol value="416" name="map_area_syn" desc="同步传送点" content="required int mapId;// 地图编号&#xD;optional string areaName;// 区域名字&#xD;optional bool disable;// 禁用&#xD;optional bool canEnter;// 允许进入"/>
+    <protocol value="417" name="map_change_syn" desc="同步地图切换" content="required int mapId;// 地图编号&#xD;required short x; // 坐标X&#xD;required short y; // 坐标Y&#xD;required byte reason;// 移动原因"/>
+    <protocol value="418" name="map_clone_invite_syn" desc="同步副本邀请" content="required int mapStaticId;// 副本静态编号&#xD;required int mapInstanceId;// 副本动态编号&#xD;requried byte mapModeType;// 副本类型"/>
+    <protocol value="419" name="map_clone_join_req" desc="请求加入副本" content="required int mapInstanceId; // 地图实例编号"/>
+    <protocol value="420" name="map_clone_join_res" desc="应答加入副本" content="required int state; // 消息码"/>
+    <protocol value="421" name="map_spirit_point_show_syn" desc="地图显示精灵点" content="required int spiritID; // 精灵ID&#xD;required int unitID; // 单位ID&#xD;required int mapID; // 地图ID&#xD;required int x; // 地图X坐标&#xD;required int y; // 地图Y坐标"/>
+    <protocol value="422" name="map_spirit_point_hide_syn" desc="地图隐藏精灵点" content="required int spiritID; // 精灵ID"/>
+    <protocol value="431" name="map_return_req" desc="地图返回请求" content=""/>
+    <protocol value="432" name="map_return_res" desc="地图返回回复" content="required int state; // 消息状态"/>
+    <protocol value="433" name="map_set_attr_syn" desc="设置属性" content="required int spriteID;//精灵ID&#xD;required short AttrID;//属性ID&#xD;required int AttrValue;//属性值"/>
+    <protocol value="434" name="map_find_sprite_req" desc="在地图内查找任意精灵请求" content=""/>
+    <protocol value="435" name="map_find_sprite_res" desc="在地图内查找任意精灵回复" content="required int spriteID; // 精灵ID（0为没找到）&#xD;required int posX; // 坐标X&#xD;required int posY; // 坐标Y"/>
+    <protocol value="436" name="map_npc_transfer_useitem_req" desc="请求使用道具npc传送" content="required int id;// npc传送ID&#xD;required int pos; // 消耗道具pos位置"/>
+    <protocol value="437" name="map_sprite_talk_syn" desc="地图精灵显示聊天泡泡" content="required int spriteId; // 精灵编号&#xD;required int showTime; // 持续时间&#xD;required string content; // 内容"/>
+  </protocolPackage>
+  <protocolPackage name="5 战斗">
+    <protocol value="501" name="battle_atk_req" desc="请求攻击" content="required int skillId; // 技能ID&#xD;required int roleDir; // 朝向&#xD;required byte targetType; // 目标类型(如:精灵, 坐标, 方向)&#xD;required int targetValue;// 目标值(坐标格式为高字节x轴,低字节y轴)"/>
+    <protocol value="502" name="battle_atk_res" desc="应答攻击" content="required int state;// 状态码&#xD;required int skillId; // 技能ID"/>
+    <protocol value="503" name="battle_atk_syn" desc="同步攻击动作" content="required int roleId; // 角色ID&#xD;required int skillId; // 技能ID&#xD;required int roleDir; // 朝向&#xD;required byte targetType; // 目标类型&#xD;repeated int targetValue;// 目标值(坐标格式为高字节x轴,低字节y轴)"/>
+    <protocol value="506" name="battle_dmg_syn" desc="战斗伤害同步" content="repeated info_battle_dmg infoList;// 战斗伤害信息列表"/>
+  </protocolPackage>
+  <protocolPackage name="6 聊天">
+    <protocol value="601" name="chat_message_req" desc="请求聊天" content="required int type // 聊天类型&#xD;required string sourceName // 源角色名字&#xD;required string targetName // 目标角色名字&#xD;required string message // 聊天内容"/>
+    <protocol value="602" name="chat_message_syn" desc="应答聊天" content="required int type // 聊天类型&#xD;required string sourceID // 源角色ID&#xD;required string sourceName // 源角色名字&#xD;required byte sourceVip // vip状态 1，VIP玩家 0，非VIP玩家&#xD;required string targetID // 目标角色ID&#xD;required string targetName // 目标角色名字&#xD;required string message // 聊天内容"/>
+    <protocol value="603" name="chat_message_res" desc="" content="required int type; // 频道类型&#xD;required int state; // 聊天状态"/>
+    <protocol value="604" name="chat_message_ban_syn" desc="//jinyan" content="required int way;//禁言途径 1 后台 2 系统&#xD;required string time;//禁言到期时间"/>
+  </protocolPackage>
+  <protocolPackage name="7 测试">
+    <protocol value="701" name="ping_server_res" desc="应答测试服务器时间" content="required string serverTick; // 服务器的时间戳"/>
+    <protocol value="702" name="ping_server_req" desc="请求测试服务器时间" content="required string clientTick; // 客户端的时间戳"/>
+    <protocol value="703" name="ping_client_res" desc="应答测试客户端时间" content="required string clientTick; // 客户端的时间戳"/>
+    <protocol value="704" name="ping_client_req" desc="请求测试客户端时间" content="required string servierTick; // 服务器的时间戳"/>
+  </protocolPackage>
+  <protocolPackage name="8 物品">
+    <protocol value="800" name="item_list_res" desc="获得物品列表" content="required int gridType;  // 格子类型&#xD;repeated info_item_list itemInfo;  // 物品"/>
+    <protocol value="802" name="item_add_res" desc="返回添加物品请求" content="required info_item_list itemInfo;  // 物品"/>
+    <protocol value="803" name="item_del_req" desc="删除物品请求" content="required int pos;  // 物品&#xD;required int count; // 数量"/>
+    <protocol value="804" name="item_del_res" desc="返回删除物品请求" content="required int state; // 操作物品状态&#xD;required int pos;  // 物品"/>
+    <protocol value="805" name="item_move_req" desc="物品调整位置请求" content="required int sourcePos; // 源物品格子位置&#xD;required int targetPos; // 目标物品格子位置"/>
+    <protocol value="806" name="item_move_res" desc="返回调整物品位置请求" content="required int state; // 操作物品状态&#xD;required int sourcePos; // 源物品格子位置&#xD;required int targetPos; // 目标物品格子位置"/>
+    <protocol value="808" name="item_modify_syn" desc="返回修改物品的相关属性请求" content="repeated info_item_list itemInfo;  // 物品"/>
+    <protocol value="809" name="item_split_req" desc="物品拆分请求" content="required int pos; // 物品格子位置&#xD;required int num // 拆分物品数量"/>
+    <protocol value="810" name="item_split_res" desc="返回物品拆分请求" content="required int state; // 操作物品状态"/>
+    <protocol value="811" name="item_tidy_req" desc="物品整理，包括背包和仓库。" content="required int gridType;  // 格子类型"/>
+    <protocol value="815" name="item_use_req" desc="物品使用" content="required int pos;  // 物品所在位置&#xD;required int count;  // 物品所在位置"/>
+    <protocol value="816" name="item_use_res" desc="物品使用情况" content="required int baseID; // 物品的静态ID;&#xD;required int state; // 状态码;"/>
+    <protocol value="817" name="item_chat_show_req" desc="查看聊天装备请求" content="required string itemID; // 道具ID"/>
+    <protocol value="818" name="item_chat_show_res" desc="查看聊天装备回复" content="required int state; // 状态&#xD;optional info_item_list itemInfo;  // 道具"/>
+    <protocol value="819" name="item_recycle_req" desc="回收请求" content="repeated int pos; // 待回收装备位置信息"/>
+    <protocol value="820" name="item_recycle_res" desc="返回回收请求状态" content="required int exp; // 回收获得经验&#xD;repeated int pos; // 不可回收物品位置信息&#xD;required int state; // 状态"/>
+  </protocolPackage>
+  <protocolPackage name="9 商店">
+    <protocol value="900" name="shop_buy_req" desc="购买物品请求" content="required int id;  // 物品购买ID"/>
+    <protocol value="901" name="shop_buy_res" desc="应答购买物品请求" content="required int state; // 购买物品状态"/>
+    <protocol value="903" name="shop_sell_req" desc="出售物品消息" content="required int pos;  //  销售物品的位置信息"/>
+    <protocol value="904" name="shop_sell_res" desc="回应物品出售请求" content="required int state; // 出售物品状态&#xD;required int pos;  // 销售物品的位置信息"/>
+    <protocol value="905" name="shop_repo_req" desc="回购物品消息" content="required int pos;  //  回购物品的位置信息"/>
+    <protocol value="906" name="shop_repo_res" desc="返回回购消息" content="required int state;  //  回购物品状态&#xD;required int index;  //  回购物品栏的位置索引"/>
+    <protocol value="907" name="shop_sell_batch_req" desc="出售一批物品" content="repeated int position;  // 待售物品"/>
+    <protocol value="908" name="shop_sell_batch_res" desc="返回出售状态" content="required int state; // 出售物品状态"/>
+    <protocol value="909" name="shop_load_syn" desc="商场物品数量初始化" content="repeated info_item_buy infos;  //"/>
+    <protocol value="910" name="shop_item_change_syn" desc="更新商场物品数量相关" content="repeated info_item_buy info;"/>
+  </protocolPackage>
+  <protocolPackage name="10 技能">
+    <protocol value="1001" name="skill_list_syn" desc="同步技能列表" content="repeated info_skill skillInfo;// 技能信息列表"/>
+    <protocol value="1002" name="skill_info_syn" desc="同步技能信息" content="required int oldSkillId;//原来的技能编号&#xD;required int newSkillId;//新的技能编号&#xD;required int proficiency; // 熟练度&#xD;required bool del; // true为删除技能"/>
+    <protocol value="1003" name="skill_enable_req" desc="请求开启技能" content="required int skillCategory;// 技能类型&#xD;required bool skillEnable;// 技能开启"/>
+    <protocol value="1004" name="skill_enable_res" desc="应答开启技能" content="required int state;// 状态码&#xD;optional int skillCategory;// 技能类型&#xD;optional bool skillEnable;// 技能开启"/>
+  </protocolPackage>
+  <protocolPackage name="11 交易">
+    <protocol value="1100" name="trading_apply_req" desc="交易申请" content="required string id;  // 玩家的ID"/>
+    <protocol value="1101" name="trading_apply_res" desc="返回申请交易的状态" content="required int state;  //  交易状态信息状态&#xD;required string id;  //  申请者的ID"/>
+    <protocol value="1102" name="trading_confirm_req" desc="交易申请" content="required string id;  // 玩家的ID&#xD;required int state;  // 接收 = 1， 拒绝 = 0"/>
+    <protocol value="1103" name="trading_confirm_res" desc="返回申请交易的状态" content="required int state;  //  交易状态信息状态&#xD;required string id  //  申请者的ID"/>
+    <protocol value="1104" name="trading_add_item_req" desc="添加物品到交易栏" content="required int pos;  // 物品位置"/>
+    <protocol value="1105" name="trading_add_item_res" desc="返回添加物品到交易栏状态" content="required int state;  //  添加物品的状态&#xD;required string id;  //  添加者的ID&#xD;required info_item_list itemInfo;  // 物品"/>
+    <protocol value="1106" name="trading_del_item_req" desc="删除交易栏的物品" content="required int pos;  // 物品位置"/>
+    <protocol value="1107" name="trading_del_item_res" desc="返回删除交易栏的物品" content="required int state;  //  删除物品的状态&#xD;required string id;  // 删除物品者的ID&#xD;required info_item_list itemInfo;  // 物品"/>
+    <protocol value="1108" name="trading_currency_req" desc="添加货币到交易栏" content="required int gold  //金币&#xD;required int vipPoint; // 元宝"/>
+    <protocol value="1109" name="trading_currency_res" desc="返回添加货币到交易栏状态" content="required int state;  //  添加物品的状态&#xD;required string id;  //  锁定者的ID&#xD;required int gold  //金币&#xD;required int vipPoint; // 元宝"/>
+    <protocol value="1112" name="trading_lock_req" desc="锁定或解锁自己的交易栏" content="required int state;  //  交易状态信息状态 锁定 = 1 解锁 = 0"/>
+    <protocol value="1113" name="trading_lock_res" desc="返回锁定或解锁自己的交易栏" content="required int state;  //  交易状态信息状态 锁定 = 1 解锁 = 0&#xD;required string id;  //  锁定者的ID"/>
+    <protocol value="1114" name="trading_req" desc="交易物品" content=""/>
+    <protocol value="1115" name="trading_res" desc="返回交易物品" content="required int state;  //  交易状态信息状态&#xD;required string id;  //  交易者的ID"/>
+    <protocol value="1116" name="trading_close_req" desc="关闭交易窗口" content=""/>
+    <protocol value="1117" name="trading_close_res" desc="返回关闭消息" content="required int state;  //  交易状态信息状态&#xD;required string id;  //  关闭者的ID"/>
+  </protocolPackage>
+  <protocolPackage name="12 强化">
+    <protocol value="1200" name="strengthen_req" desc="强化装备星级" content="required int pos; // 要强化物品的位置信息&#xD;required bool way; // 物品强化方式 true = 使用元宝 false = 不使用元宝"/>
+    <protocol value="1201" name="strengthen_res" desc="返回强化星级状态" content="required int state;  //  强化状态"/>
+    <protocol value="1202" name="strengthen_inheritance_req" desc="继承请求" content="required int source // 要强化物品的位置信息&#xD;required int target // 要强化物品的位置信息"/>
+    <protocol value="1203" name="strengthen_inheritance_res" desc="返回请求继承请求" content="required int state;  //  强化状态"/>
+    <protocol value="1204" name="strengthen_buy_star_req" desc="购买星级" content="required int pos; // 要强化物品的位置信息"/>
+    <protocol value="1205" name="strengthen_buy_star_res" desc="返回购买星级" content="required int state;// 状态码"/>
+    <protocol value="1206" name="recast_req" desc="开光，重铸请求。" content="required int pos; // 要强化物品的位置信息&#xD;required bool LockAttribute // 是否洗练物品属性&#xD;repeated info_recast_attribute recastAttribute; // 洗练物品属性"/>
+    <protocol value="1207" name="recast_res" desc="返回开光,重铸.请求" content="required int state;// 状态码&#xD;required int pos; // 要强化物品的位置信息&#xD;required bool LockAttribute // 是否洗练物品属性&#xD;repeated info_recast_attribute recastAttribute; // 洗练物品属性"/>
+    <protocol value="1208" name="recast_save_req" desc="发送保存请求" content=""/>
+    <protocol value="1209" name="recast_save_res" desc="返回发送保存请求状态" content="required int state;// 状态码"/>
+    <protocol value="1210" name="recast_clear_req" desc="清除服务器中间数据。" content=""/>
+    <protocol value="1211" name="recast_clear_res" desc="返回清除服务器中间数据。" content="required int state;// 状态码"/>
+    <protocol value="1212" name="recast_inheritance_req" desc="重铸继承请求" content="required int source; // 重铸继承的位置信息&#xD;required int target; // 被重铸继承的位置信息"/>
+    <protocol value="1213" name="recast_inheritance_res" desc="返回重铸继承请求" content="required int state;// 状态码"/>
+    <protocol value="1214" name="compound_req" desc="请求装备合成" content="required int compoundID; // 要强化物品的位置信息"/>
+    <protocol value="1215" name="compound_res" desc="返回请求装备合成" content="required int state;// 状态码"/>
+    <protocol value="1216" name="soul_req" desc="请求装备注灵" content="required int pos; // 要强化物品的位置信息"/>
+    <protocol value="1217" name="soul_res" desc="返回请求装备注灵" content="required int state;// 状态码"/>
+    <protocol value="1218" name="soul_recycle_req" desc="请求装备注灵回收" content="required int pos; // 要强化物品的位置信息"/>
+    <protocol value="1219" name="soul_recycle_res" desc="返回请求装备注灵回收" content="required int state;// 状态码"/>
+  </protocolPackage>
+  <protocolPackage name="14 公告">
+    <protocol value="1400" name="notice_system_res" desc="服务器向客户端推送公告协议，广播所有人" content="required int type; // 公告类型&#xD;required string param; // 显示参数|功能参数-显示参数|功能参数"/>
+    <protocol value="1401" name="notice_profit_res" desc="服务器推送收益栏提示，通知个人" content="repeated info_profit infoProfit;// 收益信息"/>
+  </protocolPackage>
+  <protocolPackage name="15 ＧＭ">
+    <protocol value="1500" name="command_req" desc="GM 命令请求" content="required string cmd; // 命令&#xD;repeated string param; // 参数"/>
+    <protocol value="1501" name="command_res" desc="GM 命令请求失败" content="required int id;&#xD;required int state;"/>
+  </protocolPackage>
+  <protocolPackage name="16 组队">
+    <protocol value="1600" name="team_list_req" desc="请求当前地图队伍列表" content=""/>
+    <protocol value="1601" name="team_list_res" desc="返回当前队伍列表" content="repeated info_team teamInfos; // 队伍列表"/>
+    <protocol value="1602" name="team_info_req" desc="请求队伍信息" content=""/>
+    <protocol value="1603" name="team_info_res" desc="返回队伍信息" content="required int teamId; // 队伍唯一ID&#xD;required string leaderRoleId; // 队长角色ID&#xD;required int autoAcceptRequest; // 自动接受他人发送的入队申请&#xD;repeated info_team_member teamMembers; // 成员信息"/>
+    <protocol value="1604" name="team_member_add_res" desc="队伍成员添加" content="required info_team_member teamMember; // 成员信息"/>
+    <protocol value="1605" name="team_member_del_res" desc="队伍成员移除" content="required string roleId; // 角色ID"/>
+    <protocol value="1606" name="team_member_modify_res" desc="队伍成员更新" content="required info_team_member teamMember; // 成员信息"/>
+    <protocol value="1607" name="team_info_modify_req" desc="请求队伍更新" content="required int autoAcceptRequest; // 自动接受他人发送的入队请求"/>
+    <protocol value="1608" name="team_info_modify_res" desc="返回队伍更新" content="required int state; // 状态&#xD;optional string leaderRoleId; // 队长角色ID&#xD;optional int autoAcceptRequest; // 自动接受他人发送的入队申请"/>
+    <protocol value="1609" name="team_create_req" desc="请求创建队伍" content=""/>
+    <protocol value="1610" name="team_create_res" desc="返回创建队伍" content="required int state; // 状态"/>
+    <protocol value="1611" name="team_exit_req" desc="请求离开队伍" content=""/>
+    <protocol value="1612" name="team_exit_res" desc="返回离开队伍" content="required int state; // 状态"/>
+    <protocol value="1613" name="team_kick_req" desc="请求踢出角色" content="required string roleId; // 角色ID"/>
+    <protocol value="1614" name="team_kick_res" desc="返回踢出角色" content="required int state; // 状态"/>
+    <protocol value="1615" name="team_appoint_req" desc="请求任命队长" content="required string roleId; // 角色ID"/>
+    <protocol value="1616" name="team_appoint_res" desc="返回任命队长" content="required int state; // 状态"/>
+    <protocol value="1617" name="team_invite_req" desc="请求邀请入队" content="required string roleId; // 角色ID"/>
+    <protocol value="1618" name="team_invite_res" desc="返回邀请入队" content="required int state; // 状态&#xD;required string roleName; // 角色名称"/>
+    <protocol value="1619" name="team_join_req" desc="请求加入队伍" content="required string roleId; // 角色ID"/>
+    <protocol value="1620" name="team_join_res" desc="返回加入队伍" content="required int state; // 状态&#xD;required string roleName; // 角色名称"/>
+    <protocol value="1621" name="team_received_invite_syn" desc="玩家收到邀请请求" content="required string roleId; // 角色ID&#xD;required string roleName; // 角色名称&#xD;required int job; // 角色职业&#xD;required int gender; // 角色性别&#xD;required int level; // 角色等级"/>
+    <protocol value="1622" name="team_invite_reply_req" desc="应答组队请求" content="required string roleId; // 角色ID&#xD;required int state; // 1 接受 0 拒绝"/>
+    <protocol value="1623" name="team_invite_reply_res" desc="返回应答组队请求" content="required int state; // 状态&#xD;required string roleName; // 角色名称"/>
+    <protocol value="1624" name="team_received_join_syn" desc="玩家收到入队请求" content="required string roleId; // 角色ID&#xD;required string roleName; // 角色名称&#xD;required int job; // 角色职业&#xD;required int gender; // 角色性别&#xD;required int level; // 角色等级"/>
+    <protocol value="1625" name="team_join_reply_req" desc="应答入队请求" content="required string roleId; // 角色ID&#xD;required int state; // 1 接受 0 拒绝"/>
+    <protocol value="1626" name="team_join_reply_res" desc="返回入队请求" content="required int state; // 状态&#xD;required string roleName; // 角色名称"/>
+    <protocol value="1627" name="team_nearly_players_req" desc="请求附近玩家" content=""/>
+    <protocol value="1628" name="team_nearly_players_res" desc="返回附近玩家" content="repeated info_team_nearly_player playerList; // 队伍列表"/>
+    <protocol value="1629" name="team_ready_clone_req" desc="组队副本准备请求" content="required int ready; // 准备状态1为准备0为未准备"/>
+    <protocol value="1630" name="team_ready_clone_res" desc="组队副本准备回复" content="required int state; // 状态"/>
+    <protocol value="1631" name="team_start_clone_req" desc="组队副本开始请求" content=""/>
+    <protocol value="1632" name="team_start_clone_res" desc="组队副本开始回复" content="required int state; // 状态"/>
+    <protocol value="1633" name="team_cancel_clone_req" desc="组队副本取消请求" content=""/>
+    <protocol value="1634" name="team_cancel_clone_res" desc="组队副本取消回复" content="required int state; // 状态"/>
+    <protocol value="1651" name="team_request_clone_syn" desc="推送组队副本请求" content="required string cloneName; // 副本名字"/>
+    <protocol value="1652" name="team_ready_clone_state_syn" desc="组队副本准备状态同步" content="repeated info_team_ready info; // 准备状态1为准备0为未准备"/>
+    <protocol value="1653" name="team_start_clone_syn" desc="组队副本开始通知" content=""/>
+    <protocol value="1654" name="team_cancel_clone_syn" desc="组队副本取消通知" content=""/>
+    <protocol value="1655" name="team_dissolve_req" desc="请求队伍解散" content=""/>
+    <protocol value="1656" name="team_dissolve_res" desc="返回队伍解散" content="required int state; // 状态"/>
+  </protocolPackage>
+  <protocolPackage name="17 帮会">
+    <protocol value="1701" name="guild_create_req" desc="请求创建帮会" content="required string name; //帮会名称"/>
+    <protocol value="1702" name="guild_create_res" desc="返回创建帮会" content="required int state; // 状态"/>
+    <protocol value="1703" name="guild_exit_req" desc="请求退出帮会" content=""/>
+    <protocol value="1704" name="guild_exit_res" desc="返回退出帮会" content="required int state; // 状态"/>
+    <protocol value="1705" name="guild_kick_req" desc="请求踢出角色" content="required string roleId; // 角色ID"/>
+    <protocol value="1706" name="guild_kick_res" desc="返回踢出角色" content="required string id; // 角色ID&#xD;required int state; // 状态"/>
+    <protocol value="1707" name="guild_dissolve_req" desc="请求解散帮会" content=""/>
+    <protocol value="1708" name="guild_dissolve_res" desc="返回解散帮会" content="required int state; // 状态"/>
+    <protocol value="1709" name="guild_apply_req" desc="申请加入帮会" content="required string name; // 帮会名称"/>
+    <protocol value="1710" name="guild_apply_res" desc="返回申请加入状态" content="required string name; // 帮会名称&#xD;required int check; //&#xD;required int state; // 状态"/>
+    <protocol value="1711" name="guild_apply_agree_req" desc="是否同意帮会申请" content="required string id; // 人物ID&#xD;required int agree; // 1同意 0不同意"/>
+    <protocol value="1712" name="guild_apply_agree_res" desc="是否同意帮会申请返回" content="required int state; // 状态"/>
+    <protocol value="1713" name="guild_apply_agree_auto_req" desc="是否同意帮会申请" content="repeated string id; // 人物ID&#xD;required int agree; // 1同意 0不同意"/>
+    <protocol value="1714" name="guild_apply_agree_auto_res" desc="是否同意帮会申请返回" content="required int state; // 状态"/>
+    <protocol value="1715" name="guild_notice_req" desc="修改帮会公告信息" content="required string notice; // 公告内容"/>
+    <protocol value="1716" name="guild_notice_res" desc="修改公告信息状态" content="required int state; // 状态"/>
+    <protocol value="1717" name="guild_donate_req" desc="帮会捐赠" content="required int count; // 捐赠的金币 倍数 *1000"/>
+    <protocol value="1718" name="guild_donate_res" desc="返回帮会捐赠金钱状态" content="required int state; // 状态"/>
+    <protocol value="1719" name="guild_upgrade_req" desc="帮会升级建筑请求" content="required int upgrade; // 1,升级 0,降级"/>
+    <protocol value="1720" name="guild_upgrade_res" desc="返回帮会升级建筑请求状态" content="required int state; // 状态"/>
+    <protocol value="1721" name="guild_appoint_req" desc="职位任命" content="required string id; // 人物ID&#xD;required int post; // 职位ID"/>
+    <protocol value="1722" name="guild_appoint_res" desc="返回任命状态" content="required int state; //"/>
+    <protocol value="1723" name="guild_apply_roleid_req" desc="根据人物ID加帮会" content="required string roleID; // 人物ID"/>
+    <protocol value="1724" name="guild_apply_roleid_res" desc="返回根据人物ID加帮会的状态" content="required int state; // 状态id"/>
+    <protocol value="1725" name="guild_list_req" desc="请求帮会列表" content="required int page; // 按页请求"/>
+    <protocol value="1726" name="guild_list_res" desc="返回帮会列表" content="required int count; // 最大数据&#xD;repeated info_guild guildInfos; // 帮会列表"/>
+    <protocol value="1727" name="guild_member_req" desc="请求成员列表" content="required int page; // 按页请求&#xD;required int online; // 1.在线 0.所有成员"/>
+    <protocol value="1728" name="guild_member_res" desc="返回成员列表" content="required int online; // 在线人数&#xD;required int count; // 最大人数&#xD;repeated info_guild_member members; // 成员列表"/>
+    <protocol value="1729" name="guild_audit_req" desc="请求审核成员列表" content="required int page; // 按页请求"/>
+    <protocol value="1730" name="guild_audit_res" desc="返回审核成员列表" content="required int count; // 最大数据&#xD;repeated info_guild_audit audits; // 帮会列表"/>
+    <protocol value="1731" name="guild_init_res" desc="初始化帮会信息" content="required info_guild info; // 帮会信息"/>
+    <protocol value="1732" name="guild_info_syn" desc="帮会信息" content="required info_guild info;// 帮会信息"/>
+    <protocol value="1733" name="guild_donate_item_req" desc="捐献物品" content="required int pos; // 物品位置信息"/>
+    <protocol value="1734" name="guild_donate_item_res" desc="返回捐献物品" content="required int state;"/>
+    <protocol value="1735" name="guild_exchange_item_req" desc="兑换物品" content="required string itemID; // 物品ID"/>
+    <protocol value="1736" name="guild_exchange_item_res" desc="返回兑换物品状态" content="required string itemID; // 物品ID&#xD;required int state;"/>
+    <protocol value="1737" name="guild_destroy_item_req" desc="销毁物品" content="required string itemID; // 物品ID"/>
+    <protocol value="1738" name="guild_destroy_item_res" desc="返回销毁物品状态" content="required string itemID; // 物品ID&#xD;required int state;"/>
+    <protocol value="1739" name="guild_item_syn" desc="更新物品信息" content="repeated info_item_list infos; // 物品列表"/>
+    <protocol value="1740" name="guild_log_req" desc="请求公会日志" content="required int page; // 按页请求"/>
+    <protocol value="1741" name="guild_log_res" desc="返回公会日志" content="required int count; // 最大数据&#xD;repeated info_guild_log logs; // 帮会列表"/>
+    <protocol value="1742" name="guild_send_red_req" desc="请求发放红包" content="required int gold; // 发放元宝数量&#xD;required int count; // 发放红包数量"/>
+    <protocol value="1743" name="guild_send_red_res" desc="返回发放红包" content="required int state;"/>
+    <protocol value="1744" name="guild_grab_red_req" desc="请求抢红包" content=""/>
+    <protocol value="1745" name="guild_grab_red_res" desc="返回抢红包" content="required int gold;&#xD;required int state;"/>
+    <protocol value="1746" name="guild_red_syn" desc="更新红包信息" content="optional int count; // 红包数量&#xD;optional int time; // 倒计时时间&#xD;repeated info_guild_red records; // 红包记录"/>
+    <protocol value="1747" name="guild_invite_req" desc="邀请加入帮会" content="required string id; // 被邀请者ID"/>
+    <protocol value="1748" name="guild_invite_res" desc="返回邀请加入状态" content="required string name; // 帮会名称&#xD;required int state; // 状态"/>
+    <protocol value="1749" name="guild_invite_agree_req" desc="是否同意帮会邀请" content="required string name; // 帮会名称&#xD;required int agree; // 1同意 0不同意"/>
+    <protocol value="1750" name="guild_invite_agree_res" desc="是否同意帮会邀请返回" content="required int state; // 状态"/>
+  </protocolPackage>
+  <protocolPackage name="18 单位">
+    <protocol value="1801" name="unit_click_sprite_req" desc="请求点击单位" content="required int unitSpriteId; // 单位精灵编号"/>
+    <protocol value="1802" name="unit_click_sprite_res" desc="应答单位对话面板" content="required int state; // 消息状态&#xD;required int unitSpriteId;// 单位精灵编号"/>
+  </protocolPackage>
+  <protocolPackage name="19 摆摊">
+    <protocol value="1901" name="stall_begin_req" desc="开始摆摊请求" content="required string name;  // 摊位名称&#xD;repeated info_stall_item items;  // 待售物品"/>
+    <protocol value="1902" name="stall_begin_res" desc="返回摆摊请求" content="required int state; // 状态"/>
+    <protocol value="1903" name="stall_end_req" desc="取消摆摊" content=""/>
+    <protocol value="1904" name="stall_end_res" desc="返回取消摆摊状态" content="required int state; // 状态"/>
+    <protocol value="1905" name="stall_view_req" desc="查看摊位" content="required string id;  // 待查看摊位所有者ID"/>
+    <protocol value="1906" name="stall_view_res" desc="返回查看信息状态" content="required int spriteID; // 状态&#xD;required int state; // 状态"/>
+    <protocol value="1907" name="stall_close_req" desc="关闭查看的摊位列表" content="required string id; // 摊位ID"/>
+    <protocol value="1908" name="stall_close_res" desc="返回关闭摊位列表状态" content="required int state; //"/>
+    <protocol value="1909" name="stall_info_syn" desc="摊位信息更新" content="required string id;  // 摊位所有者ID&#xD;optional string name;  // 摊位所有者ID&#xD;optional int goldProfit;  // 金币收益&#xD;optional int vipPointProfit;  // 元宝收益 &#xD;repeated info_stall_item items; // 待售物品信息&#xD;repeated info_stall_trade trades; // 物品售卖信息"/>
+    <protocol value="1910" name="stall_buy_req" desc="购买物品" content="required string id; // 摊位所有者ID&#xD;required int pos; // 物品位置&#xD;required int count; // 购买物品数量"/>
+    <protocol value="1911" name="stall_buy_res" desc="返回购买物品状态" content="required int state; // 状态"/>
+    <protocol value="1912" name="stall_modify_name_req" desc="修改摊位名称" content="required string name; // 摊位名称"/>
+    <protocol value="1913" name="stall_modify_name_res" desc="返回修改状态" content="required int state; // 状态"/>
+    <protocol value="1914" name="stall_modify_sum_req" desc="修改物品价格" content="optional int pos; // 物品位置&#xD;optional int type; // 货币类型（EnumMonerType）&#xD;optional int cost; // 物品单价"/>
+    <protocol value="1915" name="stall_modify_sum_res" desc="返回修改物品价格状态" content="required int state; // 状态"/>
+  </protocolPackage>
+  <protocolPackage name="20 邮件">
+    <protocol value="2001" name="mail_open_req" desc="邮件打开请求" content="required string mailID; // 邮件ID"/>
+    <protocol value="2002" name="mail_open_res" desc="邮件打开回复" content="required string mailID; // 邮件ID&#xD;required int state; // 状态"/>
+    <protocol value="2003" name="mail_get_award_req" desc="邮件附件领取请求" content="required string mailID; // 邮件ID"/>
+    <protocol value="2004" name="mail_get_award_res" desc="邮件附件领取回复" content="required string mailID; // 邮件ID&#xD;required int state; // 状态"/>
+    <protocol value="2005" name="mail_delete_req" desc="邮件删除请求" content="required string mailID; // 邮件ID"/>
+    <protocol value="2006" name="mail_delete_res" desc="邮件删除回复" content="required string mailID; // 邮件ID&#xD;required int state; // 状态"/>
+    <protocol value="2007" name="mail_delete_all_req" desc="邮件一键删除请求" content="repeated string mailIDList; // 邮件ID列表"/>
+    <protocol value="2008" name="mail_delete_all_res" desc="邮件一键删除回复" content="repeated string mailIDList; // 邮件ID列表&#xD;required int state; // 状态"/>
+    <protocol value="2051" name="mail_load_syn" desc="发送所有邮件数据到客户端" content="repeated info_mail mailInfo;  // 邮件"/>
+    <protocol value="2052" name="mail_new_syn" desc="发送新邮件到客户端" content="required info_mail mailInfo;  // 邮件"/>
+  </protocolPackage>
+  <protocolPackage name="21 锻造">
+    <protocol value="2101" name="forge_req" desc="锻造物品请求" content="required int pos; // 物品位置&#xD;required int protection; // 物品强化是否保护 1保护 0无保护"/>
+    <protocol value="2102" name="forge_res" desc="返回锻造结果" content="required int state; // 状态码"/>
+  </protocolPackage>
+  <protocolPackage name="22 世界BOSS">
+    <protocol value="2201" name="world_boss_load_req" desc="加载世界BOSS状态请求" content=""/>
+    <protocol value="2202" name="world_boss_load_res" desc="加载世界BOSS状态回复" content="repeated info_world_boss worldBossInfo;  // boss数据"/>
+    <protocol value="2203" name="elite_boss_load_req" desc="加载精英BOSS状态请求" content=""/>
+    <protocol value="2204" name="elite_boss_load_res" desc="加载精英BOSS状态回复" content="repeated info_elite_boss info;  // boss数据"/>
+    <protocol value="2207" name="private_boss_enter_req" desc="进入个人副本请求" content="required int id; // 个人boss表ID"/>
+    <protocol value="2208" name="private_boss_enter_res" desc="进入个人副本回复" content="required int state; // 状态"/>
+    <protocol value="2251" name="dark_temple_boss_load_syn" desc="同步未知暗殿BOSS数据" content="repeated info_dark_temple_boss info;  // boss数据"/>
+    <protocol value="2252" name="dark_temple_boss_change_syn" desc="同步未知暗殿BOSS数据改变" content="repeated info_dark_temple_boss info;  // boss数据"/>
+    <protocol value="2253" name="private_boss_load_syn" desc="加载个人BOSS状态" content="repeated info_private_boss info;  // boss数据"/>
+    <protocol value="2254" name="private_boss_change_syn" desc="同步个人BOSS状态" content="repeated info_private_boss info;  // boss数据"/>
+  </protocolPackage>
+  <protocolPackage name="23 活动奖励">
+    <protocol value="2301" name="online_award_req" desc="领取在线奖励请求" content=""/>
+    <protocol value="2302" name="online_award_res" desc="领取在线奖励回复" content="repeated int baseID; // 奖励ID&#xD;required int state; // 状态"/>
+    <protocol value="2303" name="sign_day_req" desc="签到请求" content=""/>
+    <protocol value="2304" name="sign_day_res" desc="签到回复" content="required int state; // 状态"/>
+    <protocol value="2305" name="sign_make_up_req" desc="补签请求" content="required int day; // 日期"/>
+    <protocol value="2306" name="sign_make_up_res" desc="补签回复" content="required int day; // 日期&#xD;required int state; // 状态"/>
+    <protocol value="2307" name="sign_award_req" desc="领取签到奖励请求" content="required int baseID; // 奖励ID"/>
+    <protocol value="2308" name="sign_award_res" desc="领取签到奖励回复" content="required int baseID; // 奖励ID&#xD;required int state; // 状态"/>
+    <protocol value="2309" name="active_value_award_req" desc="领取活跃值奖励请求" content="required int baseID; // 奖励ID"/>
+    <protocol value="2310" name="active_value_award_res" desc="领取活跃值奖励回复" content="required int baseID; // 奖励ID&#xD;required int state; // 状态"/>
+    <protocol value="2311" name="achievement_point_award_req" desc="领取成就点奖励请求" content="required int baseID; // 奖励ID"/>
+    <protocol value="2312" name="achievement_point_award_res" desc="领取成就点奖励回复" content="required int baseID; // 奖励ID&#xD;required int state; // 状态"/>
+    <protocol value="2313" name="weekly_money_award_req" desc="领取每周奖励绑元请求" content=""/>
+    <protocol value="2314" name="weekly_money_award_res" desc="领取每周奖励绑元回复" content="required int state; // 状态"/>
+  </protocolPackage>
+  <protocolPackage name="24 人物关系">
+    <protocol value="2401" name="relation_add_req" desc="添加关系请求" content="required string name; // 名称&#xD;required int relationType; // 类型"/>
+    <protocol value="2402" name="relation_add_res" desc="添加关系回复" content="required int state; // 状态&#xD;required int relationType; // 类型"/>
+    <protocol value="2403" name="relation_delete_req" desc="删除关系请求" content="required string targetID; // 目标ID&#xD;required int relationType; // 类型"/>
+    <protocol value="2404" name="relation_delete_res" desc="删除关系回复" content="required int state; // 状态&#xD;required int relationType; // 类型"/>
+    <protocol value="2431" name="relation_online_load_req" desc="拉取人物是否在线请求" content=""/>
+    <protocol value="2432" name="relation_online_load_res" desc="拉取人物是否在线回复" content="repeated info_role_relation friendInfo;  // 好友&#xD;repeated info_role_relation blackInfo;  // 黑名单&#xD;repeated info_role_relation enemyInfo;  // 仇敌"/>
+    <protocol value="2451" name="relation_load_syn" desc="发送所有人物关系数据到客户端" content="repeated info_role_relation friendInfo;  // 好友&#xD;repeated info_role_relation blackInfo;  // 黑名单&#xD;repeated info_role_relation enemyInfo;  // 仇敌"/>
+    <protocol value="2452" name="relation_change_syn" desc="人物关系改变" content="required info_role_relation info; // 关系数据"/>
+    <protocol value="2453" name="relation_add_notice_syn" desc="被添加好友通知" content="required string name; // 名称"/>
+  </protocolPackage>
+  <protocolPackage name="25 装备">
+    <protocol value="2500" name="equip_repair_full_req" desc="装备修复" content=""/>
+    <protocol value="2501" name="equip_repair_full_res" desc="返回装备处理状态码" content="required int state; // 状态码;"/>
+  </protocolPackage>
+  <protocolPackage name="26 条件目标">
+    <protocol value="2601" name="mission_achievement_award_req" desc="领取成就奖励请求" content="required int baseID; // 成就ID"/>
+    <protocol value="2602" name="mission_achievement_award_res" desc="领取成就奖励回复" content="required int state; // 状态&#xD;required int baseID; // 成就ID"/>
+    <protocol value="2603" name="mission_micro_client_award_req" desc="领取微端登录奖励请求" content=""/>
+    <protocol value="2604" name="mission_micro_client_award_res" desc="领取微端登录奖励回复" content="required int state; // 状态"/>
+    <protocol value="2605" name="mission_task_submit_req" desc="提交任务请求" content="required int baseID; // 任务ID&#xD;required int time; // 倍数"/>
+    <protocol value="2606" name="mission_task_submit_res" desc="提交任务回复" content="required int state; // 状态&#xD;required int baseID; // 任务ID"/>
+    <protocol value="2607" name="mission_task_receive_req" desc="领取任务请求" content="required int baseID; // 任务ID"/>
+    <protocol value="2608" name="mission_task_receive_res" desc="领取任务回复" content="required int state; // 状态&#xD;required int baseID; // 任务ID"/>
+    <protocol value="2609" name="mission_daily_task_star_req" desc="日常任务刷星请求" content="required int full; // 是否一键满星"/>
+    <protocol value="2610" name="mission_daily_task_star_res" desc="日常任务刷星回复" content="required int state; // 状态"/>
+    <protocol value="2611" name="mission_favourite_award_req" desc="领取收藏奖励请求" content=""/>
+    <protocol value="2612" name="mission_favourite_award_res" desc="领取收藏奖励回复" content="required int state; // 状态"/>
+    <protocol value="2613" name="mission_buy_daily_count_req" desc="购买日常次数" content=""/>
+    <protocol value="2614" name="mission_buy_daily_count_res" desc="" content="required int state; // 状态"/>
+    <protocol value="2615" name="mission_one_click_req" desc="一键完成任务" content="required int baseID; // 任务ID"/>
+    <protocol value="2616" name="mission_one_click_res" desc="" content="required int state; // 状态"/>
+    <protocol value="2617" name="mission_popular_boss_award_req" desc="领取全民BOSS奖励请求" content="required int baseID; // 任务ID"/>
+    <protocol value="2618" name="mission_popular_boss_award_res" desc="领取全民BOSS奖励回复" content="required int state; // 状态&#xD;required int baseID; // 任务ID"/>
+    <protocol value="2651" name="mission_active_value_syn" desc="每日活跃值任务更新" content="repeated info_mission_condition info;  // 活跃值任务"/>
+    <protocol value="2653" name="mission_level_up_award_syn" desc="等级奖励同步" content="required int roleLevel; // 人物等级&#xD;repeated int itemBaseID;  // 奖励道具ID"/>
+    <protocol value="2654" name="mission_task_load_syn" desc="任务数据同步" content="repeated info_mission_condition info;  // 任务"/>
+    <protocol value="2655" name="mission_task_change_syn" desc="任务数据同步" content="repeated info_mission_condition info;  // 任务"/>
+    <protocol value="2656" name="mission_achievement_load_syn" desc="成就数据加载" content="repeated info_achievement info;  // 成就"/>
+    <protocol value="2657" name="mission_achievement_change_syn" desc="成就数据改变" content="repeated info_achievement info;  // 成就"/>
+    <protocol value="2658" name="mission_popular_boss_load_syn" desc="全民BOSS数据加载" content="repeated info_popular_boss info;  // 全民BOSS数据"/>
+    <protocol value="2659" name="mission_popular_boss_change_syn" desc="全民BOSS数据改变" content="repeated info_popular_boss info;  // 全民BOSS"/>
+    <protocol value="2660" name="mission_active_value_load_syn" desc="每日活跃值任务加载" content="repeated info_mission_condition info;  // 活跃值任务"/>
+  </protocolPackage>
+  <protocolPackage name="27 商城">
+    <protocol value="2700" name="mall_buy_req" desc="购买物品请求" content="required int id;  // 物品购买ID&#xD;required int type;  // 物品购买方式 0普通购买  1 续费够买"/>
+    <protocol value="2701" name="mall_buy_res" desc="应答购买物品请求" content="required int state; // 购买物品状态"/>
+    <protocol value="2702" name="mall_load_limit_syn" desc="" content="repeated info_mall_buy_limit infos;"/>
+    <protocol value="2703" name="mall_data_limit_syn" desc="" content="required info_mall_buy_limit info;"/>
+  </protocolPackage>
+  <protocolPackage name="28 官职">
+    <protocol value="2800" name="officer_upgrade_req" desc="升级官职" content=""/>
+    <protocol value="2801" name="officer_upgrade_res" desc="应答升级官职请求" content="required int state; // 升级状态"/>
+    <protocol value="2802" name="officer_salary_req" desc="请求领取俸禄" content=""/>
+    <protocol value="2803" name="officer_salary_res" desc="应答领取俸禄" content="required int state; // 领取俸禄状态"/>
+  </protocolPackage>
+  <protocolPackage name="29 称号">
+    <protocol value="2901" name="title_use_req" desc="称号使用请求" content="required int baseID; // 称号ID"/>
+    <protocol value="2902" name="title_use_res" desc="称号使用回复" content="required int state; // 状态&#xD;required int baseID; // 称号ID"/>
+    <protocol value="2951" name="title_load_syn" desc="加载称号数据" content="repeated info_title info;  // 称号"/>
+    <protocol value="2952" name="title_change_syn" desc="称号数据同步" content="repeated info_title info;  // 称号"/>
+  </protocolPackage>
+  <protocolPackage name="30 沙城">
+    <protocol value="3001" name="shacheng_load_role_show_req" desc="沙城人员显示数据请求" content=""/>
+    <protocol value="3002" name="shacheng_load_role_show_res" desc="沙城人员显示数据回复" content="repeated info_shacheng_role_show info;  // 人物数据&#xD;required int start; // 起始时间戳&#xD;required int end; // 结束时间戳"/>
+    <protocol value="3003" name="shacheng_daily_award_req" desc="沙城每日奖励领取请求" content=""/>
+    <protocol value="3004" name="shacheng_daily_award_res" desc="沙城每日奖励领取回复" content="required int state; // 状态"/>
+    <protocol value="3005" name="shacheng_zheng_ba_award_req" desc="沙城争霸奖励领取请求" content="required int day; // 领取哪天的奖励"/>
+    <protocol value="3006" name="shacheng_zheng_ba_award_res" desc="沙城争霸奖励领取回复" content="required int state; // 状态"/>
+  </protocolPackage>
+  <protocolPackage name="31 翅膀">
+    <protocol value="3101" name="wing_cultivate_req" desc="培养翅膀" content="required int pos; // 状态&#xD;required int type; // 培养方式 1是一键培养 0是单一培养&#xD;required int auto; // 元宝培养 1是使用元宝培养 0是不使用元宝培养"/>
+    <protocol value="3102" name="wing_cultivate_res" desc="应答培养翅膀请求" content="required int state; // 升级状态"/>
+  </protocolPackage>
+  <protocolPackage name="32 仓库">
+    <protocol value="3203" name="storage_open_grid_req" desc="开启仓库格子" content="required int endGrid; // 结束的位置"/>
+    <protocol value="3204" name="storage_open_grid_res" desc="返回开启仓库格子状态" content="required int state; // 开启状态"/>
+  </protocolPackage>
+  <protocolPackage name="33 排行榜">
+    <protocol value="3305" name="role_rank_load_req" desc="排行榜数据请求" content="required int rankType; // 排行榜类型&#xD;required int page; // 页码(第一页为0)"/>
+    <protocol value="3306" name="role_rank_load_res" desc="排行榜数据回复" content="required int rankType; // 排行榜类型&#xD;required int page; // 页码(第一页为0)&#xD;repeated info_role_rank info;  // 人物数据"/>
+    <protocol value="3307" name="role_rank_self_load_req" desc="自己排名数据请求" content="required int rankType; // 排行榜类型"/>
+    <protocol value="3308" name="role_rank_self_load_res" desc="自己排名数据回复" content="required int state; // 状态&#xD;required int rankType; // 排行榜类型&#xD;required int rank; // 排行榜名次(0为未上榜)"/>
+  </protocolPackage>
+  <protocolPackage name="34 熔炼">
+    <protocol value="3401" name="smelter_req" desc="熔炼熔炼" content="required int baseID // 物品的ID&#xD;required int pos; // 位置信息"/>
+    <protocol value="3402" name="smelter_res" desc="返回熔炼状态" content="required int pos; // 位置信息&#xD;required int state; // 状态码"/>
+  </protocolPackage>
+  <protocolPackage name="35 官阶">
+    <protocol value="3501" name="guan_jie_upgrade_req" desc="官阶升级请求" content=""/>
+    <protocol value="3502" name="guan_jie_upgrade_res" desc="官阶升级回复" content="required int state; // 升级状态"/>
+  </protocolPackage>
+  <protocolPackage name="36 护卫（mars）">
+    <protocol value="3601" name="mars_summon_req" desc="召唤护卫" content="required int id; //  待召唤护卫ID"/>
+    <protocol value="3602" name="mars_summon_res" desc="返回召唤护卫" content="required int id; // 战神ID&#xD;required int state; // 返回召唤状态"/>
+    <protocol value="3603" name="mars_change_syn" desc="" content="required string uid; // 用户ID;&#xD;optional int dailyTime; // &#xD;optional int summonCount ; // &#xD;repeated info_mars_activate activate; //"/>
+    <protocol value="3604" name="mars_idle_req" desc="请求让战神和宠物休息" content="required byte state;//0,普通,1休息"/>
+    <protocol value="3605" name="mars_idle_res" desc="响应mars_idle_req" content="required byte state;//返回修改后的结果"/>
+  </protocolPackage>
+  <protocolPackage name="37VIP">
+    <protocol value="3701" name="vip_lev_award_req" desc="领取vip等级奖励" content="required int vipid; //;领取哪个等级的奖励"/>
+    <protocol value="3702" name="vip_lev_award_res" desc="返回领取结果" content="required int state;&#xD;required int vipid;"/>
+    <protocol value="3710" name="vip_buff_award_req" desc="//得到vip每日buff奖励" content=""/>
+    <protocol value="3712" name="vip_buff_award_res" desc="//返回每日奖励结果" content="required int state;"/>
+    <protocol value="3750" name="vip_award_syn" desc="vip信息同步" content="required byte daybuff;//每日buff领取标记&#xD;repeated byte idawards;//vip对应等级领取奖励状态"/>
+    <protocol value="3760" name="vip_pay_syn" desc="充值元宝" content="required int num;//充值数量"/>
+    <protocol value="3770" name="vip_qoe_lasttime_syn" desc="//体验vip 剩余时间" content="required int lasttime;//剩余时间"/>
+    <protocol value="3780" name="vip_num_req" desc="//vip会员数量" content=""/>
+    <protocol value="3781" name="vip_num_res" desc="//vip人数" content="required int state;//状态&#xD;required int count;"/>
+    <protocol value="3880" name="vip_guaji_req" desc="//挂机" content="required int type; //挂机类型"/>
+    <protocol value="3881" name="vip_guaji_res" desc="" content="required int state;//状态"/>
+  </protocolPackage>
+  <protocolPackage name="38宝藏">
+    <protocol value="3802" name="mine_tidy_req" desc="整理宝藏仓库" content=""/>
+    <protocol value="3803" name="mine_seek_req" desc="抽取物品" content="required int count;//一次抽取物品次数"/>
+    <protocol value="3805" name="mine_itemlist_syn" desc="//仓库物品" content="repeated int items;//仓库物品id&#xD;repeated int counts;//仓库物品数量"/>
+    <protocol value="3806" name="mine_seek_res" desc="//寻宝一次结束" content="required int state;//状态&#xD;required int count;//状态&#xD;repeated int items;//抽取物品id&#xD;repeated int poss;//抽取物品位置"/>
+    <protocol value="3807" name="mine_raido_res" desc="//宝藏公告" content="required int state;//状态&#xD;repeated info_mine_radio info;//宝藏广播信息"/>
+    <protocol value="3808" name="mine_extract_res" desc="//删除物品" content="required int state;//状态&#xD;repeated int pos;//被提取的物品位置"/>
+    <protocol value="3809" name="mine_extract_req" desc="//客户端取出物品" content="required int index; //-1代表一键领取"/>
+    <protocol value="3810" name="mine_radio_req" desc="//刷新客户端广播" content=""/>
+    <protocol value="3811" name="mine_tidy_res" desc="//返回处理" content="required  int state;"/>
+    <protocol value="3812" name="mine_one_extract_req" desc="//一键领取" content="required  int type;标签类型"/>
+    <protocol value="3820" name="mine_recycle_req" desc="//宝藏回收" content="required  int type;//回收类型"/>
+    <protocol value="3821" name="mine_recycle_res" desc="//回收返回" content="required  int state;&#xD;required  string exp;"/>
+  </protocolPackage>
+  <protocolPackage name="39 血祭">
+    <protocol value="3901" name="blood_sacrifice_activate_req" desc="血祭激活请求" content="required int baseID; // 血祭激活ID"/>
+    <protocol value="3902" name="blood_sacrifice_activate_res" desc="血祭激活回复" content="required int state; // 状态"/>
+    <protocol value="3903" name="blood_sacrifice_recycle_head_req" desc="血祭回收首级请求" content="repeated int pos; // 背包pos位"/>
+    <protocol value="3904" name="blood_sacrifice_recycle_head_res" desc="血祭回收首级回复" content="required int state; // 状态"/>
+    <protocol value="3905" name="blood_sacrifice_value_exchange_req" desc="血祭值兑换请求" content=""/>
+    <protocol value="3906" name="blood_sacrifice_value_exchange_res" desc="血祭值兑换回复" content="required int state; // 状态"/>
+    <protocol value="3907" name="blood_sacrifice_beheaded_start_req" desc="血祭斩首开始请求" content="required int spriteID; // boss精灵ID&#xD;required int roleDir; // 朝向"/>
+    <protocol value="3908" name="blood_sacrifice_beheaded_start_res" desc="血祭斩首开始回复" content="required int state; // 状态"/>
+    <protocol value="3909" name="blood_sacrifice_beheaded_complete_req" desc="血祭斩首完成请求" content=""/>
+    <protocol value="3910" name="blood_sacrifice_beheaded_complete_res" desc="血祭斩首完成回复" content="required int state; // 状态&#xD;optional int spriteID; // boss精灵ID&#xD;optional int itemID; // 头颅ID"/>
+    <protocol value="3951" name="blood_sacrifice_load_syn" desc="加载血祭激活数据" content="repeated info_blood_sacrifice info;  // 血祭激活"/>
+    <protocol value="3952" name="blood_sacrifice_activate_syn" desc="同步血祭激活" content="repeated info_blood_sacrifice info;  // 血祭激活"/>
+  </protocolPackage>
+  <protocolPackage name="40 网关协议">
+    <protocol value="4003" name="Gate_OpenClientReq" desc="网关请求打开客户端会话" content="required int ClientHashId;&#xD;required string ClientIp;//客户端ip"/>
+    <protocol value="4004" name="Gate_CloseClientReq" desc="网关请求关闭客户端ID请求" content="required int ClientHashId;"/>
+    <protocol value="4005" name="Server_CloseClientReq" desc="服务器主动关闭请求" content="required int ClientHashId;"/>
+    <protocol value="4006" name="Server_AddGroupMember" desc="给组添加成员" content="required int GroupId;&#xD;required int ClientHashId;"/>
+    <protocol value="4007" name="Server_RemoveGroup" desc="从组里移除成员" content="required int GroupId;&#xD;required int ClientHashId;"/>
+    <protocol value="4008" name="ServerReconnectID" desc="给网关发送客户端重连的ID和sign" content="required int HashID;&#xD;required string sign;"/>
+    <protocol value="4507" name="Server_ClearGroupMemeberReq" desc="//删除一个通信组" content="required int GroupId;"/>
+  </protocolPackage>
+  <protocolPackage name="41 魂装镶嵌">
+    <protocol value="4101" name="item_inlay_req" desc="魂装镶嵌" content="required int source; // 待镶嵌物品的位置&#xD;required int target; // 镶嵌材料位置"/>
+    <protocol value="4102" name="item_inlay_res" desc="返回魂装镶嵌" content="required int state;"/>
+    <protocol value="4103" name="item_inlay_relieve_req" desc="去除魂装镶嵌" content="required int pos; // 物品位置"/>
+    <protocol value="4104" name="item_inlay_relieve_res" desc="去除魂装镶嵌返回" content="required int state;"/>
+  </protocolPackage>
+  <protocolPackage name="42 积分兑换">
+    <protocol value="4201" name="item_integral_req" desc="积分兑换" content="required int id; // 待兑换ID&#xD;required int pos; // 兑换物品的位置"/>
+    <protocol value="4202" name="item_integral_res" desc="返回积分兑换" content="required int id; // 兑换ID&#xD;required int state;"/>
+    <protocol value="4203" name="item_integral_record_req" desc="请求积分记录" content=""/>
+    <protocol value="4204" name="item_integral_record_res" desc="返回请求积分记录结果" content="repeated string roleName;  //玩家名称&#xD;repeated int itemBaseID;  // 物品的基础ID&#xD;required int state;"/>
+  </protocolPackage>
+  <protocolPackage name="43 脚本">
+    <protocol value="4301" name="script_click_clone_control_req" desc="请求点击副本面板" content="required string triggerID;// 触发编号"/>
+    <protocol value="4302" name="script_click_clone_control_res" desc="回复点击副本面板" content="required int state; // 消息状态&#xD;required string triggerID;// 触发编号"/>
+    <protocol value="4303" name="script_click_npc_control_req" desc="请求点击npc面板" content="required int spriteID;// npc精灵ID&#xD;required string triggerID;// 触发编号"/>
+    <protocol value="4304" name="script_click_npc_control_res" desc="回复点击npc面板" content="required int state; // 消息状态&#xD;required int spriteID;// npc精灵ID&#xD;required string triggerID;// 触发编号"/>
+    <protocol value="4351" name="script_client_function_syn" desc="客户端功能同步" content="required int functionId; // 功能ID&#xD;required string functionParams; // 功能参数"/>
+    <protocol value="4356" name="script_clone_right_ui_context_syn" desc="同步面板内容" content="required byte[] dialogContext;// 对话面板内容"/>
+    <protocol value="4357" name="script_clone_right_ui_update_syn" desc="同步面板更新" content="required string context;// 内容"/>
+    <protocol value="4358" name="script_clone_center_ui_context_syn" desc="同步面板内容" content="required byte[] dialogContext;// 对话面板内容"/>
+    <protocol value="4359" name="script_clone_center_ui_update_syn" desc="同步面板更新" content="required string context;// 内容"/>
+    <protocol value="4360" name="script_npc_ui_context_syn" desc="同步单位对话面板内容" content="required int unitSpriteId;// 单位精灵编号&#xD;required int unitStaticId;// 单位静态编号&#xD;required byte[] dialogContext;// 对话面板内容"/>
+    <protocol value="4361" name="script_npc_ui_update_syn" desc="同步面板内容" content="required int unitSpriteId;// 单位精灵编号&#xD;required string context;// 内容"/>
+  </protocolPackage>
+  <protocolPackage name="44 活动&amp;副本">
+    <protocol value="4401" name="activity_zjsc_execute_transfer_req" desc="活动拯救沙城执行传送请求" content=""/>
+    <protocol value="4402" name="activity_zjsc_execute_transfer_res" desc="活动拯救沙城执行传送回复" content="required int state;"/>
+    <protocol value="4403" name="activity_shzc_execute_quit_req" desc="活动生化战场执行退出请求" content=""/>
+    <protocol value="4404" name="activity_shzc_execute_quit_res" desc="活动生化战场执行退出回复" content="required int state;"/>
+    <protocol value="4451" name="activity_zjsc_rank_load_syn" desc="活动拯救沙城排名同步" content="required int check; // 比对名次(从1开始)&#xD;repeated info_zjsc_rank info;  // 排名数据"/>
+    <protocol value="4452" name="activity_shzc_rank_load_syn" desc="活动生化战场排名同步" content="required int rank; // 自己的排名&#xD;required int score; // 自己的积分&#xD;required int isEnd; // 是否为结束(1为结束)&#xD;repeated info_shzc_rank info;  // 排名数据"/>
+    <protocol value="4480" name="clone_complete_syn" desc="副本完成通知" content=""/>
+    <protocol value="4481" name="clone_fml_load_score_syn" desc="封魔岭结果同步" content="required int killCount; // 击杀数量&#xD;required int getExp; // 获得的经验&#xD;required int escapeCount; // 逃跑数量&#xD;required int lostExp; // 损失的经验"/>
+    <protocol value="4482" name="clone_fml_start_syn" desc="封魔岭开始刷怪同步" content=""/>
+    <protocol value="4483" name="clone_private_load_syn" desc="加载个人副本状态" content="repeated info_private_clone info;  // 副本数据"/>
+    <protocol value="4484" name="clone_private_change_syn" desc="同步个人副本状态" content="repeated info_private_clone info;  // 副本数据"/>
+  </protocolPackage>
+  <protocolPackage name="45 队伍传送">
+    <protocol value="4501" name="team_transfer_move_req" desc="组队传送请求" content="required int itemPos; // 消耗道具位"/>
+    <protocol value="4502" name="team_transfer_move_res" desc="组队传送返回" content="required int state; // 协议状态"/>
+    <protocol value="4503" name="team_transfer_move_syn" desc="组队传送同步" content="required string roleID; // 发起者ID&#xD;required string roleName;// 发起者名称&#xD;required int mapId; // 地图id&#xD;required int x; // x坐标&#xD;required int y; // y坐标"/>
+    <protocol value="4504" name="team_transfer_move_reply_req" desc="组队传送回复请求" content="required string roleID; //"/>
+    <protocol value="4505" name="team_transfer_move_reply_res" desc="组队传送回复返回" content="required int state; // 协议状态"/>
+    <protocol value="4506" name="team_transfer_info_syn" desc="同步功能使用时间" content="required int time;  // 单位秒"/>
+  </protocolPackage>
+  <protocolPackage name="46 七日登陆及限时排名">
+    <protocol value="4601" name="seven_days_get_req" desc="七日登陆奖励领取请求" content="required byte id; // 奖励ID"/>
+    <protocol value="4602" name="seven_days_get_res" desc="七日登陆奖励领取返回" content="required int state;"/>
+    <protocol value="4603" name="seven_days_load_syn" desc="七日登陆奖励同步数据" content="repeated byte id; // 领取过的奖励数据"/>
+    <protocol value="4604" name="limit_ranking_req" desc="限时排名数据请求" content="required int type; // 分组"/>
+    <protocol value="4605" name="limit_ranking_res" desc="限时排名数据返回" content="required int type; // 分组&#xD;repeated string name; // 人物名称列表&#xD;required int state;"/>
+  </protocolPackage>
+  <protocolPackage name="47 激活码">
+    <protocol value="4701" name="code_exchange_req" desc="//激活码兑换请求" content="required byte type;//激活码类型&#xD;required string code;//兑换码字串"/>
+    <protocol value="4702" name="code_exchange_res" desc="//激活码兑换返回" content="required int state;&#xD;optional string reason; //失败原因"/>
+  </protocolPackage>
+  <protocolPackage name="48 竞技">
+    <protocol value="4801" name="athletics_get_req" desc="竞技奖励领取请求" content="required int id; // 奖励ID"/>
+    <protocol value="4802" name="athletics_get_res" desc="竞技奖励领取返回" content="required int id;&#xD;required int state;"/>
+    <protocol value="4803" name="athletics_data_syn" desc="竞技同步数据" content="repeated info_athletics infos; // 领取过的奖励数据"/>
+  </protocolPackage>
+  <protocolPackage name="49 特惠礼包">
+    <protocol value="4901" name="special_get_req" desc="特惠礼包奖励领取请求" content="required byte id; // 奖励ID"/>
+    <protocol value="4902" name="special_get_res" desc="特惠礼包奖励领取返回" content="required int state;"/>
+    <protocol value="4903" name="special_load_syn" desc="特惠礼包奖励同步数据" content="repeated byte id; // 领取过的奖励数据"/>
+  </protocolPackage>
+  <protocolPackage name="50 离线经验">
+    <protocol value="5001" name="offline_get_req" desc="离线经验奖励领取请求" content="required int index; // 0.免费领取 1.2倍领取 2.5倍领取"/>
+    <protocol value="5002" name="offline_get_res" desc="离线经验奖励领取返回" content="required int state;"/>
+    <protocol value="5003" name="offline_load_syn" desc="离线经验奖励同步数据" content="required int hour; // 离线累计时间"/>
+  </protocolPackage>
+  <protocolPackage name="51 活动列表">
+    <protocol value="5101" name="activity_list_syn" desc="" content="repeated int ids;//活动列表&#xD;repeated int states;//活动状态列表"/>
+    <protocol value="5111" name="activity_state_change_syn" desc="" content="required int id;//活动id&#xD;required int state;//状态"/>
+    <protocol value="5151" name="merger_server_activity_list_load_syn" desc="合服活动列表加载" content="repeated info_merger_server_activity_show info;//活动列表"/>
+    <protocol value="5152" name="holiday_activity_list_load_syn" desc="庆典活动列表加载" content="repeated info_holiday_activity_show info;//活动列表"/>
+    <protocol value="5153" name="open_server_activity_list_load_syn" desc="开服活动列表加载" content="repeated info_open_server_activity_show info;//活动列表"/>
+  </protocolPackage>
+  <protocolPackage name="52 投资计划">
+    <protocol value="5201" name="invest_req" desc="投资计划申请" content="required int type; // 投资计划类型"/>
+    <protocol value="5202" name="invest_res" desc="投资计划申请返回" content="required int type;&#xD;required int state;"/>
+    <protocol value="5203" name="invest_award_req" desc="投资计划奖励领取请求" content="required int id; // 投资奖励领取"/>
+    <protocol value="5204" name="invest_award_res" desc="投资计划奖励领取返回" content="required int id;&#xD;required int state;"/>
+    <protocol value="5205" name="invest_record_req" desc="投资计计划记录请求" content=""/>
+    <protocol value="5206" name="invest_record_res" desc="投资计计划记录返回" content="repeated info_invest_record records;&#xD;required int state;"/>
+    <protocol value="5207" name="invest_data_syn" desc="投资计划同步数据" content="required int type; // 投资类型&#xD;optional int activeTime;  // 激活时间&#xD;repeated int id;  // 已领取投资列表"/>
+  </protocolPackage>
+  <protocolPackage name="53 首充，每日充值">
+    <protocol value="5301" name="recharge_data_syn" desc="充值金额" content="optional int state; // 首充状态（EnumRechargeType）&#xD;optional int id; // 充值奖励表ID&#xD;optional int chargeValue; // 充值金额&#xD;optional int record; // 充值次数或天数记录"/>
+    <protocol value="5302" name="recharge_award_req" desc="充值领取请求" content="required int id; // 充值奖励表ID"/>
+    <protocol value="5303" name="recharge_award_res" desc="充值领到请求返回" content="required int state;"/>
+  </protocolPackage>
+  <protocolPackage name="54 经验炼制">
+    <protocol value="5401" name="refine_exp_req" desc="经验炼制请求" content=""/>
+    <protocol value="5402" name="refine_exp_res" desc="经验炼制回复" content="required int state;"/>
+  </protocolPackage>
+  <protocolPackage name="55 合服活动 - 充值有礼">
+    <protocol value="5501" name="recharge_data_days_syn" desc="充值金额" content="optional int id; // 活动充值奖励表ID&#xD;optional int chargeValue; // 充值金额&#xD;optional int state; // 充值状态（EnumRechargeType）"/>
+    <protocol value="5502" name="recharge_award_days_req" desc="充值领取请求" content="required int id; // 充值奖励表ID"/>
+    <protocol value="5503" name="recharge_award_days_res" desc="充值领到请求返回" content="required int state;"/>
+  </protocolPackage>
+  <protocolPackage name="56 传奇大礼">
+    <protocol value="5601" name="legendary_gift_syn" desc="充值金额" content="repeated string ids; // 排名&#xD;repeated string names; // 排名"/>
+    <protocol value="5602" name="legendary_gift_sum_syn" desc="人物消费金额同步" content="required int sum; // 消费金额"/>
+  </protocolPackage>
+  <protocolPackage name="57 限时抢购">
+    <protocol value="5701" name="time_limit_load_syn" desc="更新够买状态" content="repeated int infos; // 领取过的物品ID"/>
+    <protocol value="5702" name="time_limit_buy_req" desc="限时物品购买请求" content="required int id; // 购买限时物品的ID"/>
+    <protocol value="5703" name="time_limit_buy_res" desc="限时物品购买请求返回" content="required int state;"/>
+  </protocolPackage>
+  <protocolPackage name="58 合服活动 - 神秘商店">
+    <protocol value="5801" name="secret_store_syn" desc="神秘商店更新" content="optional int updateTime; // 刷新倒计时时间&#xD;repeated info_secret_store infos;// 神秘商店商品信息"/>
+    <protocol value="5802" name="secret_store_data_syn" desc="更新全局物品数量" content="required int id; // 购买神秘商店的ID&#xD;required int count; // 购买神秘商店的全局物品数量"/>
+    <protocol value="5803" name="secret_store_update_req" desc="神秘商店刷新请求" content=""/>
+    <protocol value="5804" name="secret_store_update_res" desc="神秘商店刷新请求返回" content="required int state;"/>
+    <protocol value="5805" name="secret_store_buy_req" desc="神秘商店购买请求" content="required int id; // 购买神秘商店的ID"/>
+    <protocol value="5806" name="secret_store_buy_res" desc="神秘商店购买请求返回" content="required int state;"/>
+  </protocolPackage>
+  <protocolPackage name="59 帮会争霸">
+    <protocol value="5901" name="guild_hegemony_syn" desc="帮会排名数据" content="repeated info_guild_hegemony rankings;"/>
+    <protocol value="5902" name="guild_hegemony_req" desc="帮会排名数据请求" content=""/>
+    <protocol value="5903" name="guild_hegemony_res" desc="帮会排名数据请求返回" content="required int state;"/>
+  </protocolPackage>
+  <protocolPackage name="60 盲测活动">
+    <protocol value="6001" name="level_award_syn" desc="等级奖励数据" content="required int level; // 当前显示等级&#xD;required int state; // 当前等级的领取状态 1.可领取, 0.不可领取"/>
+    <protocol value="6002" name="level_award_req" desc="等级奖励领取请求" content="required int level; // 当前显示等级"/>
+    <protocol value="6003" name="level_award_res" desc="等级奖励领取请求返回" content="required int state;"/>
+    <protocol value="6004" name="copybook_exchange_req" desc="字帖兑换请求" content="required int id; // 兑换ID"/>
+    <protocol value="6005" name="copybook_exchange_res" desc="字帖兑换回复" content="required int state;状态"/>
+    <protocol value="6006" name="second_day_login_award_req" desc="领取盲测次日登录奖励请求" content=""/>
+    <protocol value="6007" name="second_day_login_award_res" desc="领取盲测次日登录奖励回复" content="required int state;状态"/>
+    <protocol value="6008" name="second_day_login_award_syn" desc="领取盲测次日登录奖励同步" content="required int isGet;没领为0"/>
+  </protocolPackage>
+  <protocolPackage name="61 图腾">
+    <protocol value="6101" name="totem_upgrade_req" desc="图腾升级请求" content="required int id; 待升级物品ID&#xD;required int pos; 物品位置"/>
+    <protocol value="6102" name="totem_upgrade_res" desc="图腾升级请求返回" content="required int state; 状态"/>
+    <protocol value="6103" name="totem_recycle_req" desc="图腾回收请求" content="repeated int pos; // 待回收物品位置信息"/>
+    <protocol value="6104" name="totem_recycle_res" desc="图腾回收请求返回" content="required int state; // 物品位置"/>
+    <protocol value="6105" name="totem_buffer_syn" desc="同步更新图腾BUFF" content="required int baseID; // 图腾BUFF表ID"/>
+  </protocolPackage>
+  <protocolPackage name="62 剧情">
+    <protocol value="6201" name="plot_state_syn" desc="剧情状态同步" content="required int step;  // 步骤"/>
+    <protocol value="6202" name="plot_show_relive_panel_syn" desc="剧情显示复活面板" content=""/>
+    <protocol value="6203" name="plot_exec_next_req" desc="剧情执行下一步" content=""/>
+    <protocol value="6204" name="plot_exec_next_res" desc="剧情执行下一步" content="required int state;"/>
+  </protocolPackage>
+  <protocolPackage name="63 聚宝盆">
+    <protocol value="6301" name="treasure_put_req" desc="存入物品请求" content="required int pos;"/>
+    <protocol value="6302" name="treasure_put_res" desc="返回存入物品请求" content="required int state;"/>
+    <protocol value="6303" name="treasure_get_req" desc="取出物品请求" content=""/>
+    <protocol value="6304" name="treasure_get_res" desc="返回取出物品请求" content="required int state;"/>
+    <protocol value="6305" name="treasure_data_syn" desc="更新聚宝盆相关数据" content="required int id; // 存入物品ID&#xD;optional int count; // 可获得物品的数量&#xD;optional int putTime; // 存入物品时间&#xD;optional int state; // 可领取状态"/>
+    <protocol value="6306" name="treasure_record_req" desc="存取记录请求" content=""/>
+    <protocol value="6307" name="treasure_record_res" desc="存取记录请求" content="repeated info_treasure_record infos; // 记录信息&#xD;required int state; // 状态数据"/>
+  </protocolPackage>
+  <protocolPackage name="64 体验护卫">
+    <protocol value="6401" name="mars_experience_data_syn" desc="同步体验护卫数据" content="required int id; // 激活的护卫ID&#xD;required int surplus; // 护卫的剩余时间"/>
+    <protocol value="6402" name="mars_experience_summon_req" desc="请求召唤体验护卫" content=""/>
+    <protocol value="6403" name="mars_experience_summon_res" desc="返回请求召唤体验护卫状态" content="required int state; // 返回修改后的结果"/>
+  </protocolPackage>
+  <protocolPackage name="65 首冲豪礼">
+    <protocol value="6501" name="recharge_award_load_syn" desc="初始化首充豪礼数据" content="required int sum; // 充值金额&#xD;required int days; // 开服天数 &#xD;required int count; // 充值人数&#xD;repeated info_recharge_award infos; // 领取状态"/>
+    <protocol value="6502" name="recharge_award_data_syn" desc="更新领取状态" content="optional int sum; // 充值金额&#xD;optional int count; // 充值人数&#xD;optional info_recharge_award info; // 领取状态"/>
+    <protocol value="6504" name="recharge_award_get_req" desc="领取首充豪礼奖励" content="required int id; // 礼包ID 首充豪礼表&#xD;required int type; // 礼包类型 EnumRechargeAwardType"/>
+    <protocol value="6505" name="recharge_award_get_res" desc="返回领取首充豪礼奖励状态" content="required int state; // 状态数据"/>
+  </protocolPackage>
+  <protocolPackage name="66 特权卡">
+    <protocol value="6601" name="privilege_getaward_req" desc="//获取特权物品或次数" content="required int type;//领取类型 枚举"/>
+    <protocol value="6602" name="privilege_getaward_res" desc="返回状态" content="required int state;// 状态数据&#xD;required int type;//领取类型 枚举值"/>
+    <protocol value="6603" name="privilege_info_syn" desc="同步特权信息" content="required int level;//特权等级&#xD;required int lasttime;//结束时间&#xD;repeated int types;枚举数组&#xD;repeated int counts; //对应于枚举数组"/>
+  </protocolPackage>
+  <protocolPackage name="67 推广员">
+    <protocol value="6701" name="extension_bind_req" desc="绑定大号请求" content="required string targetID;//大号ID"/>
+    <protocol value="6702" name="extension_bind_res" desc="绑定大号回复" content="required int state;// 状态数据"/>
+    <protocol value="6703" name="extension_get_awad_req" desc="推广员领取奖励请求" content="required int id;// 奖励ID"/>
+    <protocol value="6704" name="extension_get_awad_res" desc="推广员领取奖励回复" content="required int state;// 状态数据"/>
+    <protocol value="6705" name="extension_load_probie_info_req" desc="获取小号数据请求" content="required int type;// 类型"/>
+    <protocol value="6706" name="extension_load_probie_info_res" desc="获取小号数据回复" content="repeated info_extension_probie info;"/>
+    <protocol value="6751" name="extension_load_award_state_syn" desc="加载推广员奖励领取状态" content="repeated info_extension_award_state info;"/>
+    <protocol value="6752" name="extension_award_state_change_syn" desc="同步奖励领取状态改变" content="repeated info_extension_award_state info;"/>
+  </protocolPackage>
+  <protocolPackage name="68 挂机狂欢">
+    <protocol value="6801" name="auto_fight_carnival_exchange_req" desc="挂机狂欢兑换元宝请求" content="required int id;// ID"/>
+    <protocol value="6802" name="auto_fight_carnival_exchange_res" desc="挂机狂欢兑换元宝回复" content="required int state;// 状态数据"/>
+    <protocol value="6803" name="auto_fight_carnival_load_exchange_record_req" desc="加载兑换记录请求" content=""/>
+    <protocol value="6804" name="auto_fight_carnival_load_exchange_record_res" desc="加载兑换记录回复" content="optional info_crazy_exchange_ingot_record record1;// 一等奖&#xD;optional info_crazy_exchange_ingot_record record2;// 二等奖&#xD;optional info_crazy_exchange_ingot_record record3;// 三等奖&#xD;repeated info_crazy_exchange_ingot_record info;"/>
+    <protocol value="6851" name="auto_fight_carnival_state_syn" desc="挂机狂欢状态更新" content="optional int exchangeTime; // 兑换时间戳"/>
+    <protocol value="6852" name="auto_fight_carnival_exchange_count_syn" desc="挂机狂欢兑换元宝次数更新" content="repeated info_crazy_exchange_ingot_count info;"/>
+  </protocolPackage>
+  <protocolPackage name="69 庆典活动 - 神秘商店">
+    <protocol value="6901" name="holiday_secret_store_syn" desc="神秘商店更新" content="optional int updateTime; // 刷新倒计时时间&#xD;repeated info_holiday_secret_store infos;// 神秘商店商品信息"/>
+    <protocol value="6902" name="holiday_secret_store_data_syn" desc="更新全局物品数量" content="required int id; // 购买神秘商店的ID&#xD;required int count; // 购买神秘商店的全局物品数量"/>
+    <protocol value="6903" name="holiday_secret_store_update_req" desc="神秘商店刷新请求" content=""/>
+    <protocol value="6904" name="holiday_secret_store_update_res" desc="神秘商店刷新请求返回" content="required int state;"/>
+    <protocol value="6905" name="holiday_secret_store_buy_req" desc="神秘商店购买请求" content="required int id; // 购买神秘商店的ID"/>
+    <protocol value="6906" name="holiday_secret_store_buy_res" desc="神秘商店购买请求返回" content="required int state;"/>
+  </protocolPackage>
+  <protocolPackage name="70 庆典活动 - 充值有礼">
+    <protocol value="7001" name="holiday_recharge_gift_data_syn" desc="充值金额" content="optional int id; // 活动充值奖励表ID&#xD;optional int chargeValue; // 充值金额&#xD;optional int state; // 充值状态（EnumRechargeType）"/>
+    <protocol value="7002" name="holiday_recharge_gift_award_req" desc="充值领取请求" content="required int id; // 充值奖励表ID"/>
+    <protocol value="7003" name="holiday_recharge_gift_award_res" desc="充值领到请求返回" content="required int state;"/>
+  </protocolPackage>
+  <protocolPackage name="71 收藏系统">
+    <protocol value="7101" name="role_item_collect_data_syn" desc="收藏的物品ID" content="repeated int baseID; // 收藏的物品ID"/>
+  </protocolPackage>
+  <protocolPackage name="72 平台">
+    <protocol value="7201" name="pf_360_privilege_award_req" desc="360特权奖励请求" content="required int id;奖励ID"/>
+    <protocol value="7202" name="pf_360_privilege_award_res" desc="360特权奖励回复" content="required int state;// 状态"/>
+    <protocol value="7251" name="pf_360_award_state_load_syn" desc="加载360特权奖励领取状态" content="repeated int id; // 已领奖励ID"/>
+    <protocol value="7252" name="pf_360_award_state_change_syn" desc="同步360特权奖励领取状态" content="repeated int id; // 已领奖励ID"/>
+  </protocolPackage>
+  <protocolPackage name="73 庆典活动 - 在线奖励（小岳岳npc活动）">
+    <protocol value="7301" name="holiday_online_award_req" desc="在线奖励请求" content="required int id;//奖励ID"/>
+    <protocol value="7302" name="holiday_online_award_res" desc="在线奖励回复" content="required int state;// 状态"/>
+    <protocol value="7303" name="holiday_online_syn" desc="在线奖励领取状态" content="repeated int id; // 已领奖励ID"/>
+  </protocolPackage>
+  <protocolPackage name="74 开服活动 - 搜狗平台-每日1元">
+    <protocol value="7401" name="everyday_sougou_load_syn" desc="数据全部初始化" content="required int day; // 开服天数&#xD;required int sum; // 充值金额&#xD;required int state; // 领取状态（1.领取 0.未领取）"/>
+    <protocol value="7402" name="everyday_sougou_data_syn" desc="更新数据" content="optional int sum; // 充值金额&#xD;optional int state; // 领取状态（1.领取 0.未领取）"/>
+    <protocol value="7403" name="everyday_sougou_award_req" desc="充值领取请求" content=""/>
+    <protocol value="7404" name="everyday_sougou_award_res" desc="充值领到请求返回" content="required int state;"/>
+  </protocolPackage>
+</protocolPackages>

@@ -1,0 +1,1040 @@
+<enums>
+  <enum name="EnumMsgStateType">
+    <field value="0" name="ok" desc="默认"/>
+    <field value="1" name="err" desc="未知错误"/>
+    <field value="9001" name="not_login" desc="未登录"/>
+    <field value="9002" name="not_enter_game" desc="未进入游戏"/>
+    <field value="9003" name="not_enter_map" desc="未进入地图"/>
+    <field value="9004" name="not_battle_sprite_source" desc="非战斗精灵不可发起攻击"/>
+    <field value="9005" name="not_battle_sprite_target" desc="非战斗精灵不可被攻击"/>
+    <field value="9006" name="target_dnt_exist" desc="目标不存在"/>
+    <field value="10101" name="login_success" desc="登录成功"/>
+    <field value="10102" name="login_faild" desc="登录失败"/>
+    <field value="10103" name="login_auto_create" desc="帐号不存在自动创建"/>
+    <field value="20101" name="role_list_success" desc="获得角色列表成功"/>
+    <field value="20102" name="role_list_faild" desc="获得角色列表失败"/>
+    <field value="20301" name="role_create_success" desc="角色创建成功"/>
+    <field value="20302" name="role_create_faild" desc="角色创建失败"/>
+    <field value="20303" name="role_create_name_repeat" desc="角色创建姓名重复"/>
+    <field value="20304" name="role_level_limit" desc="角色等级不足"/>
+    <field value="20501" name="role_select_enter" desc="正在进入游戏"/>
+    <field value="20502" name="role_select_faild" desc="进入游戏失败"/>
+    <field value="20503" name="role_cultivation_faild" desc="修为值兑换失败"/>
+    <field value="30201" name="line_change_success" desc="换线成功"/>
+    <field value="30202" name="line_change_faild" desc="换线失败"/>
+    <field value="40201" name="map_change_success" desc="换图成功"/>
+    <field value="40202" name="map_change_faild" desc="换图失败"/>
+    <field value="40701" name="map_move_success" desc="移动成功"/>
+    <field value="40702" name="map_move_faild" desc="移动失败"/>
+    <field value="80100" name="item_move_success" desc="物品移动成功"/>
+    <field value="80101" name="item_move_faild" desc="物品移动失败"/>
+    <field value="80102" name="item_move_cannot" desc="不能移动到这个位置"/>
+    <field value="80103" name="item_del_success" desc="物品删除成功"/>
+    <field value="80104" name="item_del_faild" desc="物品删除失败"/>
+    <field value="80105" name="item_add_success" desc="物品添加成功"/>
+    <field value="80106" name="item_add_faild" desc="物品添加失败"/>
+    <field value="80107" name="item_add_full_faild" desc="物品背包满"/>
+    <field value="80108" name="item_task_add_faild" desc="任务添加道具背包已满失败"/>
+    <field value="80110" name="item_split_success" desc="物品拆分成功"/>
+    <field value="80111" name="item_split_full" desc="物品拆分失败,背包已满。"/>
+    <field value="80112" name="item_split_cannot" desc="物品不可拆分"/>
+    <field value="80113" name="item_split_no_exist" desc="拆分的物品不存在"/>
+    <field value="80114" name="item_chat_show_get_success" desc="显示聊天道具拉取成功"/>
+    <field value="80115" name="item_chat_show_get_failed" desc="显示聊天道具拉取失败"/>
+    <field value="80116" name="item_pick_up_not_owner" desc="不是道具的拥有者"/>
+    <field value="80120" name="item_summon_boos_map_faild" desc="地图限制（只限盟重）"/>
+    <field value="80121" name="item_recycle_max_value" desc="物品回收当日达到最大值"/>
+    <field value="80122" name="item_recycle_max_level" desc="物品回收人物等级限制"/>
+    <field value="90100" name="shop_buy_success" desc="物品购买成功"/>
+    <field value="90101" name="shop_buy_faild" desc="物品购买失败"/>
+    <field value="90110" name="shop_sell_success" desc="物品出售成功"/>
+    <field value="90111" name="shop_sell_faild" desc="物品出售失败"/>
+    <field value="90120" name="shop_repo_success" desc="物品回购成功"/>
+    <field value="90121" name="shop_repo_faild" desc="物品回购失败"/>
+    <field value="90200" name="team_create_success" desc="队伍创建成功"/>
+    <field value="90201" name="team_create_faild" desc="队伍创建失败"/>
+    <field value="90202" name="team_join_success" desc="加入队伍成功"/>
+    <field value="90203" name="team_join_offline_faild" desc="对方不在线失败"/>
+    <field value="90204" name="team_join_refuse_faild" desc="队长拒绝了你的请求"/>
+    <field value="90205" name="team_invite_success" desc="邀请加入队伍成功"/>
+    <field value="90206" name="team_invite_offline_faild" desc="邀请加入队伍失败"/>
+    <field value="90207" name="team_invite_refuse_faild" desc="邀请加入队伍拒绝"/>
+    <field value="90208" name="team_kick_success" desc="踢出玩家成功"/>
+    <field value="90209" name="team_kick_faild" desc="踢出玩家失败"/>
+    <field value="90210" name="team_appoint_success" desc="任务队长成功"/>
+    <field value="90211" name="team_appoint_faild" desc="任命队长失败"/>
+    <field value="90212" name="team_exit_success" desc="离开队伍成功"/>
+    <field value="90213" name="team_exit_faild" desc="离开队伍失败"/>
+    <field value="90214" name="team_full_faild" desc="队伍已满"/>
+    <field value="90215" name="team_online_faild" desc="玩家不在线"/>
+    <field value="90216" name="team_role_exist_faild" desc="玩家已在队伍中"/>
+    <field value="90217" name="team_exist_faild" desc="队伍已存在"/>
+    <field value="90218" name="team_not_exist_faild" desc="队伍不存在"/>
+    <field value="90219" name="team_change_leader" desc="更换队长"/>
+    <field value="90220" name="team_clone_ready_success" desc="组队副本准备成功"/>
+    <field value="90221" name="team_clone_ready_failed" desc="组队副本准备失败"/>
+    <field value="90222" name="team_clone_start_success" desc="组队副本开始成功"/>
+    <field value="90223" name="team_clone_start_failed" desc="组队副本开始失败"/>
+    <field value="90224" name="team_clone_cancel_success" desc="组队副本取消成功"/>
+    <field value="90225" name="team_clone_cancel_failed" desc="组队副本取消失败"/>
+    <field value="90226" name="team_timed_out" desc="操作超时"/>
+    <field value="90300" name="stall_border_faild" desc="摆摊失败收益越界"/>
+    <field value="110001" name="trading_apply_success" desc="申请交易成功"/>
+    <field value="110002" name="trading_apply_faild" desc="申请交易失败"/>
+    <field value="110003" name="trading_apply_oneself_level_faild" desc="申请交易失败，自己的等级60级"/>
+    <field value="110004" name="trading_apply_others_level_faild" desc="申请交易失败，对方的等级60级"/>
+    <field value="110005" name="trading_apply_oneself_busy_faild" desc="申请购买失败，自己的等级60级"/>
+    <field value="110006" name="trading_apply_others_busy_faild" desc="申请购买失败，对方的等级60级"/>
+    <field value="110007" name="trading_apply_distance_faild" desc="申请交易失败，大于交易距离"/>
+    <field value="110008" name="trading_apply_offline_faild" desc="申请交易失败，玩家不在线"/>
+    <field value="110009" name="trading_agree" desc="玩家同意交易请求"/>
+    <field value="110010" name="trading_cancel" desc="玩家拒绝交易请求"/>
+    <field value="110011" name="trading_underway" desc="交易进行中"/>
+    <field value="110012" name="trading_unlock_faild" desc="对方玩家未锁定交易"/>
+    <field value="110013" name="trading_success" desc="交易成功"/>
+    <field value="110014" name="trading_add_item_success" desc="添加物品成功"/>
+    <field value="110015" name="trading_add_item_faild" desc="添加物品失败"/>
+    <field value="110016" name="trading_del_item_success" desc="移除物品成功"/>
+    <field value="110017" name="trading_del_item_faild" desc="移除物品失败"/>
+    <field value="110018" name="trading_currency_success" desc="添加货币成功"/>
+    <field value="110019" name="trading_currency_faild" desc="添加货币失败"/>
+    <field value="110020" name="trading_bag_full_faild" desc="交易失败背包没有空间"/>
+    <field value="110021" name="trading_cannot" desc="物品不可以被交易"/>
+    <field value="110022" name="trading_gold_lack_faild" desc="金币不足"/>
+    <field value="110023" name="trading_vippoint_lack_faild" desc="元宝不足"/>
+    <field value="110024" name="trading_faild" desc="交易失败"/>
+    <field value="110025" name="trading_lock_success" desc="增加交易进行中状态"/>
+    <field value="110026" name="trading_oneself_money_faild" desc="自己货币溢出"/>
+    <field value="110027" name="trading_other_money_faild" desc="其他人货币溢出"/>
+    <field value="120000" name="strengthen_success" desc="强化成功"/>
+    <field value="120001" name="strengthen_faild" desc="强化失败"/>
+    <field value="120002" name="strengthen_item_faild" desc="强化道具不足"/>
+    <field value="120003" name="strengthen_vip_point_faild" desc="强化元宝不足"/>
+    <field value="120004" name="strengthen_level_faild" desc="强化等级已满"/>
+    <field value="120005" name="strengthen_inheritance_success" desc="强化继承成功"/>
+    <field value="120006" name="strengthen_inheritance_faild" desc="强化继承失败"/>
+    <field value="120007" name="strengthen_inheritance_gold_faild" desc="金币不足"/>
+    <field value="120008" name="strengthen_inheritance_vip_point_faild" desc="元宝不足"/>
+    <field value="120009" name="strengthen_inheritance_level_faild" desc="继承等级高"/>
+    <field value="120020" name="recast_success" desc="重铸物品成功"/>
+    <field value="120021" name="recast_faild" desc="重铸物品失败"/>
+    <field value="120022" name="recast_vip_point_faild" desc="元宝不足"/>
+    <field value="120023" name="recast_material_faild" desc="材料不足"/>
+    <field value="120024" name="recast_inheritance_success" desc="重铸属性继承成功"/>
+    <field value="120025" name="recast_inheritance_faild" desc="重铸属性继承失败"/>
+    <field value="120026" name="recast_inheritance_job_faild" desc="重铸属性继承失败,职业不相同"/>
+    <field value="120027" name="recast_inheritance_level_faild" desc="重铸属性继承失败,被继承装备等级小于继承装备"/>
+    <field value="120028" name="recast_inheritance_vip_point_faild" desc="重铸属性继承失败,元宝不足"/>
+    <field value="120029" name="recast_save_success" desc="保存成功"/>
+    <field value="120030" name="recast_save_faild" desc="保存重铸失败"/>
+    <field value="120031" name="compound_success" desc="合成物品成功"/>
+    <field value="120032" name="compound_faild" desc="合成物品失败"/>
+    <field value="120033" name="compound_material_faild" desc="合成材料不足"/>
+    <field value="120034" name="compound_money_faild" desc="金钱不足"/>
+    <field value="120035" name="compound_data_table_faild" desc="合成表里无此合成物品ID"/>
+    <field value="130000" name="task_accept_success" desc="请求接受任务成功"/>
+    <field value="130001" name="task_accept_faild" desc="请求接受任务失败"/>
+    <field value="130050" name="task_submit_success" desc="请求提交任务成功"/>
+    <field value="130051" name="task_submit_faild" desc="请求提交任务失败"/>
+    <field value="130052" name="task_everyday_success" desc="请求任务刷星成功"/>
+    <field value="130053" name="task_everyday_faild" desc="请求任务刷星失败"/>
+    <field value="130054" name="task_everyday_underway" desc="请求日常任务进行中"/>
+    <field value="130055" name="task_everyday_full" desc="请求日常任务环数已满"/>
+    <field value="130056" name="task_weekly_success" desc="请示周任务成功"/>
+    <field value="130057" name="task_weekly_faild" desc="请示周任务失败"/>
+    <field value="130058" name="task_weekly_underway" desc="请示周任务进行中"/>
+    <field value="130059" name="task_weekly_full" desc="请示周任务环数已满"/>
+    <field value="130100" name="command_success" desc="GM 命令执行成功"/>
+    <field value="130101" name="command_faild" desc="GM 命令执行失败"/>
+    <field value="130102" name="command_param_faild" desc="GM 命令参数错误"/>
+    <field value="130103" name="command_id_faild" desc="GM 命令ID错误"/>
+    <field value="140001" name="mail_open_success" desc="邮件打开成功"/>
+    <field value="140002" name="mail_overtime" desc="邮件过期"/>
+    <field value="140003" name="mail_delete_success" desc="邮件删除成功"/>
+    <field value="140004" name="mail_receive_success" desc="邮件领取成功"/>
+    <field value="140005" name="mail_already_received" desc="邮件已经领取"/>
+    <field value="150001" name="role_show_info_success" desc="显示角色信息成功"/>
+    <field value="150002" name="role_show_info_target_offline" desc="显示角色信息目标不在线"/>
+    <field value="160011" name="activity_award_config_error" desc="活动奖励不存在"/>
+    <field value="160021" name="online_award_success" desc="在线奖励领取成功"/>
+    <field value="160022" name="online_award_time_limit" desc="在线时间不足"/>
+    <field value="160023" name="online_award_received" desc="在线奖励已领取"/>
+    <field value="160031" name="sign_day_success" desc="签到成功"/>
+    <field value="160032" name="sign_day_repeat" desc="签到重复"/>
+    <field value="160033" name="sign_day_date_error" desc="签到日期错误"/>
+    <field value="160034" name="sign_make_up_count_limit" desc="补签次数不足"/>
+    <field value="160041" name="sign_award_success" desc="签到奖励领取成功"/>
+    <field value="160042" name="sign_award_time_limit" desc="签到次数不足"/>
+    <field value="160043" name="sign_award_received" desc="签到奖励已领取"/>
+    <field value="160051" name="active_value_award_success" desc="活跃值奖励领取成功"/>
+    <field value="160052" name="active_value_limit" desc="活跃值不足"/>
+    <field value="160053" name="active_value_award_received" desc="活跃值奖励已领取"/>
+    <field value="160061" name="achievement_point_award_success" desc="成就点奖励领取成功"/>
+    <field value="160062" name="achievement_point_limit" desc="成就点不足"/>
+    <field value="160063" name="achievement_point_award_received" desc="成就点奖励已领取"/>
+    <field value="170001" name="relation_target_error" desc="目标玩家不在线或不存在"/>
+    <field value="170002" name="relation_add_success" desc="添加关系成功"/>
+    <field value="170003" name="relation_delete_success" desc="删除关系成功"/>
+    <field value="170004" name="relation_can_not_add_self" desc="不能添加自己"/>
+    <field value="170011" name="relation_friend_add_success" desc="添加好友成功"/>
+    <field value="170012" name="relation_friend_delete_success" desc="删除好友成功"/>
+    <field value="170013" name="relation_friend_already" desc="目标玩家已加为好友"/>
+    <field value="170014" name="relation_friend_full" desc="好友已满"/>
+    <field value="170021" name="relation_black_add_success" desc="添加黑名单成功"/>
+    <field value="170022" name="relation_black_delete_success" desc="删除黑名单成功"/>
+    <field value="170023" name="relation_black_already" desc="目标玩家已列为黑名单"/>
+    <field value="170024" name="relation_black_full" desc="黑名单已满"/>
+    <field value="170031" name="relation_enemy_delete_success" desc="删除仇敌成功"/>
+    <field value="180011" name="achievement_award_success" desc="成就奖励领取成功"/>
+    <field value="180012" name="achievement_config_error" desc="成就奖励不存在"/>
+    <field value="180013" name="achievement_award_incomplete" desc="成就未完成"/>
+    <field value="180014" name="achievement_award_received" desc="成就奖励已领取"/>
+    <field value="190001" name="title_use_success" desc="称号使用成功"/>
+    <field value="190002" name="title_use_failed" desc="称号使用失败"/>
+    <field value="190101" name="shacheng_daily_award_success" desc="占领沙城日常奖励领取成功"/>
+    <field value="190102" name="shacheng_daily_award_faild" desc="没有领取资格"/>
+    <field value="190103" name="shacheng_daily_award_config_error" desc="沙城奖励表错误"/>
+    <field value="190104" name="shacheng_daily_award_received" desc="奖励已领取"/>
+    <field value="190201" name="guan_jie_upgrade_success" desc="官阶升级成功"/>
+    <field value="190202" name="guan_jie_is_max" desc="官阶已经升级到最大值"/>
+    <field value="190203" name="guan_jie_not_enough_gong_xun" desc="功勋不足"/>
+    <field value="190204" name="guan_jie_not_enough_mo_hun" desc="魔魂不足"/>
+    <field value="190301" name="blood_sacrifice_activate_success" desc="血祭激活成功"/>
+    <field value="190302" name="blood_sacrifice_activate_config_error" desc="血祭激活配置错误"/>
+    <field value="190303" name="blood_sacrifice_activated" desc="血祭已激活"/>
+    <field value="190304" name="blood_sacrifice_activate_level_limit" desc="血祭激活等级不足"/>
+    <field value="190305" name="blood_sacrifice_activate_item_limit" desc="血祭激活道具不足"/>
+    <field value="190311" name="blood_sacrifice_value_exchange_success" desc="血祭值兑换成功"/>
+    <field value="190312" name="blood_sacrifice_value_exchange_level_limit" desc="等级不足不能兑换"/>
+    <field value="190313" name="blood_sacrifice_value_exchange_gold_limit" desc="金币不足不能兑换"/>
+    <field value="190321" name="blood_sacrifice_recycle_head_success" desc="血祭回收成功"/>
+    <field value="190401" name="private_boss_enter_success" desc="个人BOSS进入成功"/>
+    <field value="190402" name="private_boss_config_error" desc="个人BOSS配置表错误"/>
+    <field value="190403" name="private_boss_level_limit" desc="个人BOSS等级不足"/>
+    <field value="190404" name="private_boss_enter_count_limit" desc="个人BOSS进入次数限制"/>
+    <field value="190405" name="private_boss_item_count_limit" desc="个人BOSS消耗道具个数不足"/>
+    <field value="190406" name="private_boss_power_limit" desc="个人BOSS战力不足"/>
+    <field value="190501" name="refine_exp_success" desc="经验炼制成功"/>
+    <field value="190502" name="refine_exp_close" desc="功能已关闭"/>
+    <field value="190503" name="refine_exp_not_open" desc="功能未开启"/>
+    <field value="190504" name="refine_exp_count_limit" desc="经验炼制次数不足"/>
+    <field value="190505" name="refine_exp_level_limit" desc="人物等级达到上限不能炼制"/>
+    <field value="190506" name="refine_exp_vip_point_free_limit" desc="元宝不足"/>
+    <field value="190601" name="popular_boss_award_success" desc="全民BOSS奖励领取成功"/>
+    <field value="190602" name="popular_boss_award_close" desc="功能已关闭"/>
+    <field value="190603" name="popular_boss_award_incomplete" desc="尚未完成不可领取"/>
+    <field value="190604" name="popular_boss_award_received" desc="已经领取"/>
+    <field value="190605" name="popular_boss_config_error" desc="配置错误"/>
+    <field value="190701" name="sha_cheng_zheng_ba_award_success" desc="领取成功"/>
+    <field value="190702" name="sha_cheng_zheng_ba_award_master_limit" desc="不是城主不能领取"/>
+    <field value="190703" name="sha_cheng_zheng_ba_award_time_limit" desc="不在领取时间"/>
+    <field value="190704" name="sha_cheng_zheng_ba_award_receive" desc="奖励已被领取"/>
+    <field value="190801" name="beheaded_start_success" desc="斩首开始成功"/>
+    <field value="190802" name="beheaded_complete_success" desc="斩首完成成功"/>
+    <field value="190803" name="beheaded_corpse_error" desc="斩首尸体错误"/>
+    <field value="190804" name="beheaded_count_limit" desc="斩首次数不足"/>
+    <field value="190805" name="beheaded_corpse_owner_limit" desc="斩首尸体归属不是自己"/>
+    <field value="190806" name="beheaded_pos_error" desc="斩首位置错误"/>
+    <field value="190807" name="beheaded_config_error" desc="斩首配置表错误"/>
+    <field value="190808" name="beheaded_item_count_limit" desc="斩首道具不足"/>
+    <field value="190809" name="beheaded_role_state_error" desc="斩首人物状态错误"/>
+    <field value="190810" name="beheaded_time_limit" desc="斩首时长不足"/>
+    <field value="190901" name="copybook_exchange_success" desc="字帖兑换成功"/>
+    <field value="190902" name="copybook_exchange_award_error" desc="奖励不存在"/>
+    <field value="190903" name="copybook_exchange_item_limit" desc="道具不足"/>
+    <field value="191001" name="second_day_login_award_success" desc="盲测次日登录奖励领取成功"/>
+    <field value="191002" name="second_day_login_award_error" desc="条件不足领取失败"/>
+    <field value="191003" name="second_day_login_level_limit" desc="等级不足领取失败"/>
+    <field value="191004" name="second_day_login_award_count_limit" desc="奖励已领取"/>
+    <field value="191101" name="extension_bind_success" desc="推广员绑定成功"/>
+    <field value="191102" name="extension_bind_self_error" desc="不能绑定自己"/>
+    <field value="191103" name="extension_bind_self_level_limit" desc="自身等级过高不能绑定"/>
+    <field value="191104" name="extension_bind_already" desc="只能绑定一个角色"/>
+    <field value="191105" name="extension_bind_target_code_error" desc="绑定码错误"/>
+    <field value="191106" name="extension_bind_target_level_limit" desc="目标角色等级过低"/>
+    <field value="191107" name="extension_bind_interact_limit" desc="不能相互绑定"/>
+    <field value="191108" name="extension_bind_target_count_limit" desc="目标被绑定次数过多"/>
+    <field value="191109" name="extension_bind_award_error" desc="小号奖励配置表错误"/>
+    <field value="191201" name="extension_get_award_success" desc="推广员奖励领取成功"/>
+    <field value="191202" name="extension_get_award_config_error" desc="推广员奖励配置表错误"/>
+    <field value="191203" name="extension_get_award_already" desc="奖励已被领取"/>
+    <field value="191204" name="extension_get_award_condition_limit" desc="领奖条件不足"/>
+    <field value="191301" name="crazy_exchange_ingot_config_error" desc="兑换奖励不存在"/>
+    <field value="191302" name="crazy_exchange_ingot_count_limit" desc="兑换次数不足"/>
+    <field value="191401" name="privilege_360_award_config_error" desc="奖励不存在"/>
+    <field value="191402" name="privilege_360_award_received" desc="奖励已领取"/>
+    <field value="191403" name="privilege_360_award_error_0" desc="系统繁忙，请您稍后再来领取特权！"/>
+    <field value="191404" name="privilege_360_award_error_1" desc="请先登录安全卫士，领取对应特权，获得礼包领取资格"/>
+    <field value="191405" name="privilege_360_award_error_2" desc="您的安全卫士等级不满足领取条件，请提升卫士等级"/>
+    <field value="191406" name="privilege_360_award_error_3" desc="系统错误，请您稍后再来领取特权！"/>
+    <field value="191407" name="privilege_360_award_error_4" desc="特权活动未上线，请等待上线后再来领取"/>
+    <field value="191408" name="privilege_360_award_error_5" desc="很遗憾！360卫士特权活动已结束，敬请期待下次活动！"/>
+    <field value="191409" name="privilege_360_award_error_6" desc="系统异常，请您稍后再来领取特权！"/>
+    <field value="191410" name="privilege_360_award_error_7" desc="请先登录安全卫士，领取对应特权，分享特权活动到指定社交平台获得分享礼包"/>
+    <field value="191411" name="privilege_360_award_error_8" desc="礼包审核中，我们将于您分享特权活动48小时之后给您发送礼包，请耐心等待！"/>
+    <field value="200300" name="guild_create_success" desc="帮会创建成功"/>
+    <field value="200301" name="guild_create_faild" desc="帮会创建失败"/>
+    <field value="200302" name="guild_apply_undo" desc="请求者取消了申请"/>
+    <field value="200303" name="guild_dismiss_member_faild" desc="帮会成员大于1不可解散"/>
+    <field value="200304" name="guild_role_existing" desc="玩家存在帮会"/>
+    <field value="200305" name="guild_operation_timeout" desc="操作超时"/>
+    <field value="200306" name="guild_role_offline" desc="玩家不在线"/>
+    <field value="200307" name="guild_vip_level" desc="VIP等级不足"/>
+    <field value="200308" name="guild_member_full" desc="帮会成员已满"/>
+    <field value="200309" name="guild_post_full" desc="当前职位到达上限"/>
+    <field value="200310" name="guild_cooling" desc="加入帮会CD中"/>
+    <field value="200311" name="guild_invite_level" desc="帮会邀请等级不足"/>
+    <field value="200312" name="guild_red_exist" desc="帮会已发放红包"/>
+    <field value="200320" name="forge_success" desc="铸造成功"/>
+    <field value="200321" name="forge_lose" desc="铸造失败"/>
+    <field value="200322" name="forge_broken" desc="破碎"/>
+    <field value="200330" name="wing_success" desc="翅膀升阶成功"/>
+    <field value="200331" name="wing_upgrade" desc="翅膀升级通知"/>
+    <field value="200332" name="wing_item_failed" desc="升级翅膀物品不足"/>
+    <field value="200333" name="wing_money_failed" desc="升级翅膀元宝不足"/>
+    <field value="200334" name="mine_bag_faild" desc="//背包空间不足"/>
+    <field value="200340" name="mine_vip_point_faild" desc="寻宝元宝不足"/>
+    <field value="200341" name="mine_pos_faild" desc="//提取位置不对"/>
+    <field value="200342" name="mine_grid_full_faild" desc="//宝藏仓库格子不足"/>
+    <field value="200350" name="mars_equal" desc="召唤的战神与当前使用的相同"/>
+    <field value="200351" name="mars_less" desc="当前召唤的战神等级小于已召唤战神"/>
+    <field value="200352" name="vip_bag_faild" desc="//vip 背包空间不足"/>
+    <field value="200353" name="vip_award_repeat" desc="//vip领取奖励重复"/>
+    <field value="200354" name="key_find_faild" desc="//找不到这个兑换码"/>
+    <field value="200355" name="key_repeat_faild" desc="//重复领取"/>
+    <field value="200356" name="key_bag_faild" desc="//背包空间不足"/>
+    <field value="200357" name="key_faild" desc="//激活码领取失败"/>
+    <field value="200370" name="chat_offline" desc="此玩家不在线"/>
+    <field value="200371" name="privilege_count_faild" desc="次数不足"/>
+  </enum>
+  <enum name="EnumGenderType">
+    <field value="0" name="unknown" desc="未知"/>
+    <field value="1" name="male" desc="男"/>
+    <field value="2" name="female" desc="女"/>
+  </enum>
+  <enum name="EnumJobType">
+    <field value="0" name="unknown" desc="未知"/>
+    <field value="1" name="zhan" desc="战士"/>
+    <field value="2" name="fa" desc="法师"/>
+    <field value="3" name="dao" desc="道士"/>
+  </enum>
+  <enum name="EnumMapSpriteType">
+    <field value="0" name="none" desc="未知"/>
+    <field value="1" name="role" desc="角色"/>
+    <field value="2" name="monster" desc="怪物"/>
+    <field value="3" name="pet" desc="宠物"/>
+    <field value="4" name="npc" desc="NPC"/>
+    <field value="5" name="guard" desc="守卫"/>
+    <field value="6" name="collect" desc="采集"/>
+    <field value="7" name="retinue" desc="随从"/>
+    <field value="8" name="drop" desc="掉落物"/>
+    <field value="9" name="trap" desc="陷阱"/>
+    <field value="10" name="decoration" desc="装饰"/>
+    <field value="11" name="mars" desc="战神"/>
+  </enum>
+  <enum name="EnumMoveType">
+    <field value="0" name="unknown" desc="未知"/>
+    <field value="1" name="walk" desc="走"/>
+    <field value="2" name="run" desc="跑"/>
+    <field value="3" name="be_crash" desc="冲撞被动"/>
+    <field value="4" name="crash" desc="冲撞主动"/>
+    <field value="5" name="trans" desc="传送"/>
+  </enum>
+  <enum name="EnumPosChangeReasonType">
+    <field value="0" name="normal" desc="普通"/>
+    <field value="1" name="teleport" desc="传送点"/>
+    <field value="2" name="skill" desc="技能"/>
+    <field value="3" name="item" desc="道具"/>
+    <field value="4" name="relive" desc="复活"/>
+  </enum>
+  <enum name="EnumAttrType">
+    <field value="100" name="base_begin" desc="角色属性枚举起始"/>
+    <field value="101" name="gold_free" desc="金币"/>
+    <field value="102" name="gold_bind" desc="绑定金币"/>
+    <field value="103" name="vip_point_free" desc="VIP点(元宝)"/>
+    <field value="104" name="vip_point_bind" desc="绑定VIP点(绑定元宝)"/>
+    <field value="105" name="vip_level" desc="VIP等级"/>
+    <field value="106" name="level" desc="角色等级"/>
+    <field value="107" name="level_re" desc="转生等级"/>
+    <field value="108" name="exp" desc="经验值"/>
+    <field value="109" name="wolf" desc="狼牙值"/>
+    <field value="110" name="shield" desc="盾牌值"/>
+    <field value="111" name="prestige" desc="声望"/>
+    <field value="112" name="officer" desc="官职"/>
+    <field value="113" name="rebirth_cultivation" desc="转生修为值"/>
+    <field value="114" name="sin_value" desc="罪恶值"/>
+    <field value="115" name="vip_record" desc="vip充值记录"/>
+    <field value="116" name="achievement_point" desc="人物成就点数"/>
+    <field value="117" name="unit_exp_times" desc="杀怪经验倍率"/>
+    <field value="118" name="dragon" desc="龙心(宝石)"/>
+    <field value="119" name="blood_runes" desc="血符"/>
+    <field value="120" name="soul" desc="灵力值"/>
+    <field value="121" name="exp2" desc="经验2"/>
+    <field value="122" name="gong_xun" desc="功勋"/>
+    <field value="123" name="mo_hun" desc="魔魂"/>
+    <field value="124" name="guan_jie" desc="官阶"/>
+    <field value="125" name="inside_power_exp" desc="内功经验"/>
+    <field value="126" name="inside_power_val_cur" desc="内功当前值"/>
+    <field value="127" name="inside_power_val_max" desc="内功最大值"/>
+    <field value="128" name="inside_power_lev" desc="内功等级"/>
+    <field value="129" name="stars_level" desc="星宿等级"/>
+    <field value="130" name="stars_cultivation" desc="星宿修为值"/>
+    <field value="131" name="mine_score" desc="宝藏积分"/>
+    <field value="132" name="blood_sacrifice_value" desc="血祭值"/>
+    <field value="133" name="blood_sacrifice_level" desc="血祭等级"/>
+    <field value="134" name="base_end" desc="角色属性枚举结束"/>
+    <field value="135" name="vip_qoe_level" desc="//体验vip level"/>
+    <field value="136" name="vip_qoe_flag" desc="体验vip标志"/>
+    <field value="137" name="vip_pay" desc="vip充值元宝数量"/>
+    <field value="138" name="inside_power_exp2" desc="//内功经验2"/>
+    <field value="140" name="totem_long" desc="龙"/>
+    <field value="141" name="totem_feng" desc="凤"/>
+    <field value="142" name="totem_laohu" desc="虎"/>
+    <field value="143" name="totem_bao" desc="豹"/>
+    <field value="144" name="totem_lang" desc="狼"/>
+    <field value="145" name="totem_ying" desc="鹰"/>
+    <field value="146" name="totem_huli" desc="狐"/>
+    <field value="147" name="totem_she" desc="蛇"/>
+    <field value="148" name="totem_xie" desc="蝎"/>
+    <field value="200" name="battle_begin" desc="战斗属性枚举起始"/>
+    <field value="201" name="hp_cur" desc="当前血量"/>
+    <field value="202" name="hp_max" desc="最大血量"/>
+    <field value="203" name="mp_cur" desc="当前法力"/>
+    <field value="204" name="mp_max" desc="最大法力"/>
+    <field value="205" name="atk_min_warrior" desc="战士最小攻击"/>
+    <field value="206" name="atk_max_warrior" desc="战士最大攻击"/>
+    <field value="207" name="atk_min_mage" desc="法师最小攻击"/>
+    <field value="208" name="atk_max_mage" desc="法师最大攻击"/>
+    <field value="209" name="atk_min_priests" desc="道士最小攻击"/>
+    <field value="210" name="atk_max_priests" desc="道士最大攻击"/>
+    <field value="211" name="def_min_warrior" desc="战士最小防御"/>
+    <field value="212" name="def_max_warrior" desc="战士最大防御"/>
+    <field value="213" name="def_min_mage" desc="法师最小防御"/>
+    <field value="214" name="def_max_mage" desc="法师最大防御"/>
+    <field value="215" name="hit" desc="命中"/>
+    <field value="216" name="dodge" desc="闪避"/>
+    <field value="217" name="cri_rate" desc="暴击率"/>
+    <field value="218" name="cri_val" desc="暴击值"/>
+    <field value="219" name="cri_def" desc="暴击抵抗"/>
+    <field value="220" name="luck" desc="幸运"/>
+    <field value="221" name="luck_def" desc="幸运抵抗"/>
+    <field value="222" name="dmg_inc" desc="伤害增加"/>
+    <field value="223" name="dtr" desc="免疫伤害"/>
+    <field value="224" name="dtr_warrior" desc="免疫物理伤害"/>
+    <field value="225" name="dtr_mage" desc="免疫魔法伤害"/>
+    <field value="226" name="pac_rate" desc="麻痹概率"/>
+    <field value="227" name="pac_def" desc="麻痹防御"/>
+    <field value="228" name="armc" desc="护身比例"/>
+    <field value="229" name="min_dmg" desc="最小伤害"/>
+    <field value="230" name="max_dmg" desc="最大伤害"/>
+    <field value="231" name="dtr_inside_power" desc="内功免伤"/>
+    <field value="232" name="battle_end" desc="战斗属性枚举结束"/>
+    <field value="300" name="speed_atk" desc="攻击速度"/>
+    <field value="301" name="control_begin" desc="控制属性枚举开始"/>
+    <field value="302" name="speed_move" desc="移动速度"/>
+    <field value="303" name="speed_recove" desc="回血速度"/>
+    <field value="304" name="not_atk" desc="无法攻击"/>
+    <field value="305" name="not_move" desc="无法移动"/>
+    <field value="306" name="not_visible" desc="隐身"/>
+    <field value="307" name="magic_shield" desc="魔法盾"/>
+    <field value="309" name="vip_relive_use" desc="//vip复活使用次数"/>
+    <field value="310" name="vip_goldbrick_use" desc="//vip 金砖使用次数"/>
+    <field value="311" name="control_end" desc="控制属性枚举结束"/>
+  </enum>
+  <enum name="EnumBattleTargetType">
+    <field value="1" name="sprite" desc="精灵"/>
+    <field value="2" name="grid_pos" desc="格子"/>
+    <field value="3" name="dir" desc="方向"/>
+  </enum>
+  <enum name="EnumBattleTargetRelationType">
+    <field value="0" name="none" desc="无"/>
+    <field value="1" name="self" desc="自身"/>
+    <field value="2" name="friend" desc="友方"/>
+    <field value="3" name="enemy" desc="敌人"/>
+    <field value="4" name="pet" desc="宠物"/>
+  </enum>
+  <enum name="EnumBattleAttackType">
+    <field value="0" name="unknown" desc="未知"/>
+    <field value="1" name="physical" desc="物理攻击"/>
+    <field value="2" name="magic" desc="法术攻击"/>
+    <field value="3" name="taoism" desc="道术攻击"/>
+  </enum>
+  <enum name="EnumBattleDmgType">
+    <field value="0" name="none" desc="无"/>
+    <field value="1" name="normal" desc="普通"/>
+    <field value="2" name="luck" desc="幸运"/>
+    <field value="3" name="curse" desc="诅咒"/>
+    <field value="4" name="cri" desc="暴击"/>
+    <field value="5" name="dodge" desc="闪避"/>
+  </enum>
+  <enum name="EnumDirectionType">
+    <field value="0" name="unknown" desc="未知"/>
+    <field value="1" name="up" desc="上"/>
+    <field value="2" name="right_up" desc="右上"/>
+    <field value="3" name="right" desc="右"/>
+    <field value="4" name="right_down" desc="右下"/>
+    <field value="5" name="down" desc="下"/>
+    <field value="6" name="left_down" desc="左下"/>
+    <field value="7" name="left" desc="左"/>
+    <field value="8" name="left_up" desc="左上"/>
+    <field value="9" name="center" desc="中心"/>
+  </enum>
+  <enum name="EnumChatType">
+    <field value="100" name="current" desc="1.1 当前聊天"/>
+    <field value="200" name="team" desc="1.2 队伍聊天"/>
+    <field value="300" name="gang" desc="1.3  帮会聊天"/>
+    <field value="400" name="world" desc="1.4  世界聊天"/>
+    <field value="500" name="secret" desc="1.5  密聊"/>
+    <field value="600" name="pm" desc="1.6  私聊"/>
+    <field value="700" name="system" desc="1.7  系统信息"/>
+    <field value="800" name="notice" desc="1.8  公告信息"/>
+    <field value="900" name="horn" desc="1.9  喇叭喊话"/>
+    <field value="1000" name="alliance" desc="1.10 联盟聊天"/>
+  </enum>
+  <enum name="EnumItemGridType">
+    <field value="0" name="bag" desc="背包类型"/>
+    <field value="99" name="bag_end" desc="背包(0 - 99)"/>
+    <field value="100" name="equip" desc="装备类型"/>
+    <field value="199" name="equip_end" desc="装备(100 - 199)"/>
+    <field value="200" name="storage" desc="仓库类型"/>
+    <field value="399" name="storage_end" desc="仓库(200 - 399)"/>
+    <field value="400" name="rune" desc="符文"/>
+    <field value="499" name="rune_end" desc="符文（400 - 499）"/>
+    <field value="500" name="fashion" desc="时装"/>
+    <field value="699" name="fashion_end" desc="时装(500 - 699)"/>
+  </enum>
+  <enum name="EnumItemUseType">
+    <field value="0" name="unused" desc="无法使用"/>
+    <field value="1" name="single_use" desc="单个使用"/>
+    <field value="2" name="mass_use" desc="批量使用"/>
+    <field value="3" name="use_count" desc="次数使用"/>
+    <field value="4" name="use_energy" desc="能量方式使用"/>
+  </enum>
+  <enum name="EnumEquipType">
+    <field value="0" name="unknown" desc="无法装备"/>
+    <field value="1" name="weapon" desc="武器 100"/>
+    <field value="2" name="clothing" desc="衣服 101"/>
+    <field value="3" name="armet" desc="头盔 114"/>
+    <field value="4" name="necklace" desc="项链 113"/>
+    <field value="5" name="bracelet" desc="手镯 102 111"/>
+    <field value="6" name="ring" desc="戒指 103 110"/>
+    <field value="7" name="belt" desc="腰带 104"/>
+    <field value="8" name="boot" desc="靴子 109"/>
+    <field value="11" name="shoulder" desc="护肩 120"/>
+    <field value="12" name="kneelet" desc="护膝 121"/>
+    <field value="13" name="vizard" desc="面甲 122"/>
+    <field value="14" name="pendant" desc="吊坠 123"/>
+    <field value="21" name="blood_runes" desc="血符 125"/>
+    <field value="22" name="medal" desc="勋章 124"/>
+    <field value="23" name="wing" desc="翅膀 115"/>
+    <field value="24" name="wolf" desc="狼牙 105"/>
+    <field value="25" name="shield" desc="护盾 108"/>
+    <field value="26" name="dragon" desc="龙心 126"/>
+    <field value="27" name="seal" desc="官印 112"/>
+    <field value="28" name="mounts" desc="坐骑"/>
+    <field value="29" name="special_ring" desc="特戒"/>
+    <field value="31" name="fashion_weapon" desc="时装武器 116"/>
+    <field value="32" name="fashion_clothing" desc="时装衣服 117"/>
+    <field value="41" name="totem_long" desc="图腾_龙 140"/>
+    <field value="42" name="totem_feng" desc="图腾_凤 141"/>
+    <field value="43" name="totem_laohu" desc="图腾_虎 142"/>
+    <field value="44" name="totem_bao" desc="图腾_豹 143"/>
+    <field value="45" name="totem_lang" desc="图腾_狼 144"/>
+    <field value="46" name="totem_ying" desc="图腾_鹰 145"/>
+    <field value="47" name="totem_huli" desc="图腾_狐 146"/>
+    <field value="48" name="totem_she" desc="图腾_蛇 147"/>
+    <field value="49" name="totem_xie" desc="图腾_蝎 148"/>
+  </enum>
+  <enum name="EnumTargetSelectType">
+    <field value="0" name="none" desc="无"/>
+    <field value="1" name="unit" desc="单位"/>
+    <field value="2" name="grid" desc="格子"/>
+    <field value="3" name="dir" desc="方向"/>
+  </enum>
+  <enum name="EnumAttackModuleType">
+    <field value="0" name="none" desc="未定义"/>
+    <field value="1" name="peace" desc="和平"/>
+    <field value="2" name="all" desc="全体"/>
+    <field value="3" name="team" desc="组队"/>
+    <field value="4" name="gang" desc="帮会"/>
+    <field value="5" name="camp" desc="阵营"/>
+  </enum>
+  <enum name="EnumRelationType">
+    <field value="0" name="none" desc="无"/>
+    <field value="1" name="self" desc="自己"/>
+    <field value="2" name="friend" desc="友好"/>
+    <field value="3" name="hostile" desc="敌对"/>
+    <field value="4" name="neutral" desc="中立"/>
+  </enum>
+  <enum name="EnumCompoundType">
+    <field value="0" name="none" desc="无"/>
+    <field value="1" name="settled" desc="固定合成"/>
+    <field value="2" name="reandom" desc="随机合成"/>
+    <field value="3" name="reandom_fixation" desc="随机加固定"/>
+  </enum>
+  <enum name="EnumTaskStepType">
+    <field value="0" name="none" desc="无"/>
+    <field value="1" name="accept" desc="可接受的"/>
+    <field value="2" name="underway" desc="进行中的"/>
+    <field value="3" name="achievable" desc="可完成的"/>
+    <field value="4" name="finish" desc="已完成"/>
+  </enum>
+  <enum name="EnumTaskTargetType">
+    <field value="0" name="none" desc="无"/>
+    <field value="3" name="kill" desc="击杀类"/>
+    <field value="5" name="clone" desc="进入特定副本"/>
+    <field value="6" name="collection" desc="采集"/>
+    <field value="9" name="equip" desc="达到指定强化等级"/>
+    <field value="12" name="grade" desc="等级任务"/>
+    <field value="13" name="dialogue" desc="对话类"/>
+    <field value="14" name="map" desc="击杀指定地图的怪物"/>
+    <field value="15" name="submit" desc="提交物品"/>
+    <field value="16" name="look" desc="到达指定地图"/>
+    <field value="17" name="wear" desc="穿戴指定数量的指定等级以上装备"/>
+    <field value="18" name="buy" desc="从商店购买指定道具"/>
+    <field value="19" name="gain" desc="击杀指定怪物获得指定任务道具"/>
+    <field value="20" name="rune" desc="激活任意符文"/>
+    <field value="21" name="guild" desc="加入一个帮会"/>
+    <field value="22" name="rebirth" desc="人物转生"/>
+    <field value="23" name="officer" desc="官职"/>
+    <field value="31" name="wing" desc="翅膀"/>
+  </enum>
+  <enum name="EnumTaskSortType">
+    <field value="0" name="none" desc="无"/>
+    <field value="1" name="mainTask" desc="主线任务"/>
+    <field value="2" name="lineTask" desc="支线任务"/>
+    <field value="3" name="dailyTask" desc="日常任务"/>
+    <field value="4" name="weeklyTask" desc="周常任务"/>
+    <field value="5" name="exp" desc="材料"/>
+    <field value="6" name="item" desc="经验"/>
+    <field value="7" name="elite" desc="日常精英任务"/>
+  </enum>
+  <enum name="EnumDropType">
+    <field value="0" name="unknown" desc="未知"/>
+    <field value="1" name="gold" desc="金币"/>
+    <field value="2" name="item" desc="物品"/>
+  </enum>
+  <enum name="EnumItemBindType">
+    <field value="0" name="none" desc="未知"/>
+    <field value="1" name="bind" desc="绑定"/>
+    <field value="2" name="unbind" desc="非绑定"/>
+    <field value="3" name="exclusive" desc="专有"/>
+  </enum>
+  <enum name="EnumNoticeType">
+    <field value="1" name="one_level_notice" desc="一级公告"/>
+    <field value="2" name="two_level_notice" desc="二级公告"/>
+    <field value="3" name="three_level_notice" desc="三级公告"/>
+    <field value="4" name="alert_notice" desc="alert提示"/>
+    <field value="5" name="mouse_notice" desc="鼠标提示"/>
+    <field value="6" name="fixedPos_notice" desc="固定位置提示"/>
+    <field value="7" name="important_notice" desc="重要提示"/>
+    <field value="8" name="forge_notice" desc="强化到12星后公告"/>
+    <field value="9" name="create_guild" desc="创建帮会"/>
+    <field value="10" name="kill_boss" desc="击杀Boss"/>
+    <field value="11" name="join_guild_my_notice" desc="成功加入帮会{帮会名}"/>
+    <field value="12" name="join_guild_you_notice" desc="玩家加入帮会后，帮会返回公告"/>
+    <field value="13" name="appoint_guild_notice" desc="任命职位后帮会返回公告：{0}被{1}任命为{2}"/>
+    <field value="14" name="recall_guild_notice" desc="罢免后帮会频道返回公告"/>
+    <field value="15" name="wang_guild_notice" desc="禅让帮主后公告"/>
+    <field value="16" name="leave_guild_notice" desc="脱离帮会"/>
+    <field value="17" name="disband_guild_notice" desc="帮主点击解散帮会后"/>
+    <field value="18" name="modify_guild_notice" desc="帮主成功修改帮会公告"/>
+    <field value="19" name="war_guild_notice" desc="成功发起帮会战"/>
+    <field value="20" name="warend_guild_notice" desc="帮会战结束"/>
+    <field value="21" name="upgrade_guild_notice" desc="帮会等级提升"/>
+    <field value="22" name="kill_player_notice" desc="玩家死亡提示：在{地图名}发生恶性斗殴事件，玩家{击杀者}把玩家{被击杀者}砍成重伤！！！"/>
+    <field value="23" name="guild_donation_item" desc="玩家张三捐赠装备屠龙刀获得100点贡献值"/>
+    <field value="24" name="guild_exchange_item" desc="玩家张三消耗100点贡献值兑换装备屠龙刀"/>
+    <field value="25" name="guild_donation_money" desc="玩家张三捐赠10000金币获得10点贡献值"/>
+    <field value="26" name="guild_redPackage_send" desc="{0}帮会的土豪{1}有钱任性！随手一甩就是{2}元宝红包！"/>
+    <field value="27" name="redPackage_send" desc="土豪{0}有钱任性！随手一甩就是{1}元宝红包！"/>
+    <field value="28" name="guild_reduce_value" desc="贡献值-1500，当前贡献值15000"/>
+    <field value="29" name="guild_add_value" desc="贡献值+1500，当前贡献值15000"/>
+    <field value="30" name="lucky_add" desc="祝福成功，幸运+1"/>
+    <field value="31" name="lucky_reduce" desc="祝福失败，幸运-1"/>
+    <field value="32" name="lucky_unchange" desc="您的幸运值未改变"/>
+    <field value="33" name="no_equip" desc="没有穿戴武器，不能使用"/>
+    <field value="34" name="itemUse_notice_1" desc="魂珠碎片+1，当前数量250，还可使用：30次"/>
+    <field value="35" name="itemUse_notice_2" desc="今日使用次数已满"/>
+    <field value="36" name="attr_full" desc="您拥有的金币已达上限，无法使用"/>
+    <field value="37" name="vip_notice_1" desc="我也要成为vip"/>
+    <field value="38" name="vip_notice_2" desc="领取vip大礼包"/>
+    <field value="39" name="mine_notice" desc="宝藏公告"/>
+    <field value="40" name="open_server_athletics_level" desc="{某人}成功领取开服活动{等级竞技}{70级}礼包，获得海量奖励！"/>
+    <field value="41" name="open_server_special" desc="{某人}成功领取开服活动{神装礼包}，获得全套极品装备！"/>
+    <field value="42" name="wing_level" desc="{某人}将翅膀提升至五阶，实力大增！"/>
+    <field value="45" name="boss_relive" desc="BOSS刷新公告"/>
+    <field value="46" name="guild_money_value" desc="帮会财富+1500，当前贡献值1500"/>
+    <field value="47" name="recharge_first_value" desc="{0}成功领取价值8888元宝的【首冲大礼】，实力飞速提升！"/>
+    <field value="48" name="recharge_days_value" desc="玩家{0}成功领取【每日充值大礼包】"/>
+    <field value="49" name="recharge_first_get_value" desc="{0}成功领取价值8888元宝的【首冲大礼】，实力飞速提升！{我也要领}"/>
+    <field value="50" name="recharge_days_get_value" desc="玩家{0}成功领取【每日充值大礼包】{我也要领}"/>
+    <field value="51" name="popular_boss_value" desc="xxx（玩家名称）成功领取全民BOSS中的xxx（经典、暗之、禁地、终极）BOSS礼包"/>
+    <field value="52" name="popular_boss_get_value" desc="xxx（玩家名称）成功领取全民BOSS中的xxx（经典、暗之、禁地、终极）BOSS礼包{我也领取}"/>
+    <field value="53" name="refine_exp_value" desc="{0}通过经验炼制获得了{1}经验值，等级飞速提升！{我也炼制}"/>
+    <field value="54" name="open_server_get_special" desc="{0}成功领取开服活动{特惠礼包特定表里有描述}{我也领取}"/>
+    <field value="55" name="open_server_athletics_wing" desc="{0}成功领取开服活动翅膀竞技{1}"/>
+    <field value="56" name="open_server_athletics_dragon" desc="{0}成功领取开服活动龙心竞技{1}"/>
+    <field value="57" name="open_server_athletics_wolf" desc="{0}成功领取开服活动狼牙竞技{1}"/>
+    <field value="58" name="open_server_athletics_level_get" desc="{0}成功领取开服活动等级竞技{1}{2}"/>
+    <field value="59" name="open_server_athletics_wing_get" desc="{0}成功领取开服活动翅膀竞技{1}{2}"/>
+    <field value="60" name="open_server_athletics_dragon_get" desc="{0}成功领取开服活动龙心竞技{1}{2}"/>
+    <field value="61" name="open_server_athletics_wolf_get" desc="{0}成功领取开服活动狼牙竞技{1}{2}"/>
+    <field value="62" name="mars_activate_101" desc="玩家{0}成功激活龙魂护卫，击杀BOSS效率倍增！{1}"/>
+    <field value="63" name="mars_activate_103" desc="玩家{0}成功激活鹰卫，升级效率翻倍{1}"/>
+    <field value="64" name="summon_boss" desc="玩家{0}使用{1}在比奇城召唤出{2},请大家前往击杀"/>
+    <field value="65" name="sha_cheng_zheng_ba_award" desc="恭喜沙城城主{0}成功领取沙城争霸奖励！"/>
+    <field value="66" name="role_other_limit_pk" desc="对方等级低于XX级，无法被攻击"/>
+    <field value="67" name="map_call_mars" desc="当前地图无法召唤护卫"/>
+    <field value="68" name="role_oneself_limit_pk" desc="等级低于50级，无法攻击敌人"/>
+    <field value="70" name="star_elite_relive" desc="怪物{0}出现在{1}，前往击杀可掉落星珠"/>
+    <field value="71" name="htsd_vanish" desc="护体神盾消失"/>
+    <field value="72" name="guild_kikc_member" desc="玩家{0}被踢出帮会"/>
+    <field value="73" name="chongzhuang_wuli" desc="冲撞力不足"/>
+    <field value="74" name="privilege_get" desc="玩家{0}成功激活{1}，成就霸业，指日可待！我也开通"/>
+    <field value="75" name="legendary_gift_ranking" desc="恭喜玩家{0},在传奇大礼中，排名荣升至第{1}名"/>
+    <field value="76" name="compound_inlay" desc="合成公告"/>
+    <field value="77" name="mars_activate_102" desc="玩家{0}成功激活虎卫，升级效率翻倍{1}"/>
+  </enum>
+  <enum name="EnumStrengthenType">
+    <field value="1" name="attackType" desc="攻击型装备"/>
+    <field value="2" name="defenseType" desc="防御型装备"/>
+  </enum>
+  <enum name="EnumBossType">
+    <field value="1" name="worldBoss" desc="世界Boss"/>
+    <field value="2" name="personalBoss" desc="个人Boss"/>
+  </enum>
+  <enum name="EnumMapViewEnterType">
+    <field value="1" name="normal" desc="普通"/>
+    <field value="2" name="drop" desc="掉落"/>
+    <field value="3" name="monster" desc="怪物"/>
+    <field value="4" name="role" desc="角色"/>
+    <field value="5" name="mars" desc="战神"/>
+  </enum>
+  <enum name="EnumNpcShopType">
+    <field value="1" name="carryType" desc="随身商店"/>
+    <field value="2" name="npcType" desc="npc商店"/>
+    <field value="3" name="mallType" desc="商城"/>
+    <field value="4" name="quickType" desc="快速购买"/>
+  </enum>
+  <enum name="EnumMailState">
+    <field value="0" name="normal" desc="未读取"/>
+    <field value="1" name="opened" desc="已读取"/>
+    <field value="2" name="deleted" desc="已删除"/>
+  </enum>
+  <enum name="EnumItemLockType">
+    <field value="0" name="none" desc="解除锁定状态"/>
+    <field value="1" name="trade" desc="交易锁定"/>
+    <field value="2" name="stall" desc="摆摊锁定"/>
+    <field value="3" name="sale" desc="物品出售锁定"/>
+  </enum>
+  <enum name="EnumWorldBossState">
+    <field value="0" name="normal" desc="刷新"/>
+    <field value="1" name="down" desc="击杀"/>
+  </enum>
+  <enum name="EnumReliveType">
+    <field value="0" name="back" desc="回城复活"/>
+    <field value="1" name="immediately" desc="立即复活"/>
+  </enum>
+  <enum name="EnumRoleRelationType">
+    <field value="0" name="remove" desc="删除"/>
+    <field value="1" name="friend" desc="好友"/>
+    <field value="2" name="black" desc="黑名单"/>
+    <field value="3" name="enemy" desc="仇人"/>
+  </enum>
+  <enum name="EnumConditionType">
+    <field value="1" name="sign_day" desc="签到"/>
+    <field value="2" name="get_online_award" desc="领取在线奖励"/>
+    <field value="3" name="kill_monster" desc="击杀怪物"/>
+    <field value="4" name="kill_boss" desc="击杀BOSS"/>
+    <field value="5" name="move_to_clone" desc="进入副本(接此任务会传送到副本)"/>
+    <field value="6" name="use_item_base_id" desc="使用指定ID的道具"/>
+    <field value="7" name="guild_offer" desc="帮会贡献"/>
+    <field value="8" name="daily_task" desc="日常任务"/>
+    <field value="9" name="upgrade_equipment" desc="装备强化次数"/>
+    <field value="10" name="micro_client_login" desc="微端登录"/>
+    <field value="11" name="kill_player" desc="击杀玩家"/>
+    <field value="12" name="level_to" desc="升到指定等级"/>
+    <field value="13" name="npc_dialogue" desc="npc对话"/>
+    <field value="14" name="kill_monster_in_map" desc="指定地图击杀怪物"/>
+    <field value="15" name="pay_item" desc="上缴指定物品"/>
+    <field value="16" name="exploration_map" desc="探索指定地图"/>
+    <field value="17" name="have_level_equipment" desc="获取指定等级装备"/>
+    <field value="18" name="buy_item" desc="购买指定道具"/>
+    <field value="19" name="kill_monster_get_item" desc="击杀指定怪物收集道具"/>
+    <field value="20" name="activate_rune" desc="激活符文"/>
+    <field value="21" name="join_guild" desc="加入或创建帮会"/>
+    <field value="22" name="role_re_level" desc="人物转生"/>
+    <field value="23" name="upgrade_officer" desc="提升官职"/>
+    <field value="24" name="kill_elite" desc="击杀精英"/>
+    <field value="25" name="trunk_task" desc="主线任务"/>
+    <field value="26" name="join_team" desc="加入或创建队伍"/>
+    <field value="27" name="add_friend" desc="添加好友"/>
+    <field value="28" name="compound_bead" desc="合成聚灵珠"/>
+    <field value="29" name="compound_wolf" desc="升级狼牙"/>
+    <field value="30" name="compound_shield" desc="升级护盾"/>
+    <field value="31" name="upgrade_wing" desc="升级翅膀"/>
+    <field value="32" name="login_day" desc="登录"/>
+    <field value="33" name="role_dead" desc="角色死亡"/>
+    <field value="34" name="have_resources" desc="拥有资源"/>
+    <field value="35" name="wear_star_equipment" desc="穿戴指定星级装备"/>
+    <field value="36" name="have_effective_fashion" desc="拥有指定件数的有效时装"/>
+    <field value="37" name="forge_crush" desc="强化破碎数量"/>
+    <field value="38" name="forge_star" desc="强化指定星级数量"/>
+    <field value="39" name="enter_clone_entity_type" desc="进入副本(指定实体类型如:经验副本)"/>
+    <field value="40" name="use_bead" desc="使用聚灵珠"/>
+    <field value="41" name="kill_team_boss" desc="击杀指定BOSS组的BOSS"/>
+    <field value="42" name="kill_boss_in_map" desc="指定地图击杀BOSS"/>
+    <field value="43" name="kill_boss_in_dark_temple" desc="未知暗殿击杀BOSS"/>
+    <field value="44" name="daily_first_recharge" desc="每日首充"/>
+    <field value="45" name="magic_matrix" desc="魔法结阵"/>
+    <field value="46" name="worship_city_master" desc="膜拜城主"/>
+    <field value="47" name="seek_treasure" desc="挖宝"/>
+  </enum>
+  <enum name="EnumMonsterType">
+    <field value="1" name="normal" desc="小怪"/>
+    <field value="2" name="boss" desc="BOSS"/>
+    <field value="3" name="elite" desc="精英"/>
+    <field value="4" name="person" desc="人形"/>
+    <field value="5" name="star_elite" desc="七星精英"/>
+  </enum>
+  <enum name="EnumMissionState">
+    <field value="0" name="none" desc="无"/>
+    <field value="1" name="open" desc="开启（可接受）"/>
+    <field value="2" name="received" desc="已接受"/>
+    <field value="3" name="complete" desc="已完成"/>
+    <field value="4" name="submit" desc="已提交"/>
+  </enum>
+  <enum name="EnumMapCloneModeType">
+    <field value="0" name="unknown" desc="未知"/>
+    <field value="1" name="single" desc="单人"/>
+    <field value="2" name="team" desc="组队"/>
+    <field value="3" name="guild" desc="公会"/>
+    <field value="5" name="all" desc="所有"/>
+  </enum>
+  <enum name="EnumRoleDailyDataType">
+    <field value="1" name="item_start" desc="道具使用次数枚举开始"/>
+    <field value="500" name="item_end" desc="道具使用次数枚举结束"/>
+    <field value="501" name="role_cultivation_count" desc="修为值兑换次数"/>
+    <field value="502" name="role_recycle_exp" desc="回收装备获得经验记录"/>
+    <field value="503" name="role_daily_task_buy_count" desc="日常任务购买次数"/>
+    <field value="504" name="role_refine_exp_count" desc="经验炼制次数"/>
+    <field value="1001" name="private_boss_cls" desc="个人BOSS-触龙神"/>
+    <field value="1002" name="private_boss_hmbz" desc="个人BOSS-荒漠霸主"/>
+    <field value="1003" name="private_boss_xlzm" desc="个人BOSS-血炼猪魔"/>
+    <field value="1004" name="private_boss_wmjz" desc="个人BOSS-沃玛教主"/>
+    <field value="1005" name="private_boss_lysw" desc="个人BOSS-烈焰尸王"/>
+    <field value="1006" name="private_boss_hlw" desc="个人BOSS-火龙王"/>
+    <field value="1101" name="activity_slzd_award_1" desc="试炼之地1层奖励"/>
+    <field value="1102" name="activity_slzd_award_2" desc="试炼之地2层奖励"/>
+    <field value="1103" name="activity_slzd_award_3" desc="试炼之地3层奖励"/>
+    <field value="1104" name="activity_slzd_award_4" desc="试炼之地4层奖励"/>
+    <field value="1105" name="activity_slzd_award_5" desc="试炼之地5层奖励"/>
+    <field value="1106" name="activity_slzd_award_6" desc="试炼之地6层奖励"/>
+    <field value="1107" name="activity_slzd_award_7" desc="试炼之地7层奖励"/>
+    <field value="1108" name="activity_slzd_award_8" desc="试炼之地8层奖励"/>
+    <field value="1109" name="activity_slzd_award_9" desc="试炼之地9层奖励"/>
+    <field value="1110" name="activity_slzd_award_10" desc="试炼之地10层奖励"/>
+    <field value="1111" name="activity_slzd_award_11" desc="试炼之地11层奖励"/>
+    <field value="1112" name="activity_slzd_award_12" desc="试炼之地12层奖励"/>
+    <field value="1113" name="activity_slzd_award_13" desc="试炼之地13层奖励"/>
+    <field value="1501" name="clone_single_death_valley" desc="单人副本-死亡山谷进入次数"/>
+    <field value="1502" name="clone_single_sand_desert" desc="单人副本-黄沙荒漠进入次数"/>
+    <field value="1503" name="clone_single_bull_demon_temple" desc="单人副本-牛魔神殿进入次数"/>
+    <field value="1504" name="clone_single_eclipse_secret" desc="单人副本-苍月秘境进入次数"/>
+    <field value="1505" name="clone_single_deep_sea_palace" desc="单人副本-深海宫殿进入次数"/>
+    <field value="1506" name="clone_monster_seal_hill" desc="单人副本-封魔岭"/>
+    <field value="1601" name="pf_360_daily_award" desc="360特权日常奖励"/>
+    <field value="2001" name="clone_public_mayan_temple" desc="公共副本-玛雅神殿进入次数"/>
+    <field value="2101" name="ha_deng_lu_hao_li_award" desc="庆典活动-登录豪礼领取次数"/>
+    <field value="3001" name="activity_abyss_maze_award" desc="深渊迷阵奖励领取次数"/>
+    <field value="3101" name="activity_dungeon_master_daily_award" desc="城主每日奖励领取次数"/>
+    <field value="3201" name="vip_buff_award" desc="vip每日buff奖励"/>
+    <field value="3202" name="vip_relivecount" desc="vip可以原地复活次数"/>
+  </enum>
+  <enum name="EnumItemType1">
+    <field value="0" name="item" desc="道具"/>
+    <field value="1" name="equipment" desc="装备"/>
+  </enum>
+  <enum name="EnumItemType2">
+    <field value="1" name="equipment" desc="装备"/>
+    <field value="2" name="equipment_super" desc="神装"/>
+    <field value="3" name="equipment_others" desc="其他部件（符文装备）"/>
+    <field value="4" name="medicine" desc="药品"/>
+    <field value="5" name="material_synthesis" desc="合成材料"/>
+    <field value="6" name="buff" desc="BUFF物品"/>
+    <field value="7" name="material_functional" desc="功能材料"/>
+    <field value="8" name="res" desc="资源物品"/>
+    <field value="9" name="box" desc="宝箱"/>
+    <field value="10" name="gift" desc="礼包"/>
+    <field value="11" name="fashion" desc="时装类型"/>
+    <field value="12" name="equipment_soul" desc="魂装"/>
+  </enum>
+  <enum name="EnumItemType3">
+    <field value="1" name="material_functional_transfer" desc="传送石"/>
+    <field value="2" name="material_functional_skill_book" desc="技能书"/>
+    <field value="3" name="material_functional_head" desc="首级"/>
+    <field value="4" name="material_functional_isrune" desc="符文"/>
+    <field value="5" name="material_functional_gem" desc="宝石"/>
+    <field value="7" name="material_functional_office" desc="官职"/>
+  </enum>
+  <enum name="EnumTeamState">
+    <field value="0" name="normal" desc="正常"/>
+    <field value="1" name="request_clone" desc="请求队伍副本"/>
+    <field value="2" name="running_clone" desc="正在进行队伍副本"/>
+  </enum>
+  <enum name="EnumTitleState">
+    <field value="0" name="normal" desc="正常的"/>
+    <field value="1" name="invalid" desc="无效的"/>
+  </enum>
+  <enum name="EnumItemHoldType">
+    <field value="0" name="multi" desc="可以持有多个同类物品"/>
+    <field value="1" name="only" desc="同类物品只能持有一个"/>
+  </enum>
+  <enum name="EnumBufferValidType">
+    <field value="0" name="none" desc="无效的"/>
+    <field value="1" name="time" desc="时间"/>
+    <field value="2" name="hp" desc="生命"/>
+    <field value="3" name="mp" desc="法力"/>
+    <field value="4" name="hp_mp" desc="生命和法力"/>
+    <field value="5" name="world" desc="世界"/>
+    <field value="6" name="shacheng_master" desc="城主"/>
+  </enum>
+  <enum name="EnumBufferOperationType">
+    <field value="0" name="unknown" desc="未知"/>
+    <field value="1" name="addition" desc="添加"/>
+    <field value="2" name="remove" desc="删除"/>
+    <field value="3" name="modify" desc="修改"/>
+    <field value="4" name="list" desc="列表"/>
+  </enum>
+  <enum name="EnumRoleRankType">
+    <field value="0" name="role_rank_level" desc="等级榜"/>
+    <field value="1" name="role_rank_zhan" desc="战神榜"/>
+    <field value="2" name="role_rank_fa" desc="法神榜"/>
+    <field value="3" name="role_rank_dao" desc="道神榜"/>
+    <field value="4" name="role_rank_wing" desc="神翼榜"/>
+    <field value="5" name="role_rank_equipment" desc="神装榜"/>
+  </enum>
+  <enum name="EnumTeamMode">
+    <field value="0" name="none" desc="无状态"/>
+    <field value="1" name="auto" desc="自动组队"/>
+    <field value="2" name="manual" desc="手动组队"/>
+    <field value="3" name="refuse" desc="拒绝组队"/>
+  </enum>
+  <enum name="EnumRoleOnceDataType">
+    <field value="1" name="role_plot_pass" desc="已通过剧情"/>
+    <field value="11" name="role_dark_temple_award_1" desc="未知暗殿奖励1"/>
+    <field value="12" name="role_dark_temple_award_2" desc="未知暗殿奖励2"/>
+    <field value="13" name="role_dark_temple_award_3" desc="未知暗殿奖励3"/>
+    <field value="14" name="role_dark_temple_award_4" desc="未知暗殿奖励4"/>
+    <field value="15" name="role_dark_temple_award_5" desc="未知暗殿奖励5"/>
+    <field value="101" name="vip_level_1_award" desc="VIP1级奖励"/>
+    <field value="102" name="vip_level_2_award" desc="VIP2级奖励"/>
+    <field value="1001" name="activity_dungeon_master_award" desc="城主奖励领取次数"/>
+    <field value="1002" name="second_day_login_award" desc="盲测次日登录奖励"/>
+    <field value="1003" name="tian_guan_num" desc="天关层数"/>
+    <field value="1101" name="pf_360_privilege_award_1" desc="360特权奖励1"/>
+    <field value="1102" name="pf_360_privilege_award_2" desc="360特权奖励2"/>
+    <field value="1103" name="pf_360_privilege_award_3" desc="360特权奖励3"/>
+    <field value="1104" name="pf_360_privilege_award_4" desc="360特权奖励4"/>
+  </enum>
+  <enum name="EnumAttrAffectedType">
+    <field value="1" name="skill" desc="技能影响属性"/>
+    <field value="2" name="buff" desc="buff影响属性"/>
+    <field value="3" name="item" desc="物品影响属性"/>
+  </enum>
+  <enum name="EnumActivityState">
+    <field value="0" name="start" desc="立即前往"/>
+    <field value="1" name="ready" desc="即将开始"/>
+    <field value="2" name="close" desc="未开启"/>
+    <field value="3" name="end" desc="已结束"/>
+    <field value="4" name="stop" desc="停止进入"/>
+  </enum>
+  <enum name="EnumGuilLogType">
+    <field value="0" name="unknown" desc="无效值"/>
+    <field value="1" name="donate_money" desc="捐献钱"/>
+    <field value="2" name="donate_item" desc="捐献物品"/>
+    <field value="3" name="exchange_item" desc="兑换物品"/>
+  </enum>
+  <enum name="EnumGuilRedType">
+    <field value="0" name="unknown" desc="无效值"/>
+    <field value="1" name="send" desc="发红包"/>
+    <field value="2" name="grab" desc="抢红包"/>
+  </enum>
+  <enum name="EnumAthleticsType">
+    <field value="0" name="none" desc="无状态"/>
+    <field value="1" name="received" desc="已接受"/>
+    <field value="2" name="submit" desc="可提交"/>
+    <field value="3" name="complete" desc="已完成"/>
+    <field value="4" name="cannot" desc="无法领取"/>
+  </enum>
+  <enum name="EnumSmelterType">
+    <field value="0" name="unknown" desc=""/>
+    <field value="1" name="blood_runes" desc="玉佩合成"/>
+    <field value="2" name="shield" desc="护盾合成"/>
+    <field value="3" name="dragon" desc="龙心合成"/>
+    <field value="4" name="wolf" desc="狼牙合成"/>
+    <field value="5" name="medal" desc="勋章合成"/>
+  </enum>
+  <enum name="EnumInvestType">
+    <field value="0" name="unknown" desc=""/>
+    <field value="1" name="month" desc="月卡投资"/>
+    <field value="2" name="level" desc="升级投资"/>
+  </enum>
+  <enum name="EnumRechargeType">
+    <field value="0" name="none" desc="无充值"/>
+    <field value="1" name="submit" desc="充值未领取"/>
+    <field value="2" name="complete" desc="充值已领取"/>
+  </enum>
+  <enum name="EnumPlotState">
+    <field value="0" name="normal" desc="正常"/>
+    <field value="1" name="shacheng" desc="沙城"/>
+    <field value="2" name="huanggong" desc="皇宫"/>
+    <field value="3" name="end" desc="结束"/>
+  </enum>
+  <enum name="EnumMineItemType">
+    <field value="0" name="all" desc="全部"/>
+    <field value="1" name="equip" desc="装备"/>
+    <field value="2" name="other" desc="其他"/>
+  </enum>
+  <enum name="EnumRechargeAwardType">
+    <field value="0" name="none" desc="无状态"/>
+    <field value="1" name="level" desc="等级类型"/>
+    <field value="2" name="recharge" desc="任意充值"/>
+    <field value="3" name="total" desc="累计充值"/>
+  </enum>
+  <enum name="EnumPrivilegeType">
+    <field value="1" name="dropfax" desc="死亡装备掉落几率"/>
+    <field value="2" name="killfax" desc="杀怪爆率"/>
+    <field value="3" name="intensifyfax" desc="强化概率"/>
+    <field value="4" name="mapexp" desc="副本通关经验加成"/>
+    <field value="5" name="gettoken" desc="每日领取封魔法神令牌"/>
+    <field value="6" name="getaxe" desc="每日领取斧子"/>
+    <field value="7" name="entrepotcount" desc="每日使用随身仓库次数"/>
+    <field value="8" name="recyclecount" desc="每日使用随身回收次数"/>
+  </enum>
+  <enum name="EnumExtensionAwardType">
+    <field value="1" name="login" desc="登录奖励"/>
+    <field value="2" name="level" desc="等级奖励"/>
+    <field value="3" name="pay" desc="充值奖励"/>
+  </enum>
+  <enum name="EnumItemSpecialType">
+    <field value="0" name="unknown" desc="未知"/>
+    <field value="1" name="official" desc="官职等级"/>
+    <field value="2" name="skill" desc="需要技能ID"/>
+    <field value="3" name="mars" desc="护卫开启"/>
+    <field value="4" name="beast" desc="圣兽升级"/>
+    <field value="5" name="guild" desc="帮会宝箱"/>
+    <field value="6" name="vip_point" desc="元宝使用"/>
+  </enum>
+  <enum name="EnumExtensionAwardState">
+    <field value="0" name="not_reach" desc="条件未达成，不可领取"/>
+    <field value="1" name="can_receive" desc="可领取"/>
+    <field value="2" name="already_receive" desc="已领取"/>
+  </enum>
+  <enum name="EnumGuaJiType">
+    <field value="1" name="ordinary" desc="普通挂机"/>
+    <field value="2" name="lowvip" desc="vip低级挂机"/>
+    <field value="3" name="hightvip" desc="vip高级挂机"/>
+  </enum>
+</enums>
